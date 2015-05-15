@@ -2279,6 +2279,22 @@ and (orientation : landscape)
   display: block;
 }
   
+  .spritechabelita {
+    -webkit-animation: spritechabelita 0.6s steps(6, end) 7,curling5 4s both linear, spritehabla 1.4s steps(6, end) 4s 6 forwards;
+	animation: spritechabelita 0.6s steps(6, end) 7,curling5 4s both linear, spritehabla 1.4s steps(6, end) 4s 6 forwards;
+}
+  
+  @-webkit-keyframes curling5{
+	from{ margin-left:-70%;-webkit-transform: scale(0.3);transform: scale(0.3);}
+	to{margin-left:-3%;-webkit-transform: scale(0.3);transform: scale(0.3);}
+	}
+	
+  @keyframes curling5{
+	from{ margin-left:-70%;-webkit-transform: scale(0.3);transform: scale(0.3);}
+	to{margin-left:-3%;-webkit-transform: scale(0.3);transform: scale(0.3);}
+	}
+  
+
   
 }
 
