@@ -2238,6 +2238,8 @@ and (orientation : landscape)
   margin-left: 31%;
   margin-top: -94%;
   -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  -o-transform: scale(0.5);
   transform: scale(0.5);
 }
 
@@ -2251,6 +2253,8 @@ and (orientation : landscape)
   margin-left: -48%;
   margin-top: -95%;
   -webkit-transform: scale(0.5);
+   -moz-transform: scale(0.5);
+  -o-transform: scale(0.5);
   transform: scale(0.5);
 }
 
@@ -2265,6 +2269,8 @@ and (orientation : landscape)
   margin-top: 3%;
   margin-left: -12%;
   -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  -o-transform: scale(0.3);
   transform: scale(0.3);
 }
   
@@ -2275,23 +2281,27 @@ and (orientation : landscape)
   top: 69%;
   left: 50%;
   -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  -o-transform: scale(0.3);
   transform: scale(0.3);
   display: block;
 }
   
   .spritechabelita {
     -webkit-animation: spritechabelita 0.6s steps(6, end) 7,curling5 4s both linear, spritehabla 1.4s steps(6, end) 4s 6 forwards;
+	-moz-animation: spritechabelita 0.6s steps(6, end) 7,curling5 4s both linear, spritehabla 1.4s steps(6, end) 4s 6 forwards;
+	-o-animation: spritechabelita 0.6s steps(6, end) 7,curling5 4s both linear, spritehabla 1.4s steps(6, end) 4s 6 forwards;
 	animation: spritechabelita 0.6s steps(6, end) 7,curling5 4s both linear, spritehabla 1.4s steps(6, end) 4s 6 forwards;
 }
   
   @-webkit-keyframes curling5{
-	from{ margin-left:-70%;-webkit-transform: scale(0.3);transform: scale(0.3);}
-	to{margin-left:-3%;-webkit-transform: scale(0.3);transform: scale(0.3);}
+	from{ margin-left:-70%;-webkit-transform: scale(0.3);-moz-transform: scale(0.3);-o-transform: scale(0.3);transform: scale(0.3);}
+	to{margin-left:-3%;-webkit-transform: scale(0.3);-moz-transform: scale(0.3);-o-transform: scale(0.3);transform: scale(0.3);}
 	}
 	
   @keyframes curling5{
-	from{ margin-left:-70%;-webkit-transform: scale(0.3);transform: scale(0.3);}
-	to{margin-left:-3%;-webkit-transform: scale(0.3);transform: scale(0.3);}
+	from{ margin-left:-70%;-webkit-transform: scale(0.3);-moz-transform: scale(0.3);-o-transform: scale(0.3);transform: scale(0.3);}
+	to{margin-left:-3%;-webkit-transform: scale(0.3);-moz-transform: scale(0.3);-o-transform: scale(0.3);transform: scale(0.3);}
 	}
   
 
