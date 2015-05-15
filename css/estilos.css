@@ -2308,3 +2308,19 @@ and (orientation : landscape)
   
 }
 
+
+@media only screen
+and (max-width : 480px)
+and (max-height : 240px)
+and (orientation : landscape)
+{
+
+#skip {
+  z-index: 6;
+  position: absolute;
+  top: 47%;
+  -webkit-transform: scale(0.7);
+  display: block;
+}
+
+}
