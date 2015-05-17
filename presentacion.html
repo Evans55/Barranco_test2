@@ -306,13 +306,38 @@ if(document.getElementById(div1).style.display = 'none'){
   <div class="nube5" id="nube5"></div>
   </div> 
 
-<div class="ui-grid-a">
-<div class="ui-block-b">
-<a href="#page2" id="skip" data-transition="customFlip" class="ui-btn-right ui-btn-inline" onclick="activarAudio2(),stopAudio(),cambiardisplay3();"><img src="imagenes/next.png" alt="next"></a>
 
+
+<style>
+
+.test{
+  background-color: #000;
+  position: absolute;
+  top:75%;
+  width: 90%;
+  height:20%;
+  z-index: 15;
+}
+.test a{
+  display:block;
+  width:50%;
+  background-image: url("imagenes/next.png");
+  height:100%;
+  /*webkit-background-size: 46;*/
+  
+	
+}
+
+
+</style>
+
+<!--id="skip"-->
+
+<div class="test">
+<a href="#page2"  data-transition="customFlip"  onclick="activarAudio2(),stopAudio(),cambiardisplay3();" >
+<img src="imagenes/next.png">
+</a>
 <a href="#page2" id="sinAudio1" data-transition="customFlip" class="ui-btn-right ui-btn-inline" onclick="sinAudio1();"><img src="imagenes/next.png" alt="next"></a>
-
-</div>
 </div>
 
 	</div>
@@ -1475,289 +1500,298 @@ if(document.getElementById(div1).style.display = 'none'){
 <!--FIN MENU DOCUMENTACION-->
 
 
-<!--INICIO PARA MATRIMONIO CIVIL-->
+<!--INICIO PARA MATRIMONIO CIVIL   style="background-image: url('imagenes/07-Fondo.png'); background-repeat: no-repeat; background-size: 100% 100%; overflow-x: hidden; overflow-y:hidden;"-->
 
-<div data-role="page" id="page15" style="background-image: url('imagenes/07-Fondo.png'); background-repeat: no-repeat; background-size: 100% 100%; overflow-x: hidden; overflow-y:hidden;">
-  
-  <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
+<style>
+
+@font-face {
+		font-family: myFirstFont;
+		src: url("../Fuentes/arial.ttf");
+}
+
+.content-header{
+		background: none;
+		position:absolute;
+		right:0%;
+		top:0%;
+		width: 100%;
+		height:16%;
+	}
+.bg-banner{
+		background:#960;
+		position:absolute;
+		z-index: 0;
+		width:100%;
+		height:100%;
+	}
+.cinta{
+		background: none;
+		width: 70%;
+		height: 62%;
+		margin:0 auto;
+		position:relative;
+		top:15%;
+		color: #000;
+		font-size: 20px;
+		font-family:arial;
+	
+	}
+	
+.cinta img{
+		position:absolute;
+		z-index: 1;
+}
+	
+.titulo_test{
+		text-align:center;
+		text-transform:uppercase;
+}
+.content-text{
+		background: none;
+		width: 76%;
+		height:100%;
+		position:absolute;
+		left: 12%;
+		z-index:2;
+	
+}
+
+.cuerpo{
+		background: none;
+		position:absolute;
+		right:0%;
+		top:16%;  
+		width: 100%;
+		height:100%;
 		
-        <a href="#left-panel15" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
-   
-	</div>
-  
-  <div data-role="content">
-  
-   
-  <div id="titulotramite">Matrimonio Civil</div>
-  <div id="area">Sub Gerencia de Trámite Documentario y Archivo, Secretaría General </div>
-  <div id="pasos">Total de 8 pasos</div>
-  
-  
-  <div id="globaltramite">
-      <div id="mensajes" style="background-color:#FFF">
-        <div class="textotramite">
-        
-        	<strong>Observaciones</strong>
-        	<ul>
-        		<li>Con posterioridad a la presentación del expediente, se deberá cumplir con la publicación del edicto matrimonial o gestionar la dispensa de publicación del mismo.</li>
-        	</ul>
-        
-        </div>
-      </div>
-  </div>
-  
-  
-  <div id="caminotramite3">
+	}
+.cuerpo img{
+		position:absolute;
+		z-index: 1;
+	
+	}
+.header-cuerpo{
+		background: #399;
+		position: absolute;
+		left:5%;
+		top: 2%;
+		z-index: 2;
+		width: 90%;
+		height:12%;
+	
+	}
+.content-num-pasos {
+		background : none;
+		position: absolute;
+		right:22%;
+		top:55%;
+		z-index: 3;
+		width:23%;
+		height:30%;
 
-  <div class="botoncamino" id="botoncamino1" data-role="button"><a href="#popupMatrimonioCivilpaso1" data-rel="popup" data-position-to="window"><img src="imagenes/paso01.png" alt="botoncamino1"></a></div>
-  
-  <div class="botoncamino" id="botoncamino2" data-role="button">
-  <a href="#popupMatrimonioCivilpaso2" data-rel="popup" data-position-to="window" ><img src="imagenes/paso02.png" alt="botoncamino2"></a></div>
-  
- <div class="botoncamino" id="botoncamino3" data-role="button"><a href="#popupMatrimonioCivilpaso3" data-rel="popup" data-position-to="window"><img src="imagenes/paso03.png" alt="botoncamino3"></a></div>
-  
-  <div class="botoncamino" id="botoncamino4" data-role="button"><a href="#popupMatrimonioCivilpaso4" data-rel="popup" data-position-to="window"><img src="imagenes/paso04.png" alt="botoncamino4"></a></div>
-  
-  <div class="botoncamino" id="botoncamino5" data-role="button"><a href="#popupMatrimonioCivilpaso5" data-rel="popup" data-position-to="window"><img src="imagenes/paso05.png" alt="botoncamino5"></a></div>
-  
-  <div class="botoncamino" id="botoncamino6" data-role="button"><a href="#popupMatrimonioCivilpaso6" data-rel="popup" data-position-to="window"><img src="imagenes/paso06.png" alt="botoncamino6"></a></div> 
-  
-  </div>
+	}
+	
+.content-num-pasos p{
+		text-align:center;
+		margin:0px auto;
+		font-size:20px;
+		font-family:Verdana, Geneva, sans-serif;
+		color:#fff;
 
-  
-  <div id="caminotramite4">
-	  <div class="botoncamino" id="botoncamino1" data-role="button"><a href="#popupMatrimonioCivilpaso7" data-rel="popup" data-position-to="window"><img src="imagenes/paso07.png" alt="botoncamino1"></a></div>
-	  
-	  <div class="botoncamino" id="botoncamino2" data-role="button"><a href="#popupMatrimonioCivilpaso8" data-rel="popup" data-position-to="window"><img src="imagenes/paso08.png" alt="botoncamino2"></a></div>
-  </div>
+	}
+.content-areas {
+		background : none;
+		position: absolute;
+		top:30%;
+		left:1%;
+		z-index: 3;
+		width:55%;
+		height:63%;
+		color:#fff;
 
-  
-  
-<div class="ui-grid-a" id="botonespag">
-   <div class="ui-block-a"><a href="#" onclick="anteriorpaginas('caminotramite3','caminotramite4');" ><img src="imagenes/anterior.png" alt="anterior"></a></div>
-   <div class="ui-block-b"><a href="#" onclick="siguientepaginas('caminotramite3','caminotramite4');" ><img src="imagenes/siguiente.png" alt="siguiente"></a></div>
-</div>
+	}
+	
+.content-areas p{
+		margin:0 auto;
+	}
+	
+.content-observaciones{
+		background: none;
+		position: absolute;
+		z-index: 2;
+		top:14%;
+		left:4.4%;
+		width: 36%;
+		height:55%;
+	}
+.content-observaciones .content-obs{
+		padding:1%;
+		position: absolute;
+		background:none;
+		border-radius: 4%;
+		top:19%;
+		left: 5%;
+		width:89.5%;
+		height:74%;
+		overflow-y: scroll;
+		z-index: 3;
+	}
+	
+@media screen and (min-width: 230px) and (max-width: 768px) {
+	.cinta{
+        font-size: 9px;
+    }
+	
+	.content-num-pasos p{
+		font-size:8px;
 
-<div class="ui-grid-a">
-  <div class="ui-block-a"> <div class="botonconsulta" id="botonconsulta" data-role="button"><a href="#" onclick="enviomail();"><img src="imagenes/Consulta_AZUL.png" alt="botonconsulta"></a></div></div>
-  <div class="ui-block-b"><div class="botondescarga" id="botondescarga" data-role="button"><a href="#" onClick="window.open('http://www.munibarranco.gob.pe/pdf/edificacion/RV-001-2012-VIVIENDA-VMVU.pdf', '_system', 'location=no');"><img src="imagenes/pdf.png" alt="botondescarga"></a></div></div>
-</div>
+	}
+	.content-areas p{
+		font-size:8px;
+	}
+	
+	.content-observaciones .content-obs{
+		font-size:8px;
+	}
+}
+
+
+@media screen and(max-width: 768px) {
+	.cinta{
+        font-size: 12px;
+    }
+	
+	.content-num-pasos p{
+		font-size:12px;
+
+	}
+	.content-areas p{
+		font-size:12px;
+	}
+	.content-observaciones .content-obs{
+		font-size:12px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	.cinta{
+        font-size: 14px;
+    }
+	.content-num-pasos p{
+		font-size:14px;
+
+	}
+	.content-areas p{
+		font-size:12px;
+	}
+	.content-observaciones .content-obs{
+		font-size:12px;
+	}
+	
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+	.cinta{
+        font-size: 16px;
+    }
+	
+	.content-num-pasos p{
+		font-size:16px;
+
+	}
+	.content-areas p{
+		font-size:16px;
+	}
+	.content-observaciones .content-obs{
+		font-size:16px;
+	}
+}
+
+</style>
+
+<div data-role="page" id="page15" style="overflow-y: hidden;">
   
-
-<div data-role="popup" id="popupMatrimonioCivilpaso1" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
-    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-
-<div class="ui-grid-a">
-  <div class="ui-block-a" style="width: 100%;">
-    <div id="global2">
-      <div id="mensajes">
-        <div class="texto2">
-
-        <p>Debes presentar un formato de solicitud (distribución gratuita o de libre reproducción).
-        	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.
-			</span>
-		</p>
-		</div>
-      </div>
-  </div> 
-  </div>
-  
+ <div data-role="content">
  
-</div>
-
-
-</div>
-
-
-  
-  <div data-role="popup" id="popupMatrimonioCivilpaso2" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
-    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-
-<div class="ui-grid-a">
-  <div class="ui-block-a" style="width: 100%;">
-    <div id="global2">
-      <div id="mensajes">
-        <div class="texto2">
-	        <p>Partida de nacimiento legible de cada uno de los contrayentes o dispensa judicial.  
-	        	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.
-				</span>
-			</p>
-        </div>
+ 	<div class="content-header">
+    	<div class="bg-banner">
+	        <img src="imagenes/img-banner.png" width="100%" height="100%">
+        </div>	    
+    	<div class="cinta">
+        	<img src="imagenes/img-Cinta.png" width="100%" height="100%">
+        <div class="content-text">
+        	<p class="titulo_test">Lorem Ipsum es simplemente el texto de relleno  simplemente simplemente simplemente  simplemente  </p>
+        </div>  
       </div>
-  </div> 
-  </div>
-  
- 
-</div>
-</div>
-
-
-<div data-role="popup" id="popupMatrimonioCivilpaso3" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
-    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-
-<div class="ui-grid-a">
-  <div class="ui-block-a" style="width: 100%;">
-    <div id="global2">
-      <div id="mensajes">
-        <div class="texto2">
-        	<p>Copia autenticada por fedatario municipal del Documento Nacional de Identidad de los contrayentes y exhibición de los originales en la ceremonia.  
-	        	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.
-				</span>
-			</p>
-       </div>
-      </div>
-  </div> 
-  </div>
-  
- 
-</div>
-
-
-</div>
-
-
-<div data-role="popup" id="popupMatrimonioCivilpaso4" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
-    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-
-<div class="ui-grid-a">
-  <div class="ui-block-a" style="width: 100%;">
-    <div id="global2">
-      <div id="mensajes">
-        <div class="texto2">
-	         <p>Copia autenticada por fedatario municipal del Documento Nacional de Identidad de dos testigos y exhibición de los originales en la ceremonia.
-		        	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua.
-					</span>
-			 </p>
-        </div>
-      </div>
-  </div> 
-  </div>
-  
- 
-</div>
-
-
-</div>
-
-
-<div data-role="popup" id="popupMatrimonioCivilpaso5" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
-    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-
-<div class="ui-grid-a">
-  <div class="ui-block-a" style="width: 100%;">
-    <div id="global2">
-      <div id="mensajes">
-        <div class="texto2">
-        	 <p>Declaración jurada de los testigos de conocer a los contrayentes.     
-		        	<span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua.
-					</span>
-			 </p>
-		</div>
-      </div>
-  </div> 
-  </div>
-  
- 
-</div>
-
-
-</div>
-
-
-<div data-role="popup" id="popupMatrimonioCivilpaso6" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
-    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-
-<div class="ui-grid-a">
-  <div class="ui-block-a" style="width: 100%;">
-    <div id="global2">
-      <div id="mensajes">
-        <div class="texto2">
-			 <p>Certificado médico de los contrayentes (vigencia tres meses luego de su expedición).    
-			    <span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.
-				</span>
-			 </p>
-	    </div>
-      </div>
-  </div> 
-  </div>
-  
- 
-</div>
-
-
-</div>
-
-<div data-role="popup" id="popupMatrimonioCivilpaso7" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
-    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-
-<div class="ui-grid-a">
-  <div class="ui-block-a" style="width: 100%;">
-    <div id="global2">
-      <div id="mensajes">
-        <div class="texto2">
-        	<p>Declaración Jurada del estado civil actual de los contrayentes.     
-			    <span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.
-				</span>
-			</p>
-	   </div>
-      </div>
-  </div> 
-  </div>
-  
- 
-</div>
-
-
-</div>
-
-
-<div data-role="popup" id="popupMatrimonioCivilpaso8" data-overlay-theme="a" data-corners="false" data-tolerance="30,15" class="poppup" style="background-color:transparent; height:42em;">
-    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-
-<div class="ui-grid-a">
-  <div class="ui-block-a" style="width: 100%;">
-    <div id="global2">
-      <div id="mensajes">
-        <div class="texto2">
-        	<p>Declaración jurada de domicilio de cada contrayente.
-			    <span class="relleno-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua.
-				</span>
-			</p>
-   		</div>
-      </div>
-  </div> 
-  </div>
-  
- 
-</div>
-
-
-</div>
-
-  </div>
-  
-  
-    <div data-role="panel" id="left-panel15" data-theme="c" data-display="overlay" data-position-fixed="true">
-        <ul id="list" data-role="listview">
-           <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
-        <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
-          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a></li>
-          <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
-        <li><a href="#" onclick="enviomail();" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
-         <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
-  height: 3em;"></a></li>
-        </ul>
     </div>
     
+    <div class="cuerpo">
+    	 	<img src="imagenes/bg-main.png" width="100%" height="100%">
+            <div class="header-cuerpo">
+            	<img src="imagenes/img_Pasos_Seguir.png" width="100%" height="100%">
+                    <div class="content-num-pasos">
+                     	<p>Total de 1 pasos</p>
+                    </div>
+                    <div class="content-areas">
+                    	<p><span>-</span>Sub Gerencia de Trámite Documentario y Archivo.</p>
+                    	<p><span>-</span>Funcionario designado como responsable de entregar la información.</p>
+						<p><span>-</span>Lorem Ipsum es simplemente el texto de relleno Lorem Ipsum es simplemente</p>
+                    </div>
+                   
+            </div>
+             <div class="content-observaciones">
+            	<img src="imagenes/img-Observaciones_Cuadro.png" width="100%" height="100%">
+                    <div class="content-obs">
+                        	<strong>Observaciones</strong>
+                            <ul>
+                                <li>
+                                Con posterioridad a la presentación del expediente, se deberá cumplir con 
+                                la publicación del edicto matrimonial o gestionar la dispensa de publicación delmismo.                      
+                                </li>
+                                <li>
+                                Con posterioridad a la presentación del expediente, se deberá cumplir con 
+                                la publicación del edicto matrimonial o gestionar la dispensa de publicación delmismo.                      
+                                </li>
+                                <li>
+                                Con posterioridad a la presentación del expediente, se deberá cumplir con 
+                                la publicación del edicto matrimonial o gestionar la dispensa de publicación delmismo.                      
+                                </li>
+                                <li>
+                                Con posterioridad a la presentación del expediente, se deberá cumplir con 
+                                la publicación del edicto matrimonial o gestionar la dispensa de publicación delmismo.                      
+                                </li>
+                                <li>
+                                Con posterioridad a la presentación del expediente, se deberá cumplir con 
+                                la publicación del edicto matrimonial o gestionar la dispensa de publicación delmismo.                      
+                                </li>
+                                <li>
+                                Con posterioridad a la presentación del expediente, se deberá cumplir con 
+                                la publicación del edicto matrimonial o gestionar la dispensa de publicación delmismo.                      
+                                </li>
+                                <li>
+                                Con posterioridad a la presentación del expediente, se deberá cumplir con 
+                                la publicación del edicto matrimonial o gestionar la dispensa de publicación delmismo.                      
+                                </li>
+                                <li>
+                                Con posterioridad a la presentación del expediente, se deberá cumplir con 
+                                la publicación del edicto matrimonial o gestionar la dispensa de publicación delmismo.                      
+                                </li>
+                                <li>
+                                Con posterioridad a la presentación del expediente, se deberá cumplir con 
+                                la publicación del edicto matrimonial o gestionar la dispensa de publicación delmismo.                      
+                                </li>
+                                <li>
+                                Con posterioridad a la presentación del expediente, se deberá cumplir con 
+                                la publicación del edicto matrimonial o gestionar la dispensa de publicación delmismo.                      
+                                </li>
+                            </ul>
+                    </div>
+            </div>
+    
+    </div>
+ 
+ 
+ </div>
+ 
   </div>
 
 <!--FIN PARA MATRIMONIO CIVIL-->
