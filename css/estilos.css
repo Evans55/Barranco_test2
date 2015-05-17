@@ -146,7 +146,7 @@ display:none;
 }
 
 
-.caminotramite-show{
+/*.caminotramite-show{
   background: url(../imagenes/camino-tramite.png)0 100% no-repeat;
   -webkit-background-size: 55% auto;
 -moz-background-size: 55% auto;
@@ -159,9 +159,9 @@ height: 100%;
 position: absolute;
 top: 0; left: 0;
 
-}
+}*/
 
-.caminotramite-hidden{
+/*.caminotramite-hidden{
   background: url(../imagenes/camino-tramite.png)0 100% no-repeat;
   -webkit-background-size: 55% auto;
 -moz-background-size: 55% auto;
@@ -174,8 +174,7 @@ height: 100%;
 position: absolute;
 top: 0; left: 0;
 display:none;
-
-}
+}*/
 
 
 

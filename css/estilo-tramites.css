@@ -1,0 +1,315 @@
+@font-face {
+		font-family: myFirstFont;
+		src: url("../Fuentes/arial.ttf");
+}
+
+.content-header{
+		background: none;
+		position:absolute;
+		right:0%;
+		top:0%;
+		width: 100%;
+		height:16%;
+	}
+.bg-banner{
+		background:#960;
+		position:absolute;
+		z-index: 0;
+		width:100%;
+		height:100%;
+	}
+.cinta{
+		background: none;
+		width: 70%;
+		height: 62%;
+		margin:0 auto;
+		position:relative;
+		top:15%;
+		color: #000;
+		font-size: 20px;
+		font-family:arial;
+	
+	}
+	
+.cinta img{
+		position:absolute;
+		z-index: 1;
+}
+	
+.titulo_test{
+		text-align:center;
+		text-transform:uppercase;
+}
+.content-text{
+		background: none;
+		width: 76%;
+		height:100%;
+		position:absolute;
+		left: 12%;
+		z-index:2;
+	
+}
+
+.cuerpo{
+		background: none;
+		position:absolute;
+		right:0%;
+		top:16%;  
+		width: 100%;
+		height:100%;
+		
+	}
+.cuerpo img{
+		position:absolute;
+		z-index: 1;
+	
+	}
+.header-cuerpo{
+		background: #399;
+		position: absolute;
+		left:5%;
+		top: 2%;
+		z-index: 2;
+		width: 90%;
+		height:12%;
+	
+	}
+.content-num-pasos {
+		background : none;
+		position: absolute;
+		right:22%;
+		top:55%;
+		z-index: 3;
+		width:23%;
+		height:30%;
+
+	}
+	
+.content-num-pasos p{
+		text-align:center;
+		margin:0px auto;
+		font-size:20px;
+		font-family:Verdana, Geneva, sans-serif;
+		color:#fff;
+
+	}
+.content-areas {
+		background : none;
+		position: absolute;
+		top:30%;
+		left:1%;
+		z-index: 3;
+		width:55%;
+		height:63%;
+		color:#fff;
+
+	}
+	
+.content-areas p{
+		margin:0 auto;
+	}
+	
+.content-observaciones{
+		background: none;
+		position: absolute;
+		z-index: 2;
+		top:14%;
+		left:4.4%;
+		width: 36%;
+		height:55%;
+	}
+.content-observaciones .content-obs{
+		padding:1%;
+		position: absolute;
+		background:none;
+		border-radius: 4%;
+		top:19%;
+		left: 5%;
+		width:89.5%;
+		height:74%;
+		overflow-y: scroll;
+		z-index: 3;
+	}
+.content-caminos{
+		background: none;
+		position: absolute;
+		z-index: 2;
+		top: 14%;
+		left: 40.3%;
+		width: 54.7%;
+		height: 55%;
+	}
+.caminotramite-show{
+		 background: none;
+		 margin: 0 auto;
+		 margin-top: 20%;
+		 width: 90%;
+		 height: 30%;
+	}
+.caminotramite-hidden{
+		 background: none;
+		 margin: 0 auto;
+		 margin-top: 20%;
+		 width: 90%;
+		 height: 30%;
+		 display: none;
+	}
+.content-botones-sig{
+		 background: none;
+		 margin: 0 auto;
+		 margin-top: 10%;
+		 width: 80%;
+		 height: 20%;
+	}
+.content-botones-sig .boton-siguiente{
+		 background: none;
+		 position: relative;
+		 float: right;
+		 top: 24%;
+		 right: 7%;
+		 width: 40%;
+		 height: 54%;
+		  border-radius: 22%;
+		 -webkit-border-radius: 22%;
+		 -moz-border-radius: 22%;
+		 -o-border-radius: 22%;
+		 -webkit-box-shadow:  7px 8px 20px 0px rgba(61, 61, 59, 0.63);
+		 -moz-box-shadow:    7px 8px 20px 0px rgba(61, 61, 59, 0.63);
+		  box-shadow:         7px 8px 20px 0px rgba(61, 61, 59, 0.63);
+	}
+.content-botones-sig .boton-siguiente:hover {
+		border-bottom: 1px solid #000;
+	}
+	
+.content-botones-sig .boton-atras{
+		background: none;
+		position: relative;
+		top: 24%;
+		left: 7%;
+		width: 40%;
+		height: 54%;
+		border-radius: 22%;
+		-webkit-border-radius: 22%;
+		-moz-border-radius: 22%;
+		-o-border-radius: 22%;
+		-webkit-box-shadow:  7px 8px 20px 0px rgba(61, 61, 59, 0.63);
+		-moz-box-shadow:    7px 8px 20px 0px rgba(61, 61, 59, 0.63);
+		 box-shadow:         7px 8px 20px 0px rgba(61, 61, 59, 0.63);
+	}
+.content-botones-sig .boton-atras:hover {
+		border-bottom: 1px solid #000;
+	}
+	
+.content-cons-des{
+		 background: none;
+		 position: absolute;
+		 z-index: 2;
+		 top: 69%;
+		 left: 4.9%;
+		 width: 35.5%;
+		 height: 12%;
+	}
+	
+.content-cons-des .boton-consulta{
+		 background: none;
+		 position: relative;
+		 float: right;
+		 top: 24%;
+		 right: 7%;
+		 width: 40%;
+		 height: 54%;
+		  border-radius: 22%;
+		 -webkit-border-radius: 22%;
+		 -moz-border-radius: 22%;
+		 -o-border-radius: 22%;
+		 -webkit-box-shadow:  7px 8px 20px 0px rgba(61, 61, 59, 0.63);
+		 -moz-box-shadow:    7px 8px 20px 0px rgba(61, 61, 59, 0.63);
+		  box-shadow:         7px 8px 20px 0px rgba(61, 61, 59, 0.63);
+	}
+	
+.content-cons-des .boton-descarga{
+		 background: none;
+		 position: relative;
+		 float: right;
+		 top: 24%;
+		 right: 14%;
+		 width: 40%;
+		 height: 54%;
+		  border-radius: 22%;
+		 -webkit-border-radius: 22%;
+		 -moz-border-radius: 22%;
+		 -o-border-radius: 22%;
+		 -webkit-box-shadow:  7px 8px 20px 0px rgba(61, 61, 59, 0.63);
+		 -moz-box-shadow:    7px 8px 20px 0px rgba(61, 61, 59, 0.63);
+		  box-shadow:         7px 8px 20px 0px rgba(61, 61, 59, 0.63);
+	}
+	
+	
+@media screen and (min-width: 230px) and (max-width: 768px) {
+	.cinta{
+        font-size: 9px;
+    }
+	
+	.content-num-pasos p{
+		font-size:8px;
+
+	}
+	.content-areas p{
+		font-size:8px;
+	}
+	
+	.content-observaciones .content-obs{
+		font-size:8px;
+	}
+}
+
+
+@media screen and(max-width: 768px) {
+	.cinta{
+        font-size: 12px;
+    }
+	
+	.content-num-pasos p{
+		font-size:12px;
+
+	}
+	.content-areas p{
+		font-size:12px;
+	}
+	.content-observaciones .content-obs{
+		font-size:12px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	.cinta{
+        font-size: 14px;
+    }
+	.content-num-pasos p{
+		font-size:14px;
+
+	}
+	.content-areas p{
+		font-size:12px;
+	}
+	.content-observaciones .content-obs{
+		font-size:12px;
+	}
+	
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+	.cinta{
+        font-size: 16px;
+    }
+	
+	.content-num-pasos p{
+		font-size:16px;
+
+	}
+	.content-areas p{
+		font-size:16px;
+	}
+	.content-observaciones .content-obs{
+		font-size:16px;
+	}
+}
