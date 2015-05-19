@@ -39,6 +39,25 @@ display:none;
 }*/
 
 
+
+#titulotramite{
+  color: darkblue;
+  text-align: -webkit-center;
+  text-align:center;
+  margin-top: 3%;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  -webkit-transform: scale(0.5);
+}
+
+.textotramite{
+  padding: 3%;
+  font-size: 1.3em;
+  text-align: justify;
+  height: auto;
+}
+
 #globaltramite{
   height: 19.2em;
   width: 25%;
@@ -80,8 +99,19 @@ font-family: sans-serif;
   font-size: 1em;	
 }
 
+#pasos{
+font-family: sans-serif;
+  /* font-weight: bold; */
+  color: white;
+  width: 19%;
+  font-size: 1em;	
+    margin-left: 58%;
+  margin-top: -2%;
+}
 
-#Tittle,#page2,#page3,#page8,#page9,#page5,#page11,#page7,#page10,#page,#page4,#page6,#page12,#page13,#page14,#page15,#page16,#page17,#page18,#page19,#page20,#page21,#page22,#page23,#page24,#page25,#page26,#page27,#page28,#page29,#page30,#page31,#page32,#page33,#page34,#page35,#page36,#page37,#page38,#page39,#page40,#page41,#page42,#page43,#page44,#page45,#page46,#page47,#page48,#page49{
+
+
+#SeparacionConvencionalYDivorcioUlterior,#page2,#page3,#page8,#page9,#page5,#page11,#page7,#page10,#page,#page4,#page6,#page12,#page13,#page14,#page15,#page16,#page17,#page18,#page19,#page20,#page21,#page22,#page23,#page24,#page25,#page26,#page27,#page28,#page29,#page30,#page31,#page32,#page33,#page34,#page35,#page36,#page37,#page38,#page39,#page40,#page41,#page42,#page43,#page44,#page45,#page46,#page47,#page48,#page49{
 max-width:1300px;
 margin:0 auto;
 position:relative;
@@ -176,6 +206,192 @@ margin-top: 17.8%;
 #global::-webkit-scrollbar-thumb:hover {
 	background-color:#009;
 }
+
+#mensajes {
+	height: auto;
+}
+
+.texto2 {
+	padding:3%;
+	font-size:1.8em;
+	text-align:justify;
+	height: auto;
+}
+
+.relleno-texto{
+     -webkit-opacity: 0.0;
+     -moz-opacity: 0.0;
+     -ms-opacity: 0.0;
+     -o-opacity: 0.0;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+}
+
+.texto {
+	padding:3%;
+	
+	height: auto;
+}
+
+
+.texto>a{
+
+  font-size: 1.8em;
+  margin: .5em 0;
+  display: block;
+  position: relative;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /*white-space: normal;*/
+  cursor: pointer;
+
+}
+
+
+#botoncamino1{
+	 position:absolute;
+  top: 15%;
+  left: 4.5%;
+ 
+}
+
+
+#botoncamino2{
+	 position:absolute;
+	  top: 47%;
+  left: 18.8%;
+}
+
+#botoncamino3{
+	 position:absolute;
+	  top: 15%;
+  left: 34.5%;
+}
+
+#botoncamino4{
+	 position:absolute;
+	  top: 47%;
+  left: 49%;
+}
+
+
+#botoncamino5{
+	 position:absolute;
+	  top: 15%;
+  left: 64%;
+}
+
+#botoncamino6{
+	 position:absolute;
+	  top: 47%;
+  left: 79.5%;
+}
+
+
+.botondescarga {
+	
+	padding:1%;
+	width:16.8%;
+	height:auto;
+	top:80.5%;
+	left:21%;
+	position:absolute;
+	
+}
+
+
+.botondescarga>a{
+
+  margin: .5em 0;
+  display: block;
+  cursor: pointer;
+
+}
+
+
+
+.botondescarga>a:active{
+
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: botoncamino2;	
+  -webkit-animation-fill-mode:forwards;
+  -webkit-animation-timing-function:cubic-bezier(0.25,0.1,0.25,1);
+
+  -webkit-animation-delay: 0s;
+	
+}
+
+
+.botonconsulta {
+	
+	padding:1%;
+	width:16.8%;
+	height:auto;
+	position:absolute;
+	
+}
+
+#botonconsulta{
+	top:80.5%;
+	/*left:10.7%;*/
+}
+
+.botonconsulta>a{
+
+  margin: .5em 0;
+  display: block;
+  cursor: pointer;
+
+}
+
+
+.botonconsulta>a:active{
+
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: botoncamino2;	
+  -webkit-animation-fill-mode:forwards;
+  -webkit-animation-timing-function:cubic-bezier(0.25,0.1,0.25,1);
+
+  -webkit-animation-delay: 0s;
+	
+}
+
+
+.botoncamino {
+	
+  padding: 1%;
+  width: 10.8%;
+  height: 13%;
+  position: absolute;
+	
+}
+
+
+
+.botoncamino>a{
+
+  margin: .5em 0;
+  display: block;
+  cursor: pointer;
+
+}
+
+
+
+.botoncamino>a:active{
+
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: botoncamino2;	
+  -webkit-animation-fill-mode:forwards;
+  -webkit-animation-timing-function:cubic-bezier(0.25,0.1,0.25,1);
+
+  -webkit-animation-delay: 0s;
+	
+}
+
 
 
 .listitem {

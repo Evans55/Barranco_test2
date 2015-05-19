@@ -244,6 +244,14 @@
 		  box-shadow:         7px 8px 20px 0px rgba(61, 61, 59, 0.63);
 	}
 	
+
+.parrafoPopup{
+    position: absolute;
+    z-index: 1;
+    top: 32%;
+    left: 6%;
+    right: 5%;
+  }
 	
 @media screen and (min-width: 230px) and (max-width: 768px) {
 	.cinta{
