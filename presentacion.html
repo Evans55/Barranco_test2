@@ -18,6 +18,9 @@
 
 <link rel="stylesheet" href="css/estilo-tramites.css" type="text/css"/>
 <link rel="stylesheet" href="css/botones-tramites.css" type="text/css"/>
+<link rel="stylesheet" href="css/page2-estilo.css" type="text/css"/>
+<link rel="stylesheet" href="css/page3-estilo.css" type="text/css"/>
+
 
  <script async src="phonegap.js" charset="utf-8" type="text/javascript"></script>
 <script async src="jquery-mobile/jquery-1.11.1.min.js" type="text/javascript"></script>
@@ -169,19 +172,6 @@ document.getElementById('activo2').style.display = 'none';
 
 <script>
 
-function activarAudio3()
-    {
-		document.getElementById('spritechabelita2').style.display = 'none';
-		document.getElementById('activo2').style.display = 'block';
-	
-	document.getElementById('sinAudio2').style.display = 'block';
-	document.getElementById('conAudio2').style.display = 'none';
-
- document.getElementById('audiopantalla2').pause();	
-  document.getElementById('audiopantalla2').currentTime = 0;	
-document.getElementById('audiopantalla3').play();
-}
-
 
 function activarAudio33()
     {
@@ -209,24 +199,6 @@ function cambiardisplay4(){
 </script>
 
 
-<script>
-function playAudioUnavez(){
-	playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');
-	document.getElementById('spritechabelita2').style.display = 'none';
-	document.getElementById('sinAudio2').style.display = 'block';
-	document.getElementById('conAudio2').style.display = 'none';
-}
-</script>
-
-<script>
-function cambiardisplay5(){
-	document.getElementById('spritechabelita3').style.display = 'none';
-	document.getElementById('activo3').style.display = 'block';
-	//playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');
-}
-</script>
-
-
 
 <script>
 function sinAudio1(){
@@ -235,11 +207,7 @@ document.getElementById('spritechabelita2').style.display = 'none';
 document.getElementById('activo').style.display = 'block';
 }
 
-function sinAudio2(){
-document.getElementById('spritechabelita2').style.display = 'none';
-document.getElementById('spritechabelita3').style.display = 'none';
-document.getElementById('activo').style.display = 'block';
-}
+
 </script>
 
 
@@ -271,94 +239,514 @@ if(document.getElementById(div1).style.display = 'none'){
 </head> 
 <body onLoad="activarAudio1(),onBodyLoad()" style="background-color:#315AA5;">
 
-<div data-role="page" id="page" style="overflow-x: hidden; overflow-y:hidden;">
-
-<audio src="audio/audio_pantalla2.mp3" id="audiopantalla1"></audio>
-
-       <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
-       <a href="#left-panel11" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
-   	</div>
-    
-	<div data-role="content">	
- 
-  <div class="foreground">
-  </div>
-  
- <div class="midground">
- </div>
- 
-<div class="fachadaiz"></div>
- <div class="fachadader"></div>
- 
- <div class="pastoiz"></div>
- <div class="pastoder"></div>
-
-   <div class="faro1"></div>
-  <div class="faro2"></div>
-  
- <div class="spritearbolfinal" id="spritearbolfinal"></div>
-  <div class="spritepalmera" id="spritepalmera"></div>
-  
-  <div class="spritechabelita" id="spritechabelita"></div>
-
- <div class="background"> 
-  <div class="nube1" id="nube1"></div>
-  <div class="nube2" id="nube2"></div>
-  <div class="nube3" id="nube3"></div>
-  <div class="nube4" id="nube4"></div>
-  <div class="nube5" id="nube5"></div>
-  </div> 
-
-
-
 <style>
 
-.test{
-  background-color: #000;
+.cielo-fondo{
+	background:none;
+	position:absolute;
+	z-index: 0;
+	width:100%;
+	height:100%;
+	top:0%;
+	left:0%;
+}
+
+.contenedorarbol{
+  background: none;
   position: absolute;
-  top:75%;
-  width: 90%;
-  height:20%;
-  z-index: 15;
+  z-index: 3;
+  width: 24.3%;
+  height: 53%;
+  top: 22%;
+  left: 80%;
 }
-.test a{
-  display:block;
-  width:50%;
-  background-image: url("imagenes/next.png");
-  height:100%;
-  /*webkit-background-size: 46;*/
+
+.nubes{
+	background:red;
+	position:absolute;
+	z-index: 1;
+	width:100%;
+	height:20%;
+	top:0%;
+	left:0%;
+}
+
+.piso{
+	background:none;
+	position:absolute;
+	z-index: 1;
+	width:100%;
+	height:20%;
+	bottom: 0%;
+	left:0%;
+}
+
+.columnaiz{
+  position: absolute;
+  z-index: 1;
+  width: 35%;
+  height: 54%;
+  left: 0%;
+  top: 28%;
+}
+
+.columnader{
+  position: absolute;
+  z-index: 1;
+  width: 35%;
+  height: 54%;
+  right: 0%;
+  top: 28%;
+}
+
+.fachada{
+  position: absolute;
+  z-index: 3;
+  width: 47%;
+  height: 59%;
+  top: 25%;
+  left: 28%;
+}
+
+.arbustoiz{
+  position: absolute;
+  z-index: 2;
+  width: 35%;
+  height: 23%;
+  top: 68%;
+  left: 0;
+}
+
+.arbustoder{
+  position: absolute;
+  z-index: 2;
+  width: 38%;
+  height: 28%;
+  top: 62%;
+  left: 67%;
+}
+
+.faroiz{
+  position: absolute;
+  z-index: 3;
+  width: 22%;
+  height: 58%;
+  top: 43%;
+  left: 0;
+}
+
+.faroder{
+  position: absolute;
+  z-index: 3;
+  width: 22%;
+  height: 58%;
+  top: 42%;
+  left: 80%;
+}
+
+.arbolresponsive {
+  background:  url(imagenes/arbolito_sprite_final2-01.png) ;
+  background-size: 1900% 100%;
+  z-index: 4;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 139%;
+  -webkit-transform: scale(3.8);
   
-	
+  -webkit-animation: spritearbolresponsive 0.6s steps(18, end) ;
+    -webkit-animation-fill-mode:forwards;
+ -webkit-animation-delay: 1.5s;
+ 
+  -moz-animation: spritearbolresponsive 0.6s steps(18, end) ;
+    -moz-animation-fill-mode:forwards;
+ -moz-animation-delay: 1.5s;
+ 
+ -ms-animation: spritearbolresponsive 0.6s steps(18, end) ;
+ -ms-animation-fill-mode:forwards;
+ -ms-animation-delay: 1.5s;
+ 
+ -o-animation: spritearbolresponsive 0.6s steps(18, end) ;
+ -o-animation-fill-mode:forwards;
+ -o-animation-delay: 1.5s;
 }
+
+.nubes1 {
+
+z-index: 2;
+
+  background: url(imagenes/nubesita.png) 0 100%  no-repeat; 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 30%;
+  margin-left:70%;
+  -webkit-translate3d(0,0,0);
+  
+    -webkit-background-size: 5% auto;
+-moz-background-size: 5% auto;
+-o-background-size: 5% auto;
+}
+
+.nubes2 {
+
+z-index: 2;
+
+  background: url(imagenes/nubesita.png) 0 100%  no-repeat; 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 35%;
+  margin-left:-10%;
+  -webkit-translate3d(0,0,0);
+  
+    -webkit-background-size: 8% auto;
+-moz-background-size: 8% auto;
+-o-background-size: 8% auto;
+}
+
+.nubes3 {
+
+z-index: 2;
+
+  background: url(imagenes/nubesita.png) 0 100%  no-repeat; 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 40%;
+  margin-left:40%;
+  -webkit-translate3d(0,0,0);
+  
+    -webkit-background-size: 10% auto;
+-moz-background-size: 10% auto;
+-o-background-size: 10% auto;
+}
+
+.nubes4 {
+
+z-index: 2;
+
+  background: url(imagenes/nubesita.png) 0 100%  no-repeat; 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 45%;
+  margin-left:-10%;
+  -webkit-translate3d(0,0,0);
+  
+    -webkit-background-size: 8% auto;
+-moz-background-size: 8% auto;
+-o-background-size: 8% auto;
+}
+
+.nubes5{
+
+z-index: 2;
+
+  background: url(imagenes/nubesita.png) 0 100%  no-repeat; 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 48%;
+  margin-left:-10%;
+  -webkit-translate3d(0,0,0);
+  
+    -webkit-background-size: 5% auto;
+-moz-background-size: 5% auto;
+-o-background-size: 5% auto;
+}
+
+#nubes1 {
+    -webkit-animation-duration: 5s;
+  -webkit-animation-name: movernuberesponsive1;	
+  -webkit-animation-fill-mode:forwards;
+-webkit-animation-timing-function: linear;
+ -webkit-animation-delay: 0s;
+
+}
+
+#nubes2 {
+    -webkit-animation-duration: 18s;
+  -webkit-animation-name: movernuberesponsive2;	
+  -webkit-animation-iteration-count:infinite;
+-webkit-animation-timing-function: linear;
+ -webkit-animation-delay: 0s;
+ 
+}
+
+
+#nubes3 {
+    -webkit-animation-duration: 10s;
+  -webkit-animation-name: movernuberesponsive3;	
+  -webkit-animation-fill-mode:forwards;
+-webkit-animation-timing-function: linear;
+ -webkit-animation-delay: 0s;
+ 
+}
+
+
+#nubes4 {
+    -webkit-animation-duration: 18s;
+  -webkit-animation-name: movernuberesponsive2;	
+  -webkit-animation-iteration-count:infinite;
+-webkit-animation-timing-function: linear;
+ -webkit-animation-delay: 3s;
+ 
+}
+
+
+#nubes5 {
+    -webkit-animation-duration: 18s;
+  -webkit-animation-name: movernuberesponsive2;	
+  -webkit-animation-iteration-count:infinite;
+-webkit-animation-timing-function: linear;
+ -webkit-animation-delay: 5s;
+ 
+}
+
+
+@keyframes  spritearbolresponsive {  
+  from {background-position: 0% 0%; } 
+  to {background-position: -1800% 0%; } 
+}
+
+@-webkit-keyframes  spritearbolresponsive {  
+  from {background-position: 0% 0%; } 
+  to {background-position: -1800% 0%; } 
+}
+
+
+@keyframes movernuberesponsive1 {
+   0% {
+    margin-left: 70%;
+    }
+	
+	15% {
+    margin-left: 75%;
+    }
+	
+	30% {
+     margin-left: 80%;
+    }
+	
+	45% {
+     margin-left: 85%;
+    }
+	
+	60% {
+     margin-left: 90%;
+    }
+	
+	75% {
+    margin-left: 95%;
+    }
+	
+    100% {
+	margin-left: 100%;
+    }
+}
+
+@keyframes movernuberesponsive2 {
+   to {
+    margin-left: 100%;
+    }
+	
+	from{
+	margin-left: -10%;
+    }
+}
+
+
+@keyframes movernuberesponsive3 {
+   0% {
+    margin-left: 40%;
+    }
+	
+	15% {
+    margin-left: 50%;
+    }
+	
+	30% {
+     margin-left: 60%;
+    }
+	
+	45% {
+     margin-left: 70%;
+    }
+	
+	60% {
+     margin-left: 80%;
+    }
+	
+	75% {
+    margin-left: 90%;
+    }
+	
+    100% {
+	margin-left: 100%;
+    }
+}
+
+
+/* CHROME*/
+
+@-webkit-keyframes movernuberesponsive1 {
+   0% {
+    margin-left: 70%;
+    }
+	
+	15% {
+    margin-left: 75%;
+    }
+	
+	30% {
+     margin-left: 80%;
+    }
+	
+	45% {
+     margin-left: 85%;
+    }
+	
+	60% {
+     margin-left: 90%;
+    }
+	
+	75% {
+    margin-left: 95%;
+    }
+	
+    100% {
+	margin-left: 100%;
+    }
+}
+
+@-webkit-keyframes movernuberesponsive2 {
+   to {
+    margin-left: 100%;
+    }
+	
+	from{
+	margin-left: -10%;
+    }
+}
+
+
+@-webkit-keyframes movernuberesponsive3 {
+   0% {
+    margin-left: 40%;
+    }
+	
+	15% {
+    margin-left: 50%;
+    }
+	
+	30% {
+     margin-left: 60%;
+    }
+	
+	45% {
+     margin-left: 70%;
+    }
+	
+	60% {
+     margin-left: 80%;
+    }
+	
+	75% {
+    margin-left: 90%;
+    }
+	
+    100% {
+	margin-left: 100%;
+    }
+}
+
 
 
 </style>
 
-<!--id="skip"-->
+<div data-role="page" id="page" style="overflow-y:hidden;">
 
-<div class="test">
-<a href="#page2"  data-transition="customFlip"  onclick="activarAudio2(),stopAudio(),cambiardisplay3();" >
-<img src="imagenes/next.png">
-</a>
+    <audio src="audio/audio_pantalla2.mp3" id="audiopantalla1"></audio>
+
+    
+	<div data-role="content">	
+ 
+    <div class="cielo-fondo">
+       <img src="imagenes/Cielo.png" width="100%" height="100%">
+       
+       <div class="nubes">
+       <div class="nubes1" id="nubes1"></div>
+       <div class="nubes2" id="nubes2"></div>
+       <div class="nubes3" id="nubes3"></div>
+       <div class="nubes4" id="nubes4"></div>
+       <div class="nubes5" id="nubes5"></div>
+       </div>
+       
+       <div class="piso">
+       <img src="imagenes/Piso.png" width="100%" height="100%">
+       </div> 
+        
+        <div class="columnaiz">
+        <img src="imagenes/Fachada_Izq.png" width="100%" height="100%">
+        </div>
+        <div class="columnader">
+        <img src="imagenes/Fachada_der.png" width="100%" height="100%">
+        </div>
+        <div class="fachada">
+        <img src="imagenes/Fachada.png" width="100%" height="100%">
+        </div>
+        
+        <div class="arbustoiz">
+        <img src="imagenes/pastoiz.png" width="100%" height="100%">
+        </div>
+        <div class="arbustoder">
+        <img src="imagenes/pastoder.png" width="100%" height="100%">
+        </div>
+        
+        <div class="faroiz">
+        <img src="imagenes/faro1.png" width="100%" height="100%">
+        </div>
+        <div class="faroder">
+        <img src="imagenes/faro2.png" width="100%" height="100%">
+        </div>
+        
+    </div>
+
+  <!--
+
+   <div class="faro1"></div>
+  <div class="faro2"></div> -->
+  
+<!-- <div class="spritearbolfinal" id="spritearbolfinal"></div>
+  <div class="spritepalmera" id="spritepalmera"></div>
+  
+  <div class="spritechabelita" id="spritechabelita"></div> -->
+  
+ <!-- <div class="contenedorarbol">
+        <div class="arbolresponsive" id="arbolresponsive">
+        </div>  
+    </div>
+  
+ -->
+
+
+
+<!--<div class="ui-grid-a">
+<div class="ui-block-b">
+<a href="#page2" id="skip" data-transition="customFlip" class="ui-btn-right ui-btn-inline" onclick="activarAudio2(),stopAudio(),cambiardisplay3();"><img src="imagenes/next.png" alt="next"></a>
+
 <a href="#page2" id="sinAudio1" data-transition="customFlip" class="ui-btn-right ui-btn-inline" onclick="sinAudio1();"><img src="imagenes/next.png" alt="next"></a>
+
 </div>
+</div> -->
+
 
 	</div>
     
-    
-  <!--<div data-role="panel" id="left-panel11" data-theme="c" data-display="overlay" data-position-fixed="true">
-        <ul id="list" data-role="listview">
-           <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
-        <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
-          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="activarAudio1(),cambiardisplay2();"></a></li>
-        <li><a href="#" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
-         <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
-  height: 3em;"></a></li>
-        </ul>
-    </div> --> 
-    
-    <div data-role="panel" id="left-panel11" data-theme="c" data-display="overlay" data-position-fixed="true">
+
+    <!--<div data-role="panel" id="left-panel11" data-theme="c" data-display="overlay" data-position-fixed="true">
         <ul id="list" data-role="listview">
            <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
         <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
@@ -368,166 +756,123 @@ if(document.getElementById(div1).style.display = 'none'){
          <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
   height: 3em;"></a></li>
         </ul>
-    </div> 
+    </div> --> 
     
 </div> 
 
 
 
-<div data-role="page" id="page2" >
+
+<script type="text/javascript" language="javascript">
+function playAudioUnavez(){
+	playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');
+	document.getElementById('contenedorchabelita').style.display = 'none';
+	document.getElementById('sinAudio2').style.display = 'block';
+	document.getElementById('conAudio2').style.display = 'none';
+	document.getElementById('conAudio22').style.display = 'none';
+}
+
+function activarAudio3()
+    {
+		document.getElementById('chabelitaresponsive').style.display = 'none';
+		//document.getElementById('activo2').style.display = 'block';
 	
-    <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
-		
-    <!--    <a href="#" data-role="button" data-icon="back" data-theme="a" onClick="goBack();">Atras</a> -->
-     <a href="#left-panel" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
-       <!--<a href="#search2" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/buscar2.png" alt="buscarr"></a> -->
-	</div>
+	document.getElementById('sinAudio2').style.display = 'block';
+	document.getElementById('sinAudio22').style.display = 'block';
+	document.getElementById('conAudio2').style.display = 'none';
+	document.getElementById('conAudio22').style.display = 'none';
+
+ document.getElementById('audiopantalla2').pause();	
+  document.getElementById('audiopantalla2').currentTime = 0;	
+document.getElementById('audiopantalla3').play();
+}
+
+function sinAudio2(){
+document.getElementById('chabelitaresponsive').style.display = 'none';
+document.getElementById('chabelitaresponsive2').style.display = 'none';
+//document.getElementById('activo').style.display = 'block';
+}
+
+</script>
+
+<div data-role="page" id="page2" style="overflow-y: hidden;">
     
 	<div data-role="content">	
 
-<audio src="audio/Pantalla4_Ecran.mp3" id="audiopantalla3"></audio>
-
-
-    <div class="fondo3">
-    <a href="#page3" id="conAudio2" class="btnatural" onclick="activarAudio3(),playAudioUnavez();"><img src="imagenes/BotonPN.png" width="314" height="90" alt="natural"></a>
-    <a href="#" id="conAudio22" class="btjuridico" ><img src="imagenes/BotonPJ.png" width="314" height="90" alt="juridico"></a>
-    
-     <a href="#page3" id="sinAudio2" class="btnatural" onclick="sinAudio2();"><img src="imagenes/BotonPN.png" width="314" height="90" alt="natural"></a>
-    <a href="#" id="sinAudio22" class="btjuridico" ><img src="imagenes/BotonPJ.png" width="314" height="90" alt="juridico"></a>
-   <!--<div id="output"></div> -->
-   
-   <div class="spritechabelita2" id="spritechabelita2"></div>
-   
-  <!-- <div class="spritechabelitamanoiz" id="spritechabelitamanoiz"></div> -->
-   
-   </div>
-   
-
-	</div>
-    
-    
-    <div data-role="panel" id="left-panel" data-theme="c" data-display="overlay" data-position-fixed="true">
-        <ul id="list" data-role="listview">
-           <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
-        <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
-          <li id="activo2"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="activarAudio22(),cambiardisplay33();"></a></li>
-          <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
-        <li><a href="#" onclick="enviomail();" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
-         <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
-  height: 3em;"></a></li>
-        </ul>
-    </div>
-  
-    
-      <!--<div data-role="panel" id="search2" data-theme="a" data-position="right" data-display="overlay" data-position-fixed="true">
-   
-   <form class="ui-filterable">
-    <input id="inset-autocomplete-input3" data-type="search" placeholder="Buscar...">
-</form>
-<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input3">
-    <li><a href="#">Acura</a></li>
-    <li><a href="#">Audi</a></li>
-    <li><a href="#">BMW</a></li>
-    <li><a href="#">Cadillac</a></li>
-    <li><a href="#">Chrysler</a></li>
-    <li><a href="#">Dodge</a></li>
-    <li><a href="#">Ferrari</a></li>
-    <li><a href="#">Ford</a></li>
-    <li><a href="#">GMC</a></li>
-    <li><a href="#">Honda</a></li>
-    <li><a href="#">Hyundai</a></li>
-    <li><a href="#">Infiniti</a></li>
-    <li><a href="#">Jeep</a></li>
-    <li><a href="#">Kia</a></li>
-    <li><a href="#">Lexus</a></li>
-    <li><a href="#">Mini</a></li>
-    <li><a href="#">Nissan</a></li>
-    <li><a href="#">Porsche</a></li>
-    <li><a href="#">Subaru</a></li>
-    <li><a href="#">Toyota</a></li>
-    <li><a href="#">Volkswagen</a></li>
-    <li><a href="#">Volvo</a></li>
-</ul>
-   
-    </div> --><!-- /panel -->
-     
-
-</div>
-
-<div data-role="page" id="page3">
-
- <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
-		<!--<h1>Municipalidad de Barranco</h1> -->
-        <!--<a href="#" data-role="button" data-icon="back" data-theme="a" onClick="goBack();">Atras</a> -->
-        <a href="#left-panel2" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
-       <!--<a href="#search3" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/buscar2.png" alt="buscarr"></a> -->
-	</div>
-
-	
-	<div data-role="content">	
-    
     <audio src="audio/Pantalla3_Ventanilla.mp3" id="audiopantalla2"></audio>
-    
-      <div class="fondo4">
-   <!-- <a data-role="button" href="#page4" data-transition="pop" style="position:absolute;  margin-top: 2%; margin-left: 10%;">Siguiente</a> -->
-    <div class="spritechabelita3" id="spritechabelita3"></div>
-    
-    <a href="#page4" id="skip" data-transition="pop" onclick="cambiardisplay5();" class="ui-btn-right ui-btn-inline"><img src="imagenes/next.png" alt="next"></a>
-    
+
+    <div class="fondo-btn-natural-juridico">
+      <img src="imagenes/03Ventanillas.png" width="100%" height="100%">
+      
+      <div class="btn-nat-jur">
+           <div class="btn-natural" id="conAudio2">
+           <a href="#page3" onclick="activarAudio3(),playAudioUnavez();">
+           <img src="imagenes/BotonPN.png" width="100%" height="100%">
+           </a>
+           </div>
+            <div class="btn-juridico" id="conAudio22">
+            <a href="#">
+           <img src="imagenes/BotonPJ.png" width="100%" height="100%">
+           </a>
+           </div>
+           
+            <div class="btn-natural2" id="sinAudio2">
+           <a href="#page3" onclick="sinAudio2();">
+           <img src="imagenes/BotonPN.png" width="100%" height="100%">
+           </a>
+           </div>
+            <div class="btn-juridico2" id="sinAudio22">
+            <a href="#">
+           <img src="imagenes/BotonPJ.png" width="100%" height="100%">
+           </a>
+           </div>
+       </div>
+      
      </div>
-    
-				        
-	</div>
-	
-    
-    <div data-role="panel" id="left-panel2" data-theme="c" data-display="overlay" data-position-fixed="true">
-        <ul id="list" data-role="listview">
-           <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
-        <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
-          <li id="activo3"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="activarAudio33(),cambiardisplay44();"></a></li>
-          <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
-        <li><a href="#" onclick="enviomail();" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
-         <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
-  height: 3em;"></a></li>
-        </ul>
+
+    <div class="contenedorchabelita">
+        <div class="chabelitaresponsive" id="chabelitaresponsive">
+        </div> 
     </div>
-    
-     <!--<div data-role="panel" id="search3" data-theme="a" data-position="right" data-display="overlay" data-position-fixed="true">
-   
-   <form class="ui-filterable">
-    <input id="inset-autocomplete-input4" data-type="search" placeholder="Buscar...">
-</form>
-<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input4">
-    <li><a href="#">Acura</a></li>
-    <li><a href="#">Audi</a></li>
-    <li><a href="#">BMW</a></li>
-    <li><a href="#">Cadillac</a></li>
-    <li><a href="#">Chrysler</a></li>
-    <li><a href="#">Dodge</a></li>
-    <li><a href="#">Ferrari</a></li>
-    <li><a href="#">Ford</a></li>
-    <li><a href="#">GMC</a></li>
-    <li><a href="#">Honda</a></li>
-    <li><a href="#">Hyundai</a></li>
-    <li><a href="#">Infiniti</a></li>
-    <li><a href="#">Jeep</a></li>
-    <li><a href="#">Kia</a></li>
-    <li><a href="#">Lexus</a></li>
-    <li><a href="#">Mini</a></li>
-    <li><a href="#">Nissan</a></li>
-    <li><a href="#">Porsche</a></li>
-    <li><a href="#">Subaru</a></li>
-    <li><a href="#">Toyota</a></li>
-    <li><a href="#">Volkswagen</a></li>
-    <li><a href="#">Volvo</a></li>
-</ul>
-   
-    </div> --><!-- /panel -->
-    
+     
+    </div>
 </div>
 
+
+<script>
+function cambiardisplay5(){
+	document.getElementById('chabelitaresponsive2').style.display = 'none';
+	document.getElementById('audiopantalla3').pause();
+    document.getElementById('audiopantalla3').currentTime = 0;
+	//document.getElementById('activo3').style.display = 'block';
+	
+}
+</script>
+
+<div data-role="page" id="page3" style="overflow-y: hidden;">
+
+   <div data-role="content">	
+    
+        <audio src="audio/Pantalla4_Ecran.mp3" id="audiopantalla3"></audio>
+    
+          <div class="fondo-page3">
+          <img src="imagenes/04-Fondo.png" width="100%" height="100%">
+          
+          <div class="btn-sigpage3">
+          <a href="#page4" data-transition="pop" onclick="cambiardisplay5();">
+          <img src="imagenes/next.png" width="100%" height="100%">
+          </a>
+          </div>
+        
+        <div class="contenedorchabelita2">
+            <div class="chabelitaresponsive2" id="chabelitaresponsive2">
+            </div> 
+        </div> 
+                              
+          </div>
+   
+    </div>
+</div>
 
 <div data-role="page" id="page4" style="overflow-y: hidden;">
 	

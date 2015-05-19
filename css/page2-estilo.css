@@ -1,0 +1,126 @@
+.fondo-btn-natural-juridico{
+	background:none;
+	position:absolute;
+	z-index: 0;
+	width:100%;
+	height:100%;
+	top:0%;
+	left:0%;	
+}
+
+.btn-nat-jur{
+	background:none;
+	position:absolute;
+	z-index: 1;
+	width:100%;
+	height:20%;
+	top:5%;
+	left:0%;
+}
+
+
+.btn-nat-jur .btn-natural{
+  background: none;
+  position: relative;
+  z-index: 2;
+  width: 28%;
+  height: 64%;
+  top: 32%;
+  left: 18%;
+	
+}
+
+.btn-nat-jur .btn-natural2{
+  background: none;
+  position:relative;
+  z-index: 2;
+  width: 28%;
+  height: 64%;
+  top: 35%;
+  left: 18%;
+	
+}
+
+.btn-nat-jur .btn-juridico{
+  background: none;
+  position: relative;
+  z-index: 2;
+  width: 28%;
+  height: 64%;
+  bottom: 33%;
+  left: 60%;
+	
+}
+
+.btn-nat-jur .btn-juridico2{
+  background: none;
+  position: relative;
+  z-index: 2;
+  width: 28%;
+  height: 64%;
+  bottom: 30%;;
+  left: 60%;
+	
+}
+
+#activo,#activo2,#activo3,#sinAudio1,#sinAudio2,#sinAudio22{
+	display:none;
+}
+
+#conAudio2,#conAudio22{
+	display:block;
+}
+
+
+.contenedorchabelita{
+  background: none;
+  position: absolute;
+  z-index: 2;
+  width: 24.3%;
+  height: 53%;
+  top: 38%;
+  left: 5%;
+}
+
+
+.chabelitaresponsive {
+  background:  url(../imagenes/chabelita-brazoizquierdo3.png) ;
+  background-size: 2900% 200%;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+
+-webkit-animation: spritechabelitaresponsive 1.5s steps(28, end) 2 forwards,caminarresponsive 2.9s both linear,hablaresponsive 1.6s steps(28, end) 3.2s 4 forwards;
+
+}
+
+
+@keyframes spritechabelitaresponsive {  
+ from {background-position: 0% 0%; } 
+  to {background-position: -2800% 0%; }  
+}
+
+@-webkit-keyframes spritechabelitaresponsive {  
+ from {background-position: 0% 0%; } 
+  to {background-position: -2800% 0%; } 
+}
+
+@-webkit-keyframes caminarresponsive{
+	from{-webkit-transform:translateX(-155%);transform:translateX(-155%)}
+	to{-webkit-transform:translateX(128%);transform:translateX(128%)}}
+	
+@keyframes caminarresponsive{
+    from{-webkit-transform:translateX(-155%);transform:translateX(-155%)}
+	to{-webkit-transform:translateX(128%);transform:translateX(128%)}}
+
+@keyframes hablaresponsive {  
+  from {background-position: 0 -100%; } 
+  to {background-position: -2800% -100%; } 
+}
+
+@-webkit-keyframes hablaresponsive {  
+  from {background-position: 0 -100%; } 
+  to {background-position: -2800% -100%; } 
+}

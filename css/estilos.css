@@ -247,13 +247,6 @@ font-family: sans-serif;
   margin-top: -2%;
 }
 
-#activo,#activo2,#activo3,#sinAudio1,#sinAudio2,#sinAudio22{
-	display:none;
-}
-
-#conAudio2,#conAudio22{
-	display:block;
-}
 
 #sinAudio1{
 z-index:6; 
@@ -1170,7 +1163,7 @@ margin-top:-3%;
 
 
 #spritearbolfinal{
-	 background:  url(../imagenes/arbolito_sprite_final2-01.png) 0 100%;
+  background:  url(../imagenes/arbolito_sprite_final2-01.png) 0 100%;
   z-index: 3;
   height:700px;
   width:377px;
@@ -1285,6 +1278,7 @@ margin-top:-3%;
 .spritechabelita2 {
   background:  url(../imagenes/chabelita-brazoizquierdo3.png) 0 100%;
   
+  /* background-size: 2900% 200%;*/
 
   z-index: 3;
   height:514px;
