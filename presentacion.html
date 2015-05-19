@@ -117,25 +117,6 @@ $( document ).on( "pageinit", "#page", function() {
 
 <script>
 
-
-function activarAudio2()
-    {
-	
-		document.getElementById('spritechabelita').style.display = 'none';
-		document.getElementById('activo').style.display = 'block';
-		
-		//document.getElementById('spritechabelita2').style.display = 'block';
-		//document.getElementById('activo2').style.display = 'none';
- document.getElementById('audiopantalla1').pause();
- document.getElementById('audiopantalla1').currentTime = 0;
-	
-// var audio2 = new Audio('audio/Pantalla3_Ventanilla.mp3');
-//audio2.play();
- document.getElementById('audiopantalla2').play();
-
-}
-
-
 function activarAudio22()
     {
 		//document.getElementById('spritechabelita').style.display = 'none';
@@ -147,17 +128,6 @@ function activarAudio22()
 audio.play();
 }
 
-
-
-function cambiardisplay3(){
-	
-	
-	document.getElementById('sinAudio1').style.display = 'block';
-document.getElementById('skip').style.display = 'none';
-	playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');
-
-	
-}
 
 function cambiardisplay33(){
 	
@@ -195,18 +165,6 @@ function cambiardisplay4(){
 	//document.getElementById('activo3').style.display = 'none';
 	playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');
 }
-
-</script>
-
-
-
-<script>
-function sinAudio1(){
-document.getElementById('spritechabelita').style.display = 'none';
-document.getElementById('spritechabelita2').style.display = 'none';
-document.getElementById('activo').style.display = 'block';
-}
-
 
 </script>
 
@@ -258,7 +216,17 @@ if(document.getElementById(div1).style.display = 'none'){
   width: 24.3%;
   height: 53%;
   top: 22%;
-  left: 80%;
+  left: 72%;
+}
+
+.contenedorpalmera{
+  background: none;
+  position: absolute;
+  z-index: 3;
+  width: 24.3%;
+  height: 53%;
+  top: 22%;
+  left: 0%;
 }
 
 .nubes{
@@ -328,20 +296,39 @@ if(document.getElementById(div1).style.display = 'none'){
 
 .faroiz{
   position: absolute;
-  z-index: 3;
+  z-index: 4;
   width: 22%;
   height: 58%;
-  top: 43%;
+  top: 40%;
   left: 0;
 }
 
 .faroder{
   position: absolute;
-  z-index: 3;
+  z-index: 4;
   width: 22%;
   height: 58%;
-  top: 42%;
+  top: 39%;
   left: 80%;
+}
+
+.boton1-page{
+  position: absolute;
+  z-index: 5;
+  width: 23%;
+  height: 13%;
+  top: 89%;
+  right: 0%;
+}
+
+.boton2-page{
+  position: absolute;
+  z-index: 5;
+  width: 23%;
+  height: 13%;
+  top: 89%;
+  right: 0%;
+  display:none;
 }
 
 .arbolresponsive {
@@ -351,9 +338,37 @@ if(document.getElementById(div1).style.display = 'none'){
   height: 100%;
   width: 100%;
   position: absolute;
-  left: 0;
-  bottom: 139%;
-  -webkit-transform: scale(3.8);
+  right: 5%;
+  bottom: 121%;
+  -webkit-transform: scale(3.5);
+  
+  -webkit-animation: spritearbolresponsive 0.6s steps(18, end) ;
+    -webkit-animation-fill-mode:forwards;
+ -webkit-animation-delay: 1.5s;
+ 
+  -moz-animation: spritearbolresponsive 0.6s steps(18, end) ;
+    -moz-animation-fill-mode:forwards;
+ -moz-animation-delay: 1.5s;
+ 
+ -ms-animation: spritearbolresponsive 0.6s steps(18, end) ;
+ -ms-animation-fill-mode:forwards;
+ -ms-animation-delay: 1.5s;
+ 
+ -o-animation: spritearbolresponsive 0.6s steps(18, end) ;
+ -o-animation-fill-mode:forwards;
+ -o-animation-delay: 1.5s;
+}
+
+.palmeraresponsive {
+  background:  url(imagenes/palmera_sprite_final.png) ;
+  background-size: 1900% 100%;
+  z-index: 4;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: 5%;
+  bottom: 121%;
+  -webkit-transform: scale(3.5);
   
   -webkit-animation: spritearbolresponsive 0.6s steps(18, end) ;
     -webkit-animation-fill-mode:forwards;
@@ -666,6 +681,44 @@ z-index: 2;
 
 </style>
 
+
+<script>
+
+function activarAudio2()
+    {
+	
+		//document.getElementById('spritechabelita').style.display = 'none';
+		//document.getElementById('activo').style.display = 'block';
+
+ document.getElementById('audiopantalla1').pause();
+ document.getElementById('audiopantalla1').currentTime = 0;
+	
+// var audio2 = new Audio('audio/Pantalla3_Ventanilla.mp3');
+//audio2.play();
+ document.getElementById('audiopantalla2').play();
+
+}
+
+
+function cambiardisplay3(){
+	
+	
+	document.getElementById('boton2-page').style.display = 'block';
+    document.getElementById('boton1-page').style.display = 'none';
+	playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');
+
+	
+}
+
+
+function sinAudio1(){
+//document.getElementById('spritechabelita').style.display = 'none';
+document.getElementById('contenedorchabelita').style.display = 'none';
+//document.getElementById('activo').style.display = 'block';
+}
+
+</script>
+
 <div data-role="page" id="page" style="overflow-y:hidden;">
 
     <audio src="audio/audio_pantalla2.mp3" id="audiopantalla1"></audio>
@@ -712,36 +765,31 @@ z-index: 2;
         <img src="imagenes/faro2.png" width="100%" height="100%">
         </div>
         
+        <div class="boton1-page" id="boton1-page">
+        <a href="#page2" onclick="activarAudio2(),stopAudio(),cambiardisplay3();"><img src="imagenes/next.png" width="100%" height="100%"></a>
+        </div>
+        
+        <div class="boton2-page" id="boton2-page">
+        <a href="#page2" onclick="sinAudio1();"><img src="imagenes/next.png" width="100%" height="100%"></a>
+        </div>
+        
+        <div class="contenedorarbol">
+            <div class="arbolresponsive" id="arbolresponsive">
+            </div>  
+        </div>
+        
+        <div class="contenedorpalmera">
+            <div class="palmeraresponsive" id="palmeraresponsive">
+            </div>  
+        </div>
+        
     </div>
 
-  <!--
-
-   <div class="faro1"></div>
-  <div class="faro2"></div> -->
   
 <!-- <div class="spritearbolfinal" id="spritearbolfinal"></div>
   <div class="spritepalmera" id="spritepalmera"></div>
   
   <div class="spritechabelita" id="spritechabelita"></div> -->
-  
- <!-- <div class="contenedorarbol">
-        <div class="arbolresponsive" id="arbolresponsive">
-        </div>  
-    </div>
-  
- -->
-
-
-
-<!--<div class="ui-grid-a">
-<div class="ui-block-b">
-<a href="#page2" id="skip" data-transition="customFlip" class="ui-btn-right ui-btn-inline" onclick="activarAudio2(),stopAudio(),cambiardisplay3();"><img src="imagenes/next.png" alt="next"></a>
-
-<a href="#page2" id="sinAudio1" data-transition="customFlip" class="ui-btn-right ui-btn-inline" onclick="sinAudio1();"><img src="imagenes/next.png" alt="next"></a>
-
-</div>
-</div> -->
-
 
 	</div>
     
@@ -830,7 +878,7 @@ document.getElementById('chabelitaresponsive2').style.display = 'none';
       
      </div>
 
-    <div class="contenedorchabelita">
+    <div class="contenedorchabelita" id="contenedorchabelita">
         <div class="chabelitaresponsive" id="chabelitaresponsive">
         </div> 
     </div>
