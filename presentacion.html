@@ -192,8 +192,7 @@ if(document.getElementById(div1).style.display = 'none'){
 
 </script>
 
-</head> 
-<body onLoad="activarAudio1(),onBodyLoad()" style="background-color:#315AA5;">
+
 
 <script>
 
@@ -231,6 +230,56 @@ document.getElementById('contenedorchabelita').style.display = 'none';
 }
 
 </script>
+
+
+<script type="text/javascript" language="javascript">
+function playAudioUnavez(){
+	playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');
+	document.getElementById('contenedorchabelita').style.display = 'none';
+	document.getElementById('sinAudio2').style.display = 'block';
+	document.getElementById('conAudio2').style.display = 'none';
+	document.getElementById('conAudio22').style.display = 'none';
+}
+
+function activarAudio3()
+    {
+		document.getElementById('chabelitaresponsive').style.display = 'none';
+		//document.getElementById('activo2').style.display = 'block';
+	
+	document.getElementById('sinAudio2').style.display = 'block';
+	document.getElementById('sinAudio22').style.display = 'block';
+	document.getElementById('conAudio2').style.display = 'none';
+	document.getElementById('conAudio22').style.display = 'none';
+
+ document.getElementById('audiopantalla2').pause();	
+  document.getElementById('audiopantalla2').currentTime = 0;	
+document.getElementById('audiopantalla3').play();
+}
+
+function sinAudio2(){
+document.getElementById('chabelitaresponsive').style.display = 'none';
+document.getElementById('chabelitaresponsive2').style.display = 'none';
+//document.getElementById('activo').style.display = 'block';
+}
+
+</script>
+
+
+<script>
+function cambiardisplay5(){
+	document.getElementById('chabelitaresponsive2').style.display = 'none';
+	document.getElementById('audiopantalla3').pause();
+    document.getElementById('audiopantalla3').currentTime = 0;
+	//document.getElementById('activo3').style.display = 'block';
+	
+}
+</script>
+
+
+
+</head> 
+<body onLoad="activarAudio1(),onBodyLoad()" style="background-color:#315AA5;">
+
 
 <div data-role="page" id="page" style="overflow-y:hidden;">
 
@@ -321,40 +370,6 @@ document.getElementById('contenedorchabelita').style.display = 'none';
 </div> 
 
 
-
-
-<script type="text/javascript" language="javascript">
-function playAudioUnavez(){
-	playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');
-	document.getElementById('contenedorchabelita').style.display = 'none';
-	document.getElementById('sinAudio2').style.display = 'block';
-	document.getElementById('conAudio2').style.display = 'none';
-	document.getElementById('conAudio22').style.display = 'none';
-}
-
-function activarAudio3()
-    {
-		document.getElementById('chabelitaresponsive').style.display = 'none';
-		//document.getElementById('activo2').style.display = 'block';
-	
-	document.getElementById('sinAudio2').style.display = 'block';
-	document.getElementById('sinAudio22').style.display = 'block';
-	document.getElementById('conAudio2').style.display = 'none';
-	document.getElementById('conAudio22').style.display = 'none';
-
- document.getElementById('audiopantalla2').pause();	
-  document.getElementById('audiopantalla2').currentTime = 0;	
-document.getElementById('audiopantalla3').play();
-}
-
-function sinAudio2(){
-document.getElementById('chabelitaresponsive').style.display = 'none';
-document.getElementById('chabelitaresponsive2').style.display = 'none';
-//document.getElementById('activo').style.display = 'block';
-}
-
-</script>
-
 <div data-role="page" id="page2" style="overflow-y: hidden;">
     
 	<div data-role="content">	
@@ -398,16 +413,6 @@ document.getElementById('chabelitaresponsive2').style.display = 'none';
     </div>
 </div>
 
-
-<script>
-function cambiardisplay5(){
-	document.getElementById('chabelitaresponsive2').style.display = 'none';
-	document.getElementById('audiopantalla3').pause();
-    document.getElementById('audiopantalla3').currentTime = 0;
-	//document.getElementById('activo3').style.display = 'block';
-	
-}
-</script>
 
 <div data-role="page" id="page3" style="overflow-y: hidden;">
 
