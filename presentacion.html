@@ -759,6 +759,7 @@ function cambiardisplay5(){
   position: absolute;
   top: 23%;
   left: 20%;	
+  overflow-y: scroll;
 }
 </style>
 
@@ -773,9 +774,18 @@ function cambiardisplay5(){
      <div class="boton-prueba">
              <div data-role="collapsible"  data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" id="custom-collapsible">
                 <h3>6. ACCESO A LA INFORMACIÓN QUE POSEA <br>O PRODUZCA LA MUNICIPALIDAD</h3>
-               <a href="#Acceso1" style="text-decoration:none;white-space: normal;font-size: 150%;">Acceso a la información que posea o produzca la municipalidad</a><br>
-               <a href="#CopiaDePlanos" style="text-decoration:none;white-space: normal;font-size: 150%;">Acceso 1</a>
-               <a data-role="button" href="#CopiaDePlanos" style="text-decoration:none;white-space: normal;font-size: 150%;">Acceso 1</a>
+               
+               <ul data-role="listview" style="width:103%;">
+                                  <li data-role="list-divider" style="background-color:#C6E2FF;">
+                                        <a href="#Acceso1" style="text-decoration:none;white-space: normal;font-size: 150%;">Acceso a la información que posea o produzca la municipalidad</a>
+                                  </li>
+                                  <li data-role="list-divider" style="background-color:#FFF;">
+                                        <a href="#CopiaDePlanos" style="text-decoration:none;white-space: normal;font-size: 150%;">Acceso 1</a>
+                                  </li>
+	            </ul>
+                            
+      <!--         <a href="#Acceso1" style="text-decoration:none;white-space: normal;font-size: 150%;">Acceso a la información que posea o produzca la municipalidad</a>
+               <a href="#CopiaDePlanos" style="text-decoration:none;white-space: normal;font-size: 150%;">Acceso 1</a> -->
             </div>     
       </div>
      
