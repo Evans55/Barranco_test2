@@ -9,13 +9,13 @@
 }
 
 .acordeon{
-  background: none;
+background: none;
   position: absolute;
   z-index: 1;
-  width: 57%;
-  height: 55%;
-  top: 32%;
-  left: 22%;
+  width: 71%;
+  height: 65%;
+  top: 21.5%;
+  left: 15.5%;
   overflow-y: scroll;
 }
 
@@ -36,7 +36,7 @@
 
 
 #colapsable1{
-font-size: 90%;width: 100%;top: 0%;position: absolute;	
+font-size: 100%;width: 100%;top: 0%;position: absolute;	
 }
 
 
