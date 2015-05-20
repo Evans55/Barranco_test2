@@ -149,8 +149,8 @@
   position: absolute;
   left: 0;
 
--webkit-animation: spritechabelitaresponsive1 0.6s steps(6, end) 5,caminarresponsive1 3s both linear,hablaresponsive1 1.4s steps(6, end) 3.3s 6 forwards;
-
+-webkit-animation: spritechabelitaresponsive1 0.6s steps(6, end) 5,caminarresponsive1 3s both linear,hablaresponsive1 1.4s steps(6, end) 3.3s 6;
+-webkit-animation-fill-mode:forwards;
 }
 
 
