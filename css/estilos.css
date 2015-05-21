@@ -24,6 +24,22 @@ max-height: 691px;
 	
 }
 
+.logomenu {
+	
+	 width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; left: 0;
+  background: url(../imagenes/fondomenu.png)0 100% no-repeat;
+  
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+-o-background-size: 100% 100%;
+
+
+}
+
+
 .fondobloque1{
 	color:#000;
 	background-color:#C6E2FF;
@@ -296,17 +312,6 @@ max-height: 691px;
 }
 #list .ui-li {
     border: none;
-}
-
-
-.logomenu {
-  background: url(../imagenes/fondomenu.png)0 100% no-repeat;
-  
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
--o-background-size: 100% 100%;
-
-
 }
 
 

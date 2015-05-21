@@ -283,6 +283,10 @@ function cambiardisplay5(){
 
 <div data-role="page" id="page" style="overflow-y:hidden;">
 
+<div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
+       <a href="#left-panel11" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
+   	</div>
+
     <audio src="audio/audio_pantalla2.mp3" id="audiopantalla1"></audio>
 
     
@@ -354,19 +358,16 @@ function cambiardisplay5(){
 
 	</div>
     
-
-    <!--<div data-role="panel" id="left-panel11" data-theme="c" data-display="overlay" data-position-fixed="true">
-        <ul id="list" data-role="listview">
-           <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
-        <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
-          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="activarAudio1(),cambiardisplay2();"></a></li><br>
-        <li><a href="#" onclick="enviomail();" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
-         <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
-  height: 3em;"></a></li>
-        </ul>
-    </div> --> 
-    
+               <div data-role="panel" id="left-panel11" data-theme="c" data-display="overlay" data-position-fixed="true">
+                      <ul id="list" data-role="listview">
+                         <li><a href="#page"><img src="imagenes/fondomenu.png" width="100%" height="100%"></a></li>
+                      <li><a href="#page" data-iconpos="notext"><img src="imagenes/menu_emergente-02.png" width="100%" height="100%"></a></li><br>
+                   <li><a href="#page4" data-iconpos="notext"><img src="imagenes/menu_emergente-03.png" width="100%" height="100%"></a></li>
+                        <li id="activo"><a data-role="button" data-iconpos="notext" style="-webkit-border-radius: inherit;" onclick="activarAudio1(),cambiardisplay2();"><img src="imagenes/menu_emergente-04.png" width="100%" height="100%"></a></li><br>
+                      <li><a href="#" onclick="enviomail();" data-iconpos="notext"><img src="imagenes/menu_emergente-05.png" width="100%" height="100%"></a></li>
+                       <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext"><img src="imagenes/menu_emergente-06.png" width="100%" height="100%"></a>                  </li>
+                      </ul> 
+                  </div>            
 </div> 
 
 
@@ -754,14 +755,25 @@ function cambiardisplay5(){
 <style>
 .boton-prueba{
   z-index: 2;
-  width: 50%;
+  width: 71%;
   height: 65%;
   position: absolute;
   top: 23%;
-  left: 20%;	
+  left: 15.5%;
   overflow-y: scroll;
 }
+
+#lista1{
+	display:none;	
+}
+
 </style>
+
+<script>
+function mostrarsubmenu(){
+	document.getElementById('lista1').style.display = 'block';
+}
+</script>
 
 <!-- INICIO MENU TRANSPARENCIA-->
 <div data-role="page" id="page9" style="overflow-y: hidden;">
@@ -777,25 +789,22 @@ function cambiardisplay5(){
                 <a href="#Acceso1" style="text-decoration:none;white-space: normal;font-size: 150%;">Acceso a la información que posea o produzca la municipalidad</a><br>
                <a href="#CopiaDePlanos" style="text-decoration:none;white-space: normal;font-size: 150%;">Acceso 1</a>
             </div>  -->
-            <div data-role="collapsible" data-collapsed="true">
-    <h4>Heading</h4>
-    <ul data-role="listview">
-        <li><a href="#Acceso1">List item 1</a></li>
-        <li><a href="#CopiaDePlanos">List item 2</a></li>
-        <li><a href="#Acceso1">List item 3</a></li>
-    </ul>
-</div>    
+           <div style=" background:lightskyblue;  border-right-width: 1px;border-left-width: 1px;font-family: serif;font-variant: small-caps;font-size: larger;">     
+          <a onclick="mostrarsubmenu();" href="#" style="text-decoration:none;white-space: normal;font-size: 150%;color: #FFF;"><h3>6. ACCESO A LA INFORMACIÓN QUE POSEA <br>O PRODUZCA LA MUNICIPALIDAD</h3></a> 
+          </div>
+          
+          <ul id="lista1" data-role="listview" style="width:103%;">
+                                  <li data-role="list-divider" style="background-color:#C6E2FF;font-size: 150%;">
+                                    <a href="#AccesoALaInformacionQuePoseaOProduzcaLaMunicipalidad" style="display : block;text-decoration:none;white-space: normal;">Acceso a la información que posea o produzca la municipalidad</a>
+                                  </li>
+                                  <li data-role="list-divider" style="background-color:#FFF;font-size: 150%;">
+                                    <a href="#CopiaDePlanos" style="display : block;text-decoration:none;white-space: normal;">Acceso a la información que posea o produzca la municipalidad</a>
+                                  </li>
+
+	      </ul>    
+                
       </div>
      
-         <!--<div class="acordeon" id="acordeon">
-                <div data-role="collapsible"  data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" id="custom-collapsible">
-                <h3>6. ACCESO A LA INFORMACIÓN QUE POSEA <br>O PRODUZCA LA MUNICIPALIDAD</h3>
-               <a href="#Acceso1" style="text-decoration:none;white-space: normal;font-size: 150%;">Acceso a la información que posea o produzca la municipalidad</a><br>
-               <a href="#CopiaDePlanos" style="text-decoration:none;white-space: normal;font-size: 150%;">Acceso 1</a>
-               <a data-role="button" href="#CopiaDePlanos" style="text-decoration:none;white-space: normal;font-size: 150%;">Acceso 1</a>
-            </div>
-        </div> -->
-         
                 <!--<div data-role="collapsibleset" id="colapsable1">
                        <div data-role="collapsible" data-collapsed="true">
                             <h3>6. ACCESO A LA INFORMACIÓN QUE POSEA <br>O PRODUZCA LA MUNICIPALIDAD</h3>
@@ -1002,7 +1011,7 @@ function cambiardisplay5(){
 
 <!--INICIO TRAMITES TRANSPARENCIA-->
 
-<div data-role="page" id="Acceso1" style="overflow-y: hidden;">
+<div data-role="page" id="AccesoALaInformacionQuePoseaOProduzcaLaMunicipalidad" style="overflow-y: hidden;">
   <div data-role="content">
   <div class="content-header">
       <div class="bg-banner">
