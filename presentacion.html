@@ -812,8 +812,24 @@ function cambiardisplay5(){
 #lista1{
 	font-size: 140%;
 	}
-
 }
+
+
+#boton-prueba::-webkit-scrollbar {
+    width: 1.2em;
+}
+
+#boton-prueba::-webkit-scrollbar-track {
+    background-color: #FFF;
+    border-left: 1px solid #ccc;
+}
+#boton-prueba::-webkit-scrollbar-thumb {
+    background-color:#039;
+}
+#boton-prueba::-webkit-scrollbar-thumb:hover {
+	background-color:#009;
+}
+
 
 </style>
 
@@ -831,7 +847,7 @@ function mostrarsubmenu(){
  <div class="fondo-page-tramites">
      <img src="imagenes/escritorios-03.png" width="100%" height="100%">
      
-     <div class="boton-prueba">
+     <div class="boton-prueba" id="boton-prueba">
             <!-- <div data-role="collapsible"  data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" id="custom-collapsible">
                 <h3>6. ACCESO A LA INFORMACIÓN QUE POSEA <br>O PRODUZCA LA MUNICIPALIDAD</h3>
                 <a href="#Acceso1" style="text-decoration:none;white-space: normal;font-size: 150%;">Acceso a la información que posea o produzca la municipalidad</a><br>
@@ -841,13 +857,15 @@ function mostrarsubmenu(){
           <a href="#" style="text-decoration:none;white-space: normal;font-size: 150%;color: #FFF;"><h3>6. ACCESO A LA INFORMACIÓN QUE POSEA <br>O PRODUZCA LA MUNICIPALIDAD</h3></a> 
           </div>
           
-               <div style="background-color:#C6E2FF;height: 10%;">
-               <a href="#AccesoALaInformacionQuePoseaOProduzcaLaMunicipalidad" style="display : block;text-decoration:none;white-space: normal;font-size:150%;">Acceso a la información que posea o produzca la municipalidad</a>
+               <div style="background-color:#C6E2FF;">
+               <a id="lista1" href="#AccesoALaInformacionQuePoseaOProduzcaLaMunicipalidad" style="display : block;text-decoration:none;white-space: normal;padding: 3%;">Acceso a la información que posea o produzca la municipalidad</a>
                 </div>           
-             <div style="background-color:#FFF;height: 10%;">                  
-            <a href="#CopiaDePlanos" style="display : block;text-decoration:none;white-space: normal; font-size:150%;">Acceso a la información que posea o produzca la municipalidad</a>
+             <div style="background-color:#FFF;">                  
+            <a id="lista1" href="#CopiaDePlanos" style="display : block;text-decoration:none;white-space: normal;padding: 3%;">Acceso a la información que posea o produzca la municipalidad</a>
                    </div>            
-
+<div style="background-color:#C6E2FF;">
+               <a id="lista1" href="#CopiaCertificadaDeDocumentos" style="display : block;text-decoration:none;white-space: normal;padding: 3%;">Acceso a la información que posea o produzca la municipalidad</a>
+                </div>
 	      </ul>    
                 
       </div>
