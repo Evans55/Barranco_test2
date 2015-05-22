@@ -484,6 +484,24 @@ function cambiardisplay5(){
   
 }
 
+.chabelitabrazoder {
+  background:  url(imagenes/sprite_chabukita33.png) 0 100%;
+  
+
+  z-index: 3;
+  height:511px;
+  width:600px;
+  position: absolute;
+  left: 0;
+  
+ margin-top:-22%;
+  margin-left:-12%;
+
+-webkit-animation: chabelitabrazoiz 1.5s steps(14, end) 2,caminatachabelita 2.9s both linear, spritehablachabelitabrazoiz 1.8s steps(14, end) 3.2s 3 forwards;
+
+  
+}
+
 @keyframes spritehablachabelitabrazoiz {  
   from {background-position: 0 -511px; } 
   to {background-position: -8400px -511px; } 
@@ -557,8 +575,10 @@ from{-webkit-transform:translateX(-1000px);transform:translateX(-1000px)}
           </div>
         
         <div class="contenedorchabelita2">
-            <div class="chabelitaresponsive2" id="chabelitaresponsive2">
-            </div> 
+           <!-- <div class="chabelitaresponsive2" id="chabelitaresponsive2">
+            </div>  -->
+            <div class="chabelitabrazoder" id="chabelitabrazoder">
+        </div>
         </div> 
                               
           </div>
