@@ -289,6 +289,9 @@
 	.listatramites{
 		font-size: 8px;
 	}
+	
+	.parrafoPopup{
+		font-size: 12px;
 }
 
 
@@ -314,6 +317,10 @@
 	.listatramites{
 		font-size: 12px;
 	}
+	
+	.parrafoPopup{
+		font-size: 12px;
+}
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -337,6 +344,10 @@
 		font-size: 12px;
 	}
 	
+	.parrafoPopup{
+		font-size: 14px;
+}
+	
 }
 @media (min-width: 992px) and (max-width: 1200px) {
 	.cinta{
@@ -359,4 +370,7 @@
 	.listatramites{
 		font-size: 16px;
 	}
+	.parrafoPopup{
+		font-size: 16px;
+}
 }
