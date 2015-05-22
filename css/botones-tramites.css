@@ -62,6 +62,16 @@
     left: 60%;
 	opacity: 0;
 }
+.fila1-botones .btn4-1{
+    background: none;
+    position: absolute;
+    z-index: 2;
+    width: 17%;
+    height: 87%;
+    bottom: 8%;
+    left: 32%;
+	opacity: 0;
+}
 
 .fila1-botones .btn5{
     background: none;
@@ -71,6 +81,16 @@
     height: 87%;
     bottom: 8%;
     left: 80%;
+	opacity: 0;
+}
+.fila1-botones .btn5-1{
+    background: none;
+    position: absolute;
+    z-index: 2;
+    width: 17%;
+    height: 87%;
+    bottom: 8%;
+    left: 52%;
 	opacity: 0;
 }
 
