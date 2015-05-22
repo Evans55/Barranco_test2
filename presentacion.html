@@ -78,7 +78,7 @@ $( document ).on( "pagecreate", function() {
 
 
 function cambiardisplay2(){
-	document.getElementById('spritechabelita').style.display = 'block';
+	document.getElementById('contenedorchabelita1').style.display = 'block';
 	document.getElementById('activo').style.display = 'none';
 	playAudio('file:///android_asset/www/audio/audio_pantalla2.mp3');
 }
@@ -120,7 +120,7 @@ function activarAudio22()
 		//document.getElementById('spritechabelita').style.display = 'none';
 		//document.getElementById('activo').style.display = 'block';
 		
-		document.getElementById('spritechabelita2').style.display = 'block';
+		document.getElementById('chabelitaresponsive').style.display = 'block';
 		document.getElementById('activo2').style.display = 'none';
  var audio = new Audio('audio/Pantalla3_Ventanilla.mp3');
 audio.play();
@@ -130,7 +130,7 @@ audio.play();
 function cambiardisplay33(){
 	
 	
-	document.getElementById('spritechabelita2').style.display = 'block';
+	document.getElementById('contenedorchabelita').style.display = 'block';
 document.getElementById('activo2').style.display = 'none';
 	playAudio('file:///android_asset/www/audio/Pantalla3_Ventanilla.mp3');
 
@@ -146,14 +146,14 @@ function activarAudio33()
 		//document.getElementById('spritechabelita2').style.display = 'none';
 		//document.getElementById('activo2').style.display = 'block';
 		
-	document.getElementById('spritechabelita3').style.display = 'block';
+	document.getElementById('chabelitaresponsive2').style.display = 'block';
 	document.getElementById('activo3').style.display = 'none';
  var audio = new Audio('audio/Pantalla4_Ecran.mp3');
 audio.play();
 }
 
 function cambiardisplay44(){
-	document.getElementById('spritechabelita3').style.display = 'block';
+	document.getElementById('chabelitaresponsive2').style.display = 'block';
 	document.getElementById('activo3').style.display = 'none';
 	playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');
 }
@@ -200,7 +200,7 @@ function activarAudio2()
     {
 	
 		document.getElementById('contenedorchabelita1').style.display = 'none';
-		//document.getElementById('activo').style.display = 'block';
+		document.getElementById('activo').style.display = 'block';
 
  document.getElementById('audiopantalla1').pause();
  document.getElementById('audiopantalla1').currentTime = 0;
@@ -226,7 +226,7 @@ function cambiardisplay3(){
 function sinAudio1(){
 document.getElementById('contenedorchabelita1').style.display = 'none';
 document.getElementById('contenedorchabelita').style.display = 'none';
-//document.getElementById('activo').style.display = 'block';
+document.getElementById('activo').style.display = 'block';
 }
 
 </script>
@@ -244,7 +244,7 @@ function playAudioUnavez(){
 function activarAudio3()
     {
 		document.getElementById('chabelitaresponsive').style.display = 'none';
-		//document.getElementById('activo2').style.display = 'block';
+		document.getElementById('activo2').style.display = 'block';
 	
 	document.getElementById('sinAudio2').style.display = 'block';
 	document.getElementById('sinAudio22').style.display = 'block';
@@ -259,7 +259,7 @@ document.getElementById('audiopantalla3').play();
 function sinAudio2(){
 document.getElementById('chabelitaresponsive').style.display = 'none';
 document.getElementById('chabelitaresponsive2').style.display = 'none';
-//document.getElementById('activo').style.display = 'block';
+document.getElementById('activo').style.display = 'block';
 }
 
 </script>
@@ -270,7 +270,7 @@ function cambiardisplay5(){
 	document.getElementById('chabelitaresponsive2').style.display = 'none';
 	document.getElementById('audiopantalla3').pause();
     document.getElementById('audiopantalla3').currentTime = 0;
-	//document.getElementById('activo3').style.display = 'block';
+	document.getElementById('activo3').style.display = 'block';
 	
 }
 </script>
@@ -335,7 +335,12 @@ function cambiardisplay5(){
 <div data-role="page" id="page" style="overflow-y:hidden;">
 
     <audio src="audio/audio_pantalla2.mp3" id="audiopantalla1"></audio>
-
+ 
+ <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
+       <a href="#left-panel11" style="padding:0;box-shadow:none;border:0;background-color:transparent;">
+        <img src="iconos/menu2.png" alt="menuu">
+      </a>
+  </div>
     
 	<div data-role="content">	
  
@@ -404,17 +409,16 @@ function cambiardisplay5(){
 	</div>
     
 
-    <!--<div data-role="panel" id="left-panel11" data-theme="c" data-display="overlay" data-position-fixed="true">
-        <ul id="list" data-role="listview">
-           <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
-        <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
-          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="activarAudio1(),cambiardisplay2();"></a></li><br>
-        <li><a href="#" onclick="enviomail();" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
-         <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
-  height: 3em;"></a></li>
-        </ul>
-    </div> --> 
+   <div data-role="panel" id="left-panel11" data-theme="c" data-display="overlay" data-position-fixed="true">
+                      <ul id="list" data-role="listview">
+                         <li><a href="#page"><img src="imagenes/fondomenu.png" width="100%" height="100%"></a></li>
+                      <li><a href="#page" data-iconpos="notext"><img src="imagenes/menu_emergente-02.png" width="100%" height="100%"></a></li><br>
+                   <li><a href="#page4" data-iconpos="notext"><img src="imagenes/menu_emergente-03.png" width="100%" height="100%"></a></li>
+                        <li id="activo"><a data-role="button" data-iconpos="notext" style="-webkit-border-radius: inherit;" onclick="activarAudio1(),cambiardisplay2();"><img src="imagenes/menu_emergente-04.png" width="100%" height="100%"></a></li><br>
+                      <li><a href="#" onclick="enviomail();" data-iconpos="notext"><img src="imagenes/menu_emergente-05.png" width="100%" height="100%"></a></li><br>
+                       <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext"><img src="imagenes/menu_emergente-06.png" width="100%" height="100%"></a>                  </li>
+                      </ul> 
+                  </div> 
     
 </div> 
 
@@ -424,6 +428,12 @@ function cambiardisplay5(){
 	<div data-role="content">	
 
     <audio src="audio/Pantalla3_Ventanilla.mp3" id="audiopantalla2"></audio>
+
+    <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
+       <a href="#left-panel" style="padding:0;box-shadow:none;border:0;background-color:transparent;">
+        <img src="iconos/menu2.png" alt="menuu">
+      </a>
+  </div>
 
     <div class="fondo-btn-natural-juridico">
       <img src="imagenes/03Ventanillas.png" width="100%" height="100%">
@@ -460,6 +470,19 @@ function cambiardisplay5(){
     </div>
      
     </div>
+    
+         
+    <div data-role="panel" id="left-panel" data-theme="c" data-display="overlay" data-position-fixed="true">
+                      <ul id="list" data-role="listview">
+                         <li><a href="#page"><img src="imagenes/fondomenu.png" width="100%" height="100%"></a></li>
+                      <li><a href="#page" data-iconpos="notext"><img src="imagenes/menu_emergente-02.png" width="100%" height="100%"></a></li><br>
+                   <li><a href="#page4" data-iconpos="notext"><img src="imagenes/menu_emergente-03.png" width="100%" height="100%"></a></li>
+                        <li id="activo2"><a data-role="button" data-iconpos="notext" style="-webkit-border-radius: inherit;" onclick="activarAudio22(),cambiardisplay33();"><img src="imagenes/menu_emergente-04.png" width="100%" height="100%"></a></li><br>
+                      <li><a href="#" onclick="enviomail();" data-iconpos="notext"><img src="imagenes/menu_emergente-05.png" width="100%" height="100%"></a></li><br>
+                       <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext"><img src="imagenes/menu_emergente-06.png" width="100%" height="100%"></a>                  </li>
+                      </ul> 
+                  </div>
+     
 </div>
 
 
@@ -468,7 +491,9 @@ function cambiardisplay5(){
    <div data-role="content">	
     
         <audio src="audio/Pantalla4_Ecran.mp3" id="audiopantalla3"></audio>
-    
+     <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
+        <a href="#left-panel2" style="padding:0;box-shadow:none;border:0;background-color:transparent;"><img src="iconos/menu2.png" alt="menuu"></a>
+	</div>
           <div class="fondo-page3">
           <img src="imagenes/04-Fondo.png" width="100%" height="100%">
           
@@ -486,10 +511,28 @@ function cambiardisplay5(){
           </div>
    
     </div>
+    
+    <div data-role="panel" id="left-panel2" data-theme="c" data-display="overlay" data-position-fixed="true">
+                      <ul id="list" data-role="listview">
+                         <li><a href="#page"><img src="imagenes/fondomenu.png" width="100%" height="100%"></a></li>
+                      <li><a href="#page" data-iconpos="notext"><img src="imagenes/menu_emergente-02.png" width="100%" height="100%"></a></li><br>
+                   <li><a href="#page4" data-iconpos="notext"><img src="imagenes/menu_emergente-03.png" width="100%" height="100%"></a></li>
+                        <li id="activo3"><a data-role="button" data-iconpos="notext" style="-webkit-border-radius: inherit;" onclick="activarAudio33(),cambiardisplay44();"><img src="imagenes/menu_emergente-04.png" width="100%" height="100%"></a></li><br>
+                      <li><a href="#" onclick="enviomail();" data-iconpos="notext"><img src="imagenes/menu_emergente-05.png" width="100%" height="100%"></a></li><br>
+                       <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext"><img src="imagenes/menu_emergente-06.png" width="100%" height="100%"></a>                  </li>
+                      </ul> 
+                  </div>
+    
 </div>
 
 <div data-role="page" id="page4" style="overflow-y: hidden;">
 	
+      <div data-role="header" data-theme="b" data-position="fixed" style="max-width:1300px; margin:0 auto;">
+       <a href="#left-panel4" style="padding:0;box-shadow:none;border:0;background-color:transparent;">
+        <img src="iconos/menu2.png" alt="menuu">
+      </a>
+  </div>
+
      
 	<div data-role="content">
       
@@ -556,6 +599,37 @@ function cambiardisplay5(){
 
     
 	</div>
+
+<div data-role="panel" id="left-panel4" data-theme="c" data-display="overlay" data-position-fixed="true">
+          <ul id="list" data-role="listview">
+                <li>
+                  <a href="#page">
+                    <img src="imagenes/fondomenu.png" width="100%" height="100%">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#page" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-02.png" width="100%" height="100%">
+                  </a>
+                </li>
+                <li>
+                  <a href="#page4" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-03.png" width="100%" height="100%">
+                  </a>
+                </li>
+                 <li>
+                  <a href="#" onclick="enviomail();" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-05.png" width="100%" height="100%">
+                  </a>
+                </li>
+                 <li>
+                  <a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-06.png" width="100%" height="100%">
+                  </a>
+                </li>
+            </ul> 
+      </div>
 
 	
 </div>
@@ -679,15 +753,33 @@ function cambiardisplay5(){
   
   <div data-role="panel" id="left-panel4" data-theme="c" data-display="overlay" data-position-fixed="true">
         <ul id="list" data-role="listview">
-           <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
-        <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
-          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a></li>
-          <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
-        <li><a href="#" onclick="enviomail();" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
-         <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
-  height: 3em;"></a></li>
-        </ul>
+                <li>
+                  <a href="#page">
+                    <img src="imagenes/fondomenu.png" width="100%" height="100%">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#page" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-02.png" width="100%" height="100%">
+                  </a>
+                </li>
+                <li>
+                  <a href="#page4" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-03.png" width="100%" height="100%">
+                  </a>
+                </li>
+                 <li>
+                  <a href="#" onclick="enviomail();" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-05.png" width="100%" height="100%">
+                  </a>
+                </li>
+                 <li>
+                  <a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-06.png" width="100%" height="100%">
+                  </a>
+                </li>
+            </ul> 
     </div>
 
 </div>
@@ -709,23 +801,41 @@ function cambiardisplay5(){
 
 <div data-role="panel" id="left-panel6" data-theme="c" data-display="overlay" data-position-fixed="true">
         <ul id="list" data-role="listview">
-           <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
-        <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
-          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a></li>
-          <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
-        <li><a href="#" onclick="enviomail();" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
-         <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
-  height: 3em;"></a></li>
-        </ul>
+                <li>
+                  <a href="#page">
+                    <img src="imagenes/fondomenu.png" width="100%" height="100%">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#page" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-02.png" width="100%" height="100%">
+                  </a>
+                </li>
+                <li>
+                  <a href="#page4" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-03.png" width="100%" height="100%">
+                  </a>
+                </li>
+                 <li>
+                  <a href="#" onclick="enviomail();" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-05.png" width="100%" height="100%">
+                  </a>
+                </li>
+                 <li>
+                  <a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-06.png" width="100%" height="100%">
+                  </a>
+                </li>
+            </ul> 
     </div>
 
 </div>
 
 
+
 <!--INICIO MENU MATRIMONIOS-->
 <div data-role="page" id="page8" style="overflow: hidden;">
-
 
        <div data-role="content" style="overflow: hidden;">
                <div class="fondo-page-tramites">
@@ -848,15 +958,33 @@ function cambiardisplay5(){
 
 <div data-role="panel" id="left-panel8" data-theme="c" data-display="overlay" data-position-fixed="true">
         <ul id="list" data-role="listview">
-           <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
-        <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
-          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a></li>
-          <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
-        <li><a href="#" onclick="enviomail();" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
-         <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
-  height: 3em;"></a></li>
-        </ul>
+                <li>
+                  <a href="#page">
+                    <img src="imagenes/fondomenu.png" width="100%" height="100%">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#page" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-02.png" width="100%" height="100%">
+                  </a>
+                </li>
+                <li>
+                  <a href="#page4" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-03.png" width="100%" height="100%">
+                  </a>
+                </li>
+                 <li>
+                  <a href="#" onclick="enviomail();" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-05.png" width="100%" height="100%">
+                  </a>
+                </li>
+                 <li>
+                  <a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-06.png" width="100%" height="100%">
+                  </a>
+                </li>
+            </ul> 
     </div>
 		<div data-role="panel" id="search9" data-theme="a" data-position="right" data-display="overlay" data-position-fixed="true">
 			<form class="ui-filterable">
@@ -907,15 +1035,33 @@ function cambiardisplay5(){
 
 <div data-role="panel" id="left-panel9" data-theme="c" data-display="overlay" data-position-fixed="true">
         <ul id="list" data-role="listview">
-           <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
-        <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
-          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a></li>
-          <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
-        <li><a href="#" onclick="enviomail();" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
-         <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
-  height: 3em;"></a></li>
-        </ul>
+                <li>
+                  <a href="#page">
+                    <img src="imagenes/fondomenu.png" width="100%" height="100%">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#page" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-02.png" width="100%" height="100%">
+                  </a>
+                </li>
+                <li>
+                  <a href="#page4" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-03.png" width="100%" height="100%">
+                  </a>
+                </li>
+                 <li>
+                  <a href="#" onclick="enviomail();" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-05.png" width="100%" height="100%">
+                  </a>
+                </li>
+                 <li>
+                  <a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-06.png" width="100%" height="100%">
+                  </a>
+                </li>
+            </ul> 
     </div>
 
 
@@ -940,15 +1086,33 @@ function cambiardisplay5(){
 
 <div data-role="panel" id="left-panel10" data-theme="c" data-display="overlay" data-position-fixed="true">
         <ul id="list" data-role="listview">
-           <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
-        <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
-          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a></li>
-          <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
-        <li><a href="#" onclick="enviomail();" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
-         <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
-  height: 3em;"></a></li>
-        </ul>
+                <li>
+                  <a href="#page">
+                    <img src="imagenes/fondomenu.png" width="100%" height="100%">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#page" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-02.png" width="100%" height="100%">
+                  </a>
+                </li>
+                <li>
+                  <a href="#page4" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-03.png" width="100%" height="100%">
+                  </a>
+                </li>
+                 <li>
+                  <a href="#" onclick="enviomail();" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-05.png" width="100%" height="100%">
+                  </a>
+                </li>
+                 <li>
+                  <a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-06.png" width="100%" height="100%">
+                  </a>
+                </li>
+            </ul> 
     </div>
 
 
@@ -974,15 +1138,33 @@ function cambiardisplay5(){
 
 <div data-role="panel" id="left-panel11" data-theme="c" data-display="overlay" data-position-fixed="true">
         <ul id="list" data-role="listview">
-           <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
-        <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
-          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a></li>
-          <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
-        <li><a href="#" onclick="enviomail();" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
-         <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
-  height: 3em;"></a></li>
-        </ul>
+                <li>
+                  <a href="#page">
+                    <img src="imagenes/fondomenu.png" width="100%" height="100%">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#page" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-02.png" width="100%" height="100%">
+                  </a>
+                </li>
+                <li>
+                  <a href="#page4" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-03.png" width="100%" height="100%">
+                  </a>
+                </li>
+                 <li>
+                  <a href="#" onclick="enviomail();" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-05.png" width="100%" height="100%">
+                  </a>
+                </li>
+                 <li>
+                  <a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-06.png" width="100%" height="100%">
+                  </a>
+                </li>
+            </ul> 
     </div>
 
 </div>
@@ -1003,15 +1185,33 @@ function cambiardisplay5(){
 
 <div data-role="panel" id="left-panel12" data-theme="c" data-display="overlay" data-position-fixed="true">
         <ul id="list" data-role="listview">
-           <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
-        <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
-          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a></li>
-          <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
-        <li><a href="#" onclick="enviomail();" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
-         <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
-  height: 3em;"></a></li>
-        </ul>
+                <li>
+                  <a href="#page">
+                    <img src="imagenes/fondomenu.png" width="100%" height="100%">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#page" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-02.png" width="100%" height="100%">
+                  </a>
+                </li>
+                <li>
+                  <a href="#page4" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-03.png" width="100%" height="100%">
+                  </a>
+                </li>
+                 <li>
+                  <a href="#" onclick="enviomail();" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-05.png" width="100%" height="100%">
+                  </a>
+                </li>
+                 <li>
+                  <a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-06.png" width="100%" height="100%">
+                  </a>
+                </li>
+            </ul> 
     </div>
 
 </div>
@@ -1049,15 +1249,33 @@ function cambiardisplay5(){
 
 <div data-role="panel" id="left-panel13" data-theme="c" data-display="overlay" data-position-fixed="true">
         <ul id="list" data-role="listview">
-           <li data-role="list-divider" style="padding: 3.5em 1.143em;"><div class="logomenu"></div></li>
-        <li><a href="#page" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-02.png);background-size: cover; height: 3em;"></a></li><br>
-     <li><a href="#page4" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-03.png);background-size: cover; height: 3em;"></a></li>
-          <li id="activo"><a data-role="button" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-04.png);background-size: cover; height: 3em;-webkit-border-radius: inherit;" onclick="cambiardisplay2();"></a></li>
-          <!--<li data-role="list-divider" style="height:2em;background-color:#C6E2FF"></li> -->
-        <li><a href="#" onclick="enviomail();" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-05.png);background-size: cover; height: 3em;"></a></li>
-         <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext" style="background-image:url(imagenes/menu_emergente-06.png);background-size: cover;
-  height: 3em;"></a></li>
-        </ul>
+                <li>
+                  <a href="#page">
+                    <img src="imagenes/fondomenu.png" width="100%" height="100%">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#page" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-02.png" width="100%" height="100%">
+                  </a>
+                </li>
+                <li>
+                  <a href="#page4" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-03.png" width="100%" height="100%">
+                  </a>
+                </li>
+                 <li>
+                  <a href="#" onclick="enviomail();" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-05.png" width="100%" height="100%">
+                  </a>
+                </li>
+                 <li>
+                  <a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext">
+                    <img src="imagenes/menu_emergente-06.png" width="100%" height="100%">
+                  </a>
+                </li>
+            </ul> 
     </div>
 
 
@@ -1854,7 +2072,7 @@ function cambiardisplay5(){
             <div role="main" class="ui-content">
               <img  src="imagenes/07-Popup.png" width="100%" height="100%">
               <img src="imagenes/paso9.png" style="position: absolute; top: 5.5%; right: 3%;">
-              <p class="parrafoPopup">Autorización expresa de los padres, de no existir éstos últimos, de los ascendientes y a falta de éstos la autorización judicial, conforme lo indica el artículo 244 del Código Civil.</p>
+              <p class="parrafoPopup">Autorización expresa de los padres, de no existir éstos últimos, de los ascendientes y a falta de éstos la autorización judicial, conforme lo indica el artículo<br> 244 del Código Civil.</p>
             </div>
       </div>
 
@@ -2696,7 +2914,7 @@ function cambiardisplay5(){
             <div role="main" class="ui-content">
               <img  src="imagenes/07-Popup.png" width="100%" height="100%">
               <img src="imagenes/paso11.png" style="position: absolute; top: 5.5%; right: 3%;">
-              <p class="parrafoPopup">Certificado médico negativo de embarazo de la contrayente expedido por el Ministerio de Salud si es que no ha transcurrido 300 días de producido la viudez.</p>
+              <p class="parrafoPopup">Certificado médico negativo de embarazo de la contrayente expedido por el Ministerio de Salud si es que no ha transcurrido 300 días de producido<br> la viudez.</p>
             </div>
       </div>
 
@@ -3127,7 +3345,7 @@ function cambiardisplay5(){
             <div role="main" class="ui-content">
               <img  src="imagenes/07-Popup.png" width="100%" height="100%">
               <img src="imagenes/paso9.png" style="position: absolute; top: 5.5%; right: 3%;">
-              <p class="parrafoPopup">Partida de nacimiento y/o certificado de naturalización según corresponda, visado por el Cónsul peruano en el país de origen, legalizado por el Ministerio de Relaciones Exteriores o apostillado, con traducción oficial de ser el caso.</p>
+              <p class="parrafoPopup">Partida de nacimiento y/o certificado de naturalización según corresponda, visado por el Cónsul peruano en el país de origen, legalizado por el <br>Ministerio de  Relaciones Exteriores o apostillado, con traducción oficial de ser el caso.</p>
             </div>
       </div>
 
@@ -3574,7 +3792,7 @@ function cambiardisplay5(){
             <div role="main" class="ui-content">
               <img  src="imagenes/07-Popup.png" width="100%" height="100%">
               <img src="imagenes/paso9.png" style="position: absolute; top: 5.5%; right: 3%;">
-              <p class="parrafoPopup">Poder por Escritura Pública inscrito en los Registros Públicos. Si el poder fue otorgado en el extranjero debe estar visado por el Cónsul peruano del país donde lo dio el poderdante, debiendo legalizarlo en Relaciones Exteriores y con traducción oficial de ser el caso.</p>
+              <p class="parrafoPopup">Poder por Escritura Pública inscrito en los Registros Públicos. Si el poder fue otorgado en el extranjero debe estar visado por el Cónsul peruano del país<br> donde lo dio el poderdante, debiendo legalizarlo en Relaciones Exteriores y con traducción oficial de ser el caso.</p>
             </div>
       </div>
 
@@ -4392,13 +4610,13 @@ function cambiardisplay5(){
             <div role="main" class="ui-content">
               <img  src="imagenes/07-Popup.png" width="100%" height="100%">
               <img src="imagenes/paso1.png" style="position: absolute; top: 5.5%; right: 3%;">
-              <p class="parrafoPopup">Debes presentar una solicitud por escrito dirigida al Alcalde, que exprese de manera indubitable, la decisión de separarse. Ésta debe incluir:</p>
-              <ul style=" top: 50%; left: 10%; position: absolute;" >
-                <li>Nombres.</li>
-                <li>Documentos de identidad.</li>
-                <li>Último domicilio conyugal.</li>
-                <li>Firmas y huellas digitales.</li>
-              </ul>
+              <p class="parrafoPopup">Debes presentar una solicitud por escrito dirigida al Alcalde, que exprese de manera indubitable, la decisión de separarse. Ésta debe incluir:
+              <br><br>
+                -Nombres.<br>
+                -Documentos de identidad.<br>
+                -Último domicilio conyugal.<br>
+                -Firmas y huellas digitales.</p>
+              
             </div>
       </div>
 
@@ -4704,13 +4922,13 @@ function cambiardisplay5(){
             <div role="main" class="ui-content">
               <img  src="imagenes/07-Popup.png" width="100%" height="100%">
               <img src="imagenes/paso1.png" style="position: absolute; top: 5.5%; right: 3%;">
-              <p class="parrafoPopup">Debes presentar una solicitud por escrito dirigida al Alcalde, que exprese de manera indubitable, la decisión de separarse. Ésta debe incluir:</p>
-              <ul style=" top: 50%; left: 10%; position: absolute;" >
-              <li>Nombres.</li>
-              <li>Documentos de identidad.</li>
-              <li>Último domicilio conyugal.</li>
-              <li>Firmas y huellas digitales.</li>
-              </ul>
+              <p class="parrafoPopup">Debes presentar una solicitud por escrito dirigida al Alcalde, que exprese de manera indubitable, la decisión de separarse. Ésta debe incluir:
+              <br><br>
+              -Nombres.<br>
+              -Documentos de identidad.<br>
+              -Último domicilio conyugal.<br>
+              -Firmas y huellas digitales.
+              </p>
             </div>
       </div>
 
@@ -4796,7 +5014,7 @@ function cambiardisplay5(){
             <div role="main" class="ui-content">
               <img  src="imagenes/07-Popup.png" width="100%" height="100%">
               <img src="imagenes/paso7.png" style="position: absolute; top: 5.5%; right: 3%;">
-              <p class="parrafoPopup">Presentar copia certificada de la sentencia judicial firme o acta de conciliación respecto de los regímenes del ejercicio de la patria potestad, alimentos, tenencia y visita.</p>
+              <p class="parrafoPopup">Presentar copia certificada de la sentencia judicial firme o acta de conciliación respecto de los regímenes del ejercicio de la patria potestad, <br>alimentos, tenencia y visita.</p>
             </div>
       </div>
 
@@ -5046,14 +5264,14 @@ function cambiardisplay5(){
             <div role="main" class="ui-content">
               <img  src="imagenes/07-Popup.png" width="100%" height="100%">
               <img src="imagenes/paso1.png" style="position: absolute; top: 5.5%; right: 3%;">
-              <p class="parrafoPopup">Debes presentar una solicitud por escrito dirigida al Alcalde, que exprese de manera indubitable, la decisión de separarse. Ésta debe incluir:</p>
-
-              <ul style=" top: 50%; left: 10%; position: absolute;" >
-                  <li>Nombres.</li>
-                  <li>Documentos de identidad.</li>
-                  <li>Último domicilio conyugal.</li>
-                  <li>Firmas y huellas digitales.</li>
-              </ul>
+              <p class="parrafoPopup">Debes presentar una solicitud por escrito dirigida al Alcalde, que exprese de manera indubitable, la decisión de separarse. Ésta debe incluir:
+                <br><br>
+             
+                  -Nombres.<br>
+                  -Documentos de identidad.<br>
+                  -Último domicilio conyugal.<br>
+                  -Firmas y huellas digitales.
+              </p>
             </div>
       </div>
 
@@ -5128,7 +5346,7 @@ function cambiardisplay5(){
             <div role="main" class="ui-content">
               <img  src="imagenes/07-Popup.png" width="100%" height="100%">
               <img src="imagenes/paso6.png" style="position: absolute; top: 5.5%; right: 3%;">
-              <p class="parrafoPopup">Adjuntar una copia certificada del acta o de la partida de nacimiento expedida dentro de los tres meses anteriores a la fecha de la presentación de la solicitud.</p>
+              <p class="parrafoPopup">Adjuntar una copia certificada del acta o de la partida de nacimiento expedida dentro de los tres meses anteriores a la fecha de la presentación de<br> la solicitud.</p>
             </div>
       </div>
 
@@ -5146,7 +5364,7 @@ function cambiardisplay5(){
             <div role="main" class="ui-content">
               <img  src="imagenes/07-Popup.png" width="100%" height="100%">
               <img src="imagenes/paso7.png" style="position: absolute; top: 5.5%; right: 3%;">
-              <p class="parrafoPopup">Presentar copia certificada de la sentencia judicial firme o acta de conciliación respecto de los regímenes del ejercicio de la patria potestad, alimentos, tenencia y visita.</p>
+              <p class="parrafoPopup">Presentar copia certificada de la sentencia judicial firme o acta de conciliación respecto de los regímenes del ejercicio de la patria potestad, alimentos,<br> tenencia y visita.</p>
             </div>
       </div>
 
@@ -5407,14 +5625,14 @@ function cambiardisplay5(){
             <div role="main" class="ui-content">
               <img  src="imagenes/07-Popup.png" width="100%" height="100%">
               <img src="imagenes/paso1.png" style="position: absolute; top: 5.5%; right: 3%;">
-              <p class="parrafoPopup">Debes presentar una solicitud por escrito dirigida al Alcalde, que exprese de manera indubitable, la decisión de separarse. Ésta debe incluir:</p>
+              <p class="parrafoPopup">Debes presentar una solicitud por escrito dirigida al Alcalde, que exprese de manera indubitable, la decisión de separarse. Ésta debe incluir:
 
-              <ul style=" top: 50%; left: 10%; position: absolute;" >
-                  <li>Nombres.</li>
-                  <li>Documentos de identidad.</li>
-                  <li>Último domicilio conyugal.</li>
-                  <li>Firmas y huellas digitales.</li>
-              </ul>
+              <br><br>
+                  -Nombres.<br>
+                  -Documentos de identidad.<br>
+                  -Último domicilio conyugal.<br>
+                  -Firmas y huellas digitales.
+              </p>
             </div>
       </div>
 
@@ -5777,14 +5995,14 @@ function cambiardisplay5(){
             <div role="main" class="ui-content">
               <img  src="imagenes/07-Popup.png" width="100%" height="100%">
               <img src="imagenes/paso1.png" style="position: absolute; top: 5.5%; right: 3%;">
-              <p class="parrafoPopup">Debes presentar una solicitud por escrito dirigida al Alcalde, que exprese de manera indubitable, la decisión de separarse. Ésta debe incluir:</p>
+              <p class="parrafoPopup">Debes presentar una solicitud por escrito dirigida al Alcalde, que exprese de manera indubitable, la decisión de separarse. Ésta debe incluir:
 
-              <ul style=" top: 50%; left: 10%; position: absolute;" >
-                <li>Nombres.</li>
-                <li>Documentos de identidad.</li>
-                <li>Último domicilio conyugal.</li>
-                <li>Firmas y huellas digitales.</li>
-              </ul>
+             <br><br>
+                -Nombres.<br>
+                -Documentos de identidad.<br>
+                -Último domicilio conyugal.<br>
+                -Firmas y huellas digitales.
+             </p>
             </div>
       </div>
 
@@ -5856,7 +6074,7 @@ function cambiardisplay5(){
             <div role="main" class="ui-content">
               <img  src="imagenes/07-Popup.png" width="100%" height="100%">
               <img src="imagenes/paso6.png" style="position: absolute; top: 5.5%; right: 3%;">
-              <p class="parrafoPopup">De no haber bienes sujetos al régimen de sociedad de gananciales, presentar una declaración jurada con firma e impresión de la huella digital de cada uno de los cónyuges.</p>
+              <p class="parrafoPopup">De no haber bienes sujetos al régimen de sociedad de gananciales, presentar una declaración jurada con firma e impresión de la huella digital<br> de cada uno de los cónyuges.</p>
             </div>
       </div>
 
@@ -6290,14 +6508,14 @@ function cambiardisplay5(){
             <div role="main" class="ui-content">
               <img  src="imagenes/07-Popup.png" width="100%" height="100%">
               <img src="imagenes/paso1.png" style="position: absolute; top: 5.5%; right: 3%;">
-              <p class="parrafoPopup">Debes presentar una solicitud dirigida al responsable de brindar la información, consignando lo siguiente:</p>
-              <ul style=" top: 50%; left: 10%; position: absolute;" >
-                  <li>Nombres y apellidos o denominación o razón social, número de documento de identidad o número de RUC, domicilio del recurrente y del representante, según corresponda.</li>
-                  <li>Número de teléfono y/o correo electrónico; de ser el caso.</li>
-                  <li>Expresión concreta y precisa del pedido de información.</li>
-                  <li>Fechas aproximadas en que la información se ha producido u obtenido.</li>
-                  <li>Medio en que se requiere la información (copia simple, diskette, CD, etc.)</li>
-              </ul>
+              <p class="parrafoPopup">Debes presentar una solicitud dirigida al responsable de brindar la información, consignando lo siguiente:
+              <br><br>
+                  -Nombres y apellidos o denominación o razón social, número de documento de identidad o número de RUC, domicilio del recurrente y del representante, según corresponda.<br>
+                  -Número de teléfono y/o correo electrónico; de ser el caso.<br>
+                  -Expresión concreta y precisa del pedido de información.<br>
+                  -Fechas aproximadas en que la información se ha producido u obtenido.<br>
+                  -Medio en que se requiere la información (copia simple, diskette, CD, etc.)
+              </p>
             </div>
       </div>
 
@@ -7861,11 +8079,11 @@ Persona jurídica o representación.</p>
             <div role="main" class="ui-content">
               <img  src="imagenes/07-Popup.png" width="100%" height="100%">
               <img src="imagenes/paso2.png" style="position: absolute; top: 5.5%; right: 3%;">
-              <p class="parrafoPopup">Debes presentar una solicitud de tercería dirigida al Ejecutor Coactivo en el que se consignará lo siguiente:
+              <p class="parrafoPopup">Debes presentar una solicitud de tercería dirigida al Ejecutor Coactivo en el que se consignará lo siguiente:<br><br>
 a) Nombres y apellidos o denominación o razón
-social, número de documento de identidad y/o número de RUC del solicitante y/o de su representante, de ser el caso.
-b) Domicilio real o procesal del solicitante dentro del radio urbano de la Provincia de Lima.
-c) Fundamentar la solicitud de tercería, indicando el bien afectado.
+social, número de documento de identidad y/o número de RUC del solicitante y/o de su representante,<br> de ser el caso.<br>
+b) Domicilio real o procesal del solicitante dentro del radio urbano de la Provincia de Lima.<br>
+c) Fundamentar la solicitud de tercería, indicando el bien afectado.<br>
 d) Firma del solicitante y/o representante legal, de ser el caso.</p>
             </div>
       </div>
@@ -7881,7 +8099,7 @@ d) Firma del solicitante y/o representante legal, de ser el caso.</p>
             <div role="main" class="ui-content">
               <img  src="imagenes/07-Popup.png" width="100%" height="100%">
               <img src="imagenes/paso3.png" style="position: absolute; top: 5.5%; right: 3%;">
-              <p class="parrafoPopup">Debes presentar copia legalizada notarialmente o autenticada por fedatario de la Municipalidad del documento privado de fecha cierta, documento público u otro documento, que acredite fehacientemente la propiedad de los bienes antes de haberse trabado la medida cautelar.</p>
+              <p class="parrafoPopup">Debes presentar copia legalizada notarialmente o autenticada por fedatario de la Municipalidad del documento privado de fecha cierta, documento <br>público u otro documento, que acredite fehacientemente la propiedad de los bienes antes de haberse trabado la medida cautelar.</p>
             </div>
       </div>
 
@@ -8368,7 +8586,7 @@ d) Firma del solicitante y/o representante legal, de ser el caso.</p>
             <div role="main" class="ui-content">
               <img  src="imagenes/07-Popup.png" width="100%" height="100%">
               <img src="imagenes/paso3.png" style="position: absolute; top: 5.5%; right: 3%;">
-              <p class="parrafoPopup">Debes presentar una copia legalizada notarialmente o autenticada por fedatario de la Municipalidad del documento privado de fecha cierta, documento público u otro documento, que acredite fehacientemente la propiedad de los bienes antes de haberse trabado la medida cautelar.</p>
+              <p class="parrafoPopup">Debes presentar una copia legalizada notarialmente o autenticada por fedatario de la Municipalidad del documento privado de fecha cierta,<br> documento público u otro documento, que acredite fehacientemente la propiedad de los bienes antes de haberse trabado la medida cautelar.</p>
             </div>
       </div>
 

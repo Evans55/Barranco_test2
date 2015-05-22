@@ -72,6 +72,21 @@ max-height: 691px;
 	background-color:#009;
 }
 
+.content-obs::-webkit-scrollbar {
+    width: 1.2em;
+}
+
+.content-obs::-webkit-scrollbar-track {
+    background-color: #FFF;
+    border-left: 1px solid #ccc;
+}
+.content-obs::-webkit-scrollbar-thumb {
+    background-color:#039;
+}
+.content-obs::-webkit-scrollbar-thumb:hover {
+	background-color:#009;
+}
+
 #mensajes {
 	height: auto;
 }
