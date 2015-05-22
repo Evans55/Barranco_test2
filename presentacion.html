@@ -464,9 +464,62 @@ function cambiardisplay5(){
       
      </div>
 
+
+<style>
+.chabelitabrazoiz {
+  background:  url(imagenes/sprite_chabukita22.png) 0 100%;
+  
+
+  z-index: 3;
+  height:511px;
+  width:600px;
+  position: absolute;
+  left: 0;
+  
+ margin-top:27%;
+  margin-left:-12%;
+
+-webkit-animation: chabelitabrazoiz 1.5s steps(14, end) 2,caminatachabelita 2.9s both linear, spritehablachabelitabrazoiz 1.8s steps(14, end) 3.2s 3 forwards;
+
+  
+}
+
+@keyframes spritehablachabelitabrazoiz {  
+  from {background-position: 0 -511px; } 
+  to {background-position: -8400px -511px; } 
+}
+
+@-webkit-keyframes spritehablachabelitabrazoiz {  
+    from {background-position: 0 -511px; } 
+  to {background-position: -8400px -511px; } 
+}
+
+@keyframes chabelitabrazoiz {  
+  from {background-position: 0 0; } 
+  to {background-position: -8400px 0; } 
+}
+
+@-webkit-keyframes chabelitabrazoiz {  
+    from {background-position: 0 0; } 
+  to {background-position: -8400px 0; } 
+}
+
+@-webkit-keyframes caminatachabelita{
+	from{-webkit-transform:translateX(-1000px);transform:translateX(-1000px)}
+	to{-webkit-transform:translateX(300px);transform:translateX(300px)}}
+	
+@keyframes caminatachabelita{
+from{-webkit-transform:translateX(-1000px);transform:translateX(-1000px)}
+	to{-webkit-transform:translateX(300px);transform:translateX(300px)}}	
+
+</style>
+
+
     <div class="contenedorchabelita" id="contenedorchabelita">
-        <div class="chabelitaresponsive" id="chabelitaresponsive">
-        </div> 
+        <!--<div class="chabelitaresponsive" id="chabelitaresponsive">
+        </div>  -->
+          <div class="chabelitabrazoiz" id="chabelitabrazoiz">
+        </div>
     </div>
      
     </div>
