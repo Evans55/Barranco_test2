@@ -100,12 +100,12 @@
 
 @keyframes spritechabelitaresponsive {  
  from {background-position: 0% 0%; } 
-  to {background-position: -2700% 0%; }  
+  to {background-position: -2800% 0%; }  
 }
 
 @-webkit-keyframes spritechabelitaresponsive {  
  from {background-position: 0% 0%; } 
-  to {background-position: -2700% 0%; } 
+  to {background-position: -2800% 0%; } 
 }
 
 @-webkit-keyframes caminarresponsive{
@@ -118,10 +118,10 @@
 
 @keyframes hablaresponsive {  
   from {background-position: 0 -100%; } 
-  to {background-position: -2700% -100%; } 
+  to {background-position: -2800% -100%; } 
 }
 
 @-webkit-keyframes hablaresponsive {  
   from {background-position: 0 -100%; } 
-  to {background-position: -2700% -100%; } 
+  to {background-position: -2800% -100%; } 
 }
