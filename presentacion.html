@@ -120,8 +120,8 @@ function activarAudio22()
 		//document.getElementById('spritechabelita').style.display = 'none';
 		//document.getElementById('activo').style.display = 'block';
 		
-		//document.getElementById('chabelitaresponsive').style.display = 'block';
-		document.getElementById('chabelitabrazoiz').style.display = 'block';
+		document.getElementById('chabelitaresponsive').style.display = 'block';
+		//document.getElementById('chabelitabrazoiz').style.display = 'block';
 		document.getElementById('activo2').style.display = 'none';
  var audio = new Audio('audio/Pantalla3_Ventanilla.mp3');
 audio.play();
@@ -147,16 +147,16 @@ function activarAudio33()
 		//document.getElementById('spritechabelita2').style.display = 'none';
 		//document.getElementById('activo2').style.display = 'block';
 		
-	//document.getElementById('chabelitaresponsive2').style.display = 'block';
-	document.getElementById('chabelitabrazoder').style.display = 'block';
+	document.getElementById('chabelitaresponsive2').style.display = 'block';
+	//document.getElementById('chabelitabrazoder').style.display = 'block';
 	document.getElementById('activo3').style.display = 'none';
  var audio = new Audio('audio/Pantalla4_Ecran.mp3');
 audio.play();
 }
 
 function cambiardisplay44(){
-	//document.getElementById('chabelitaresponsive2').style.display = 'block';
-	document.getElementById('chabelitabrazoder').style.display = 'block';
+	document.getElementById('chabelitaresponsive2').style.display = 'block';
+	//document.getElementById('chabelitabrazoder').style.display = 'block';
 	document.getElementById('activo3').style.display = 'none';
 	playAudio('file:///android_asset/www/audio/Pantalla4_Ecran.mp3');
 }
@@ -246,8 +246,8 @@ function playAudioUnavez(){
 
 function activarAudio3()
     {
-		//document.getElementById('chabelitaresponsive').style.display = 'none';
-		document.getElementById('chabelitabrazoiz').style.display = 'none';
+		document.getElementById('chabelitaresponsive').style.display = 'none';
+		//document.getElementById('chabelitabrazoiz').style.display = 'none';
 		document.getElementById('activo2').style.display = 'block';
 	
 	document.getElementById('sinAudio2').style.display = 'block';
@@ -261,10 +261,10 @@ document.getElementById('audiopantalla3').play();
 }
 
 function sinAudio2(){
-//document.getElementById('chabelitaresponsive').style.display = 'none';
-document.getElementById('chabelitabrazoiz').style.display = 'none';
-document.getElementById('chabelitabrazoder').style.display = 'none';
-//document.getElementById('chabelitaresponsive2').style.display = 'none';
+document.getElementById('chabelitaresponsive').style.display = 'none';
+//document.getElementById('chabelitabrazoiz').style.display = 'none';
+//document.getElementById('chabelitabrazoder').style.display = 'none';
+document.getElementById('chabelitaresponsive2').style.display = 'none';
 document.getElementById('activo').style.display = 'block';
 }
 
@@ -540,10 +540,10 @@ from{-webkit-transform:translateX(-1000px);transform:translateX(-1000px)}
 
 
     <div class="contenedorchabelita" id="contenedorchabelita">
-        <!--<div class="chabelitaresponsive" id="chabelitaresponsive">
-        </div>  -->
-          <div class="chabelitabrazoiz" id="chabelitabrazoiz">
-        </div>
+        <div class="chabelitaresponsive" id="chabelitaresponsive">
+        </div>  
+         <!-- <div class="chabelitabrazoiz" id="chabelitabrazoiz">
+        </div> -->
     </div>
      
     </div>
@@ -581,10 +581,10 @@ from{-webkit-transform:translateX(-1000px);transform:translateX(-1000px)}
           </div>
         
         <div class="contenedorchabelita2">
-           <!-- <div class="chabelitaresponsive2" id="chabelitaresponsive2">
-            </div>  -->
-            <div class="chabelitabrazoder" id="chabelitabrazoder">
-        </div>
+         <div class="chabelitaresponsive2" id="chabelitaresponsive2">
+            </div>  
+           <!-- <div class="chabelitabrazoder" id="chabelitabrazoder">
+        </div> -->
         </div> 
                               
           </div>
