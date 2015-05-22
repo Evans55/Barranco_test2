@@ -38,10 +38,10 @@
   position: absolute;
   left: 0;
 
--webkit-animation: spritechabelitaresponsive3 1.6s steps(28, end) 2 forwards,caminarresponsive3 2.9s both linear,hablaresponsive3 1.6s steps(28, end) 4s 4 forwards;
--moz-animation: spritechabelitaresponsive3 1.6s steps(28, end) 2 forwards,caminarresponsive3 2.9s both linear,hablaresponsive3 1.6s steps(28, end) 4s 4 forwards;
--o-animation: spritechabelitaresponsive3 1.6s steps(28, end) 2 forwards,caminarresponsive3 2.9s both linear,hablaresponsive3 1.6s steps(28, end) 4s 4 forwards;
-animation: spritechabelitaresponsive3 1.6s steps(28, end) 2 forwards,caminarresponsive3 2.9s both linear,hablaresponsive3 1.6s steps(28, end) 4s 4 forwards;
+-webkit-animation: spritechabelitaresponsive3 1.6s steps(28, end) 2 ,caminarresponsive3 2.9s both linear,hablaresponsive3 1.6s steps(28, end) 4s 4 forwards;
+-moz-animation: spritechabelitaresponsive3 1.6s steps(28, end) 2 ,caminarresponsive3 2.9s both linear,hablaresponsive3 1.6s steps(28, end) 4s 4 forwards;
+-o-animation: spritechabelitaresponsive3 1.6s steps(28, end) 2 ,caminarresponsive3 2.9s both linear,hablaresponsive3 1.6s steps(28, end) 4s 4 forwards;
+animation: spritechabelitaresponsive3 1.6s steps(28, end) 2 ,caminarresponsive3 2.9s both linear,hablaresponsive3 1.6s steps(28, end) 4s 4 forwards;
 }	
 
 @keyframes spritechabelitaresponsive3 {  
