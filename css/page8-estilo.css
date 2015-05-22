@@ -9,14 +9,28 @@
 }
 
 .acordeon{
-background: none;
+  background: none;
   position: absolute;
-  z-index: 1;
-  width: 71%;
-  height: 65%;
-  top: 21.5%;
-  left: 15.5%;
-  overflow-y: scroll;
+  z-index: 0;
+  width: 45%;
+  height: 100%;
+  top: 24%;
+  left: 28%;
+  overflow: auto;
+}
+
+.acordeon2{
+  position: absolute;
+  top: 23%;
+  left: 18%;
+  /* right: -6%; */
+  width: 64%;
+  height: 50%;
+  z-index: 2;
+ 
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translate3d (0,0,0);
+
 }
 
 #acordeon::-webkit-scrollbar {
@@ -36,13 +50,13 @@ background: none;
 
 
 #colapsable1{
-font-size: 100%;width: 100%;top: 0%;position: absolute;	
+font-size: 90%;width: 100%;top: 0%;position: absolute;	
 }
 
 
 @media screen and (min-width: 230px) and (max-width: 768px) {
 	#colapsable1{
-font-size: 70%;width: 100%;top: 0%;position: absolute;	
+font-size: 51%;width: 100%;top: 0%;position: absolute;	
 }
 
 }
@@ -50,20 +64,20 @@ font-size: 70%;width: 100%;top: 0%;position: absolute;
 
 @media screen and(max-width: 768px) {
 	#colapsable1{
-font-size: 80%;width: 100%;top: 0%;position: absolute;	
+font-size: 60%;width: 100%;top: 0%;position: absolute;	
 }
 
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 	#colapsable1{
-font-size: 90%;width: 100%;top: 0%;position: absolute;	
+font-size: 70%;width: 100%;top: 0%;position: absolute;	
 }
 
 }
 @media (min-width: 992px) and (max-width: 1200px) {
 	#colapsable1{
-font-size: 100%;width: 100%;top: 0%;position: absolute;	
+font-size: 80%;width: 100%;top: 0%;position: absolute;	
 }
 }
 

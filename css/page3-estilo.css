@@ -38,34 +38,6 @@
   position: absolute;
   left: 0;
 
--webkit-animation: spritechabelitaresponsive2 1.6s steps(28, end) 2,caminarresponsive2 2.9s both linear,hablaresponsive2 1.6s steps(28, end) 3.5s 4 forwards;
+-webkit-animation: spritechabelitaresponsive 1.6s steps(28, end) 2 forwards,caminarresponsive 2.9s both linear,hablaresponsive 1.6s steps(28, end) 4s 4 forwards;
 
 }	
-
-@keyframes spritechabelitaresponsive2 {  
- from {background-position: 0% 0%; } 
-  to {background-position: -2800% 0%; }  
-}
-
-@-webkit-keyframes spritechabelitaresponsive2 {  
- from {background-position: 0% 0%; } 
-  to {background-position: -2800% 0%; } 
-}
-
-@-webkit-keyframes caminarresponsive2{
-	from{-webkit-transform:translateX(-155%);transform:translateX(-155%)}
-	to{-webkit-transform:translateX(128%);transform:translateX(128%)}}
-	
-@keyframes caminarresponsive2{
-    from{-webkit-transform:translateX(-155%);transform:translateX(-155%)}
-	to{-webkit-transform:translateX(128%);transform:translateX(128%)}}
-
-@keyframes hablaresponsive2 {  
-  from {background-position: 0 -100%; } 
-  to {background-position: -2800% -100%; } 
-}
-
-@-webkit-keyframes hablaresponsive2 {  
-  from {background-position: 0 -100%; } 
-  to {background-position: -2800% -100%; } 
-}

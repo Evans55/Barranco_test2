@@ -1,13 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
-#CopiaDePlanos,#CopiaCertificadaDeDocumentos,#AccesoALaInformacionQuePoseaOProduzcaLaMunicipalidad,#page2,#page3,#page8,#page9,#page5,#page11,#page7,#page10,#page,#page4,#page6,#page12,#page13,#page14,#page15,#page16,#page17,#page18,#page19,#page20,#page21,#page22,#page23,#page24,#page25,#page26,#page27,#page28,#page29,#page30,#page31,#page32,#page33,#page34,#page35,#page36,#page37,#page38,#page39,#page40,#page41,#page42,#page43,#page44,#page45,#page46,#page47,#page48,#page49{
+#MatrimonioCivil,#ParaMenoresDeEdad,#ParaDivorciados,#ParaViudos,#ParaExtranjeros,#ParaMatrimoniosPorPoder,#DispensaParcialDePublicacionDeAvisoMatrimonial,#ExhibicionDeEdictosMatrimonialesTramitadosEnOtrosMunicipios,#ReprogramacionDeFechaDeMatrimonio,#SeparacionConvencional,#EnCasoDeNoTenerHijos,#EnCasoDeTenerHijosMenores,#EnCasoDeTenerHijosMayoresConIncapacidad,#EnCasoDeRequisitosRelacionadosConElPatrimonio,#AccesoALaInformacionQuePoseaOProduzcaLaMunicipalidad,#DivorcioUlterior,#CopiaCertificadaDeDocumentos,#CopiaDePlanos,#CopiaCertificadaDePlanos,#RetiroODesgloseDeDocumentacionDelExpediente,#FraccionamientoDeDeudasTributarias,#FraccionamientoDeDeudasPorMultasAdministrativas,#TerceriaDePropiedadAnteCobranzaDeObligacionesTributarias,#SolicitudDeSuspensionDeCobranzaCoactivaDeObligacionesTributarias,#FraccionamientoDeDeudasTributarias,#FraccionamientoDeDeudasPorMultasAdministrativas,#TerceriaDePropiedadAnteCobranzaDeObligacionesTributarias,#SolicitudDeSuspensionDeCobranzaCoactivaDeObligacionesTributarias,#TerceriaDePropiedadAnteCobranzaDeObligacionesNoTributarias,#SolicitudDeSuspensionDeCobranzaCoactivaDeObligacionesNoTributarias,#SolicitudDeDevolucionEnMateriaTributaria,#SolicitudDeCompensacionEnMateriaTributaria,#SolicitudDePrescripcionEnMateriaTributaria,#ImpuestoPredial,#ArbitriosMunicipales,#InafectacionAlImpuestoPredial,#InafectacionAlImpuestoDeAlcabalaHastaElAno2001,#PagoDeTributos,#page2,#page3,#page8,#page9,#page5,#page11,#page7,#page10,#page,#page4,#page6,#page12,#page13,#page14,#page15,#page16,#page17,#page18,#page19,#page20,#page21,#page22,#page23,#page24,#page25,#page26,#page27,#page28,#page29,#page30,#page31,#page32,#page33,#page34,#page35,#page36,#page37,#page38,#page39,#page40,#page41,#page42,#page43,#page44,#page45,#page46,#page47,#page48,#page49{
 max-width:1300px;
 margin:0 auto;
 position:relative;
 
 }
-
 .poppup {
 	
 background-image: url('../imagenes/07-Popup.png');
@@ -116,50 +115,73 @@ max-height: 691px;
 
 }
 
+                  .content-paso1{
+                   position: absolute;
+                   z-index: 3;
+                   width: 16%;
+                   height: 30%;
+                   
+                  }
 
-#botoncamino1{
-	 position:absolute;
-  top: 15%;
-  left: 4.5%;
- 
-}
+                  .content-paso2{
+                   position: absolute;
+                   z-index: 3;
+                   width: 16%;
+                   left: 20%;
+                   height: 30%;
+                   
+                  }
+
+                  .content-paso3{
+                   position: absolute;
+                   z-index: 3;
+                   width: 16%;
+                   left: 35%;
+                   height: 30%;
+                   
+                  }
+
+                   .content-paso4{
+                   position: absolute;
+                   z-index: 3;
+                   width: 16%;
+                   left: 50.1%;
+                   height: 30%;
+                   
+                  }
+
+                  .content-paso5{
+                   position: absolute;
+                   z-index: 3;
+                   width: 16%;
+                   left: 65.1%;
+                   height: 30%;
+                   
+                  }
+
+                  .content-paso6{
+                   position: absolute;
+                   z-index: 3;
+                   width: 16%;
+                   left: 80.13%;
+                   height: 30%;
+                   
+                  }
+
+                  .content-boton{
+                   position:absolute; 
+                   width: 80% ; 
+                   height: 60%;
+                   top:-45%;
+                   left: 5%;
+                   z-index:5;
+                  }
 
 
-#botoncamino2{
-	 position:absolute;
-	  top: 47%;
-  left: 18.8%;
-}
-
-#botoncamino3{
-	 position:absolute;
-	  top: 15%;
-  left: 34.5%;
-}
-
-#botoncamino4{
-	 position:absolute;
-	  top: 47%;
-  left: 49%;
-}
-
-
-#botoncamino5{
-	 position:absolute;
-	  top: 15%;
-  left: 64%;
-}
-
-#botoncamino6{
-	 position:absolute;
-	  top: 47%;
-  left: 79.5%;
-}
 
 
 
 .botoncamino {
-	
   padding: 1%;
   width: 10.8%;
   height: 13%;
