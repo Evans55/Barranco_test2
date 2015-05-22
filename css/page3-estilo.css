@@ -38,5 +38,33 @@
   position: absolute;
   left: 0;
 
--webkit-animation: spritechabelitaresponsive 1.6s steps(28, end) 2 forwards,caminarresponsive 2.9s both linear,hablaresponsive 1.6s steps(28, end) 4s 4 forwards;
+-webkit-animation: spritechabelitaresponsive3 1.6s steps(28, end) 2 forwards,caminarresponsive3 2.9s both linear,hablaresponsive3 1.6s steps(28, end) 4s 4 forwards;
 }	
+
+@keyframes spritechabelitaresponsive3 {  
+ from {background-position: 0% 0%; } 
+  to {background-position: -2700% 0%; }  
+}
+
+@-webkit-keyframes spritechabelitaresponsive3 {  
+ from {background-position: 0% 0%; } 
+  to {background-position: -2700% 0%; } 
+}
+
+@-webkit-keyframes caminarresponsive3{
+	from{-webkit-transform:translateX(-155%);transform:translateX(-155%)}
+	to{-webkit-transform:translateX(128%);transform:translateX(128%)}}
+	
+@keyframes caminarresponsive3{
+    from{-webkit-transform:translateX(-155%);transform:translateX(-155%)}
+	to{-webkit-transform:translateX(128%);transform:translateX(128%)}}
+
+@keyframes hablaresponsive3 {  
+  from {background-position: 0 -100%; } 
+  to {background-position: -2700% -100%; } 
+}
+
+@-webkit-keyframes hablaresponsive3 {  
+  from {background-position: 0 -100%; } 
+  to {background-position: -2700% -100%; } 
+}

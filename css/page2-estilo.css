@@ -100,12 +100,12 @@
 
 @keyframes spritechabelitaresponsive {  
  from {background-position: 0% 0%; } 
-  to {background-position: -2800% 0%; }  
+  to {background-position: -2700% 0%; }  
 }
 
 @-webkit-keyframes spritechabelitaresponsive {  
  from {background-position: 0% 0%; } 
-  to {background-position: -2800% 0%; } 
+  to {background-position: -2700% 0%; } 
 }
 
 @-webkit-keyframes caminarresponsive{
