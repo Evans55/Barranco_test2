@@ -48,7 +48,7 @@
   width: 28%;
   height: 64%;
   bottom: 33%;
-  left: 60%;
+  left: 54%;
 	
 }
 
@@ -59,11 +59,11 @@
   width: 28%;
   height: 64%;
   bottom: 30%;;
-  left: 60%;
+  left: 54%;
 	
 }
 
-#activo,#activo2,#activo3,#sinAudio1,#sinAudio2,#sinAudio22{
+#activo,#activo2,#activo3,#activo4,#sinAudio1,#sinAudio2,#sinAudio22{
 	display:none;
 }
 
