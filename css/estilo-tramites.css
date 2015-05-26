@@ -1,3 +1,16 @@
+@font-face {
+	    font-family: "RemachineScript_Personal_Use";
+	    src: url("../fonts/RemachineScript_Personal_Use.ttf");
+}
+
+@font-face {
+	    font-family: "arial";
+	    src: url("../fonts/arial.ttf");
+}
+
+@font-face { font-family: "AlteHaasGroteskRegular"; src: url("../fonts/AlteHaasGroteskRegular.ttf");}
+@font-face { font-family: "Arial Rounded MT Bold Bold"; src: url("../fonts/Arial Rounded MT Bold Bold.ttf");}
+
 .content-header{
 		background: none;
 		position:absolute;
@@ -42,6 +55,7 @@
 		position:absolute;
 		left: 12%;
 		z-index:2;
+		font-family: "Arial Rounded MT Bold Bold";
 	
 }
 
@@ -97,6 +111,7 @@
 		width:55%;
 		height:63%;
 		color:#fff;
+		font-family: "AlteHaasGroteskRegular";
 
 	}
 	
@@ -112,6 +127,8 @@
 		left:4.4%;
 		width: 36%;
 		height:55%;
+		font-family: "arial";
+
 	}
 .content-observaciones .content-obs{
 		padding:1%;
@@ -129,7 +146,7 @@
 		background: none;
 		position: absolute;
 		z-index: 2;
-		top: 30%;
+		top: 14%;
 		left: 40.3%;
 		width: 54.7%;
 		height: 55%;
@@ -137,14 +154,14 @@
 .caminotramite-show{
 		 background: none;
 		 margin: 0 auto;
-		 margin-top: 20%;
+		 margin-top: 32%;
 		 width: 90%;
 		 height: 30%;
 	}
 .caminotramite-hidden{
 		 background: none;
 		 margin: 0 auto;
-		 margin-top: 20%;
+		 margin-top: 32%;
 		 width: 90%;
 		 height: 30%;
 		 display: none;
@@ -152,7 +169,7 @@
 .content-botones-sig{
 		 background: none;
 		 margin: 0 auto;
-		 margin-top: 10%;
+		 margin-top: 2.3%;
 		 width: 80%;
 		 height: 20%;
 	}
@@ -249,17 +266,43 @@
     	  right: 5%;
   }
 
+.parrafoFinPasos{
+    	  position: absolute;
+    	  font-family: "RemachineScript_Personal_Use";
+    	  z-index: 1;
+    	  top: 84%;
+    	  left: 29%;
+    	  right: 5%;
+    	  color: #4c4c4c;
+  }
+
 .parafoCamino{
          position : absolute;
-         top:18%; 
+         top:9%; 
          z-index: 5;
          width: 91%;
          height:30%;
          text-align: center;
          font-size: 20px;
-         font-family: fantasy;
+         font-family: "RemachineScript_Personal_Use";
          color: #fff;
       }
+.parafoCamino-click{
+         position : absolute;
+         top:32%; 
+         z-index: 5;
+         width: 91%;
+         height:30%;
+         text-align: center;
+         font-size: 20px;
+         font-family: "arial";
+         color: #fff;
+      }
+
+.displayPopup{
+	max-width:900px;
+	background: #c2c2c2;
+}
 
 	
 @media screen and (min-width: 230px) and (max-width: 768px) {
@@ -281,13 +324,27 @@
 	.parafoCamino{
 	 	font-size: 10px;
 	}
+	.parafoCamino-click{
+		font-size: 10px;
+	}
+
+	.parrafoFinPasos {
+		font-size: 10px;
+		top: 82%;
+	}
+
 	.listatramites{
 		font-size: 8px;
 	}
 	
 	.parrafoPopup{
 		font-size: 10px;
-}
+	}
+
+	.displayPopup{
+		max-width:1100px;
+		background: #c2c2c2;
+	}	
 
 
 @media screen and(max-width: 768px) {
@@ -308,6 +365,9 @@
 	.parafoCamino{
 	 	font-size: 12px;
 	}
+	.parafoCamino-click{
+		font-size: 12px;
+	}
 
 	.listatramites{
 		font-size: 12px;
@@ -315,7 +375,16 @@
 	
 	.parrafoPopup{
 		font-size: 10px;
-}
+	}
+
+	.parrafoFinPasos {
+		font-size: 12px;
+	}
+
+	.displayPopup{
+		max-width:1100px;
+		background: #c2c2c2;
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -335,13 +404,24 @@
 	.parafoCamino{
 	 	font-size: 12px;
 	}
+	.parafoCamino-click{
+		font-size: 12px;
+	}
 	.listatramites{
 		font-size: 12px;
 	}
 	
 	.parrafoPopup{
 		font-size: 14px;
-}
+	}
+	.parrafoFinPasos {
+		font-size: 14px;
+	}
+
+	.displayPopup{
+		max-width:1100px;
+		background: #c2c2c2;
+	}
 	
 }
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -362,10 +442,18 @@
 	.parafoCamino{
 	 	font-size: 16px;
 	}
+	.parafoCamino-click{
+		font-size: 16px;
+	}
 	.listatramites{
 		font-size: 16px;
 	}
 	.parrafoPopup{
 		font-size: 16px;
-}
+	}
+
+	.displayPopup{
+		max-width:1100px;
+		background: #c2c2c2;
+	}
 }
