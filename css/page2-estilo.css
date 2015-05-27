@@ -100,13 +100,13 @@ animation: spritechabelitaresponsive 1.8s steps(29, end) 1 forwards,hablarespons
 
 
 @keyframes spritechabelitaresponsive {  
- from {background-position: 0% 0%; right:180%; } 
-  to {background-position: -2900% 0%; right:-135%; }  
+ from {background-position: 0% 0%; -webkit-transform:translateX(-155%);transform:translateX(-155%); } 
+  to {background-position: -2900% 0%; -webkit-transform:translateX(128%);transform:translateX(128%); }  
 }
 
 @-webkit-keyframes spritechabelitaresponsive {  
-from {background-position: 0% 0%; right:180%; } 
-  to {background-position: -2900% 0%; right:-135%; }  
+ from {background-position: 0% 0%; -webkit-transform:translateX(-155%);transform:translateX(-155%); } 
+  to {background-position: -2900% 0%; -webkit-transform:translateX(128%);transform:translateX(128%); }  
 }
 
 @-webkit-keyframes caminarresponsive{
