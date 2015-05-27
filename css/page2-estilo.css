@@ -80,7 +80,7 @@
   width: 24.3%;
   height: 53%;
   top: 38%;
-   margin-left: -30%;
+   margin-left: 0%;
   
 }
 
@@ -92,7 +92,7 @@
   height: 100%;
   width: 100%;
   position: absolute;
-    margin-left: 0%;
+    margin-left: -30%;
   
 
 -webkit-animation: caminarresponsive 2.9s both linear,spritechabelitaresponsive 3s steps(29, end) 1 forwards,hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
