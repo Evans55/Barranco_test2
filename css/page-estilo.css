@@ -149,11 +149,11 @@
   position: absolute;
   left: 0;
 
--webkit-animation: spritechabelitaresponsive1 0.7s steps(6, end) 3 ,caminarresponsive1 2s both linear,hablaresponsive1 1.4s steps(6, end) 2.5s 6 ;
--moz-animation: spritechabelitaresponsive1 0.7s steps(6, end) 3 ,caminarresponsive1 2s both linear,hablaresponsive1 1.4s steps(6, end) 2.5s 6 ;
--o-animation: spritechabelitaresponsive1 0.7s steps(6, end) 3 ,caminarresponsive1 2s both linear,hablaresponsive1 1.4s steps(6, end) 2.5s 6 ;
-animation: spritechabelitaresponsive1 0.7s steps(6, end) 3 ,caminarresponsive1 2s both linear,hablaresponsive1 1.4s steps(6, end) 2.5s 6 ;
--webkit-animation-fill-mode:forwards;
+-webkit-animation: spritechabelitaresponsive1 0.7s steps(6, end) 3 forwards,caminarresponsive1 2s both linear,hablaresponsive1 1.4s steps(6, end) 2.5s 6 forwards;
+-moz-animation: spritechabelitaresponsive1 0.7s steps(6, end) 3 forwards,caminarresponsive1 2s both linear,hablaresponsive1 1.4s steps(6, end) 2.5s 6 forwards;
+-o-animation: spritechabelitaresponsive1 0.7s steps(6, end) 3 forwards,caminarresponsive1 2s both linear,hablaresponsive1 1.4s steps(6, end) 2.5s 6 forwards;
+animation: spritechabelitaresponsive1 0.7s steps(6, end) 3 forwards,caminarresponsive1 2s both linear,hablaresponsive1 1.4s steps(6, end) 2.5s 6 forwards;
+/*-webkit-animation-fill-mode:forwards;*/
 }
 
 
