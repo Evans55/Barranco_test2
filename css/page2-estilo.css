@@ -80,7 +80,7 @@
   width: 24.3%;
   height: 53%;
   top: 38%;
-   margin-left: -10%;
+   margin-left: -20%;
   
 }
 
@@ -113,12 +113,12 @@ animation: caminarresponsive 2.9s both linear,spritechabelitaresponsive 3s steps
 
 @-webkit-keyframes caminarresponsive{
 	from{margin-left: -100%;}
-	to{ margin-left: 150%;}
+	to{ margin-left: 230%;}
 }
 	
 @keyframes caminarresponsive{
    from{margin-left: -100%;}
-	to{ margin-left: 150%;}
+	to{ margin-left: 230%;}
 }
 
 @keyframes hablaresponsive {  
