@@ -91,22 +91,22 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  left: 0;
+  
 
--webkit-animation: spritechabelitaresponsive 1.5s steps(29, end) 2 forwards,hablaresponsive 1.6s steps(29, end) 3.2s 4 forwards;
-animation: spritechabelitaresponsive 1.5s steps(29, end) 2 forwards,hablaresponsive 1.6s steps(29, end) 3.2s 4 forwards;
+-webkit-animation: spritechabelitaresponsive 1.8s steps(29, end) 1 forwards,hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
+animation: spritechabelitaresponsive 1.8s steps(29, end) 1 forwards,hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
 
 }
 
 
 @keyframes spritechabelitaresponsive {  
- from {background-position: 0% 0%; } 
-  to {background-position: -2900% 0%; }  
+ from {background-position: 0% 0%; right:180%; } 
+  to {background-position: -2900% 0%; right:-135%; }  
 }
 
 @-webkit-keyframes spritechabelitaresponsive {  
- from {background-position: 0% 0%; } 
-  to {background-position: -2900% 0%; } 
+from {background-position: 0% 0%; right:180%; } 
+  to {background-position: -2900% 0%; right:-135%; }  
 }
 
 @-webkit-keyframes caminarresponsive{
