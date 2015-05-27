@@ -56,12 +56,12 @@ animation: spritechabelitaresponsive3 2.5s steps(29, end) 1 forwards,hablarespon
 }
 
 @-webkit-keyframes caminarresponsive3{
-	from{-webkit-transform:translateX(-155%);transform:translateX(-155%)}
-	to{-webkit-transform:translateX(148%);transform:translateX(148%)}}
+    from{margin-left: -50%;}
+	to{ margin-left: 150%;}
 	
 @keyframes caminarresponsive3{
-    from{-webkit-transform:translateX(-155%);transform:translateX(-155%)}
-	to{-webkit-transform:translateX(148%);transform:translateX(148%)}}
+    from{margin-left: -50%;}
+	to{ margin-left: 150%;}
 
 @keyframes hablaresponsive3 {  
   from {background-position: 0 -100%; } 
