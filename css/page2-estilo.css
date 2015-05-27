@@ -91,7 +91,7 @@
   height: 100%;
   width: 100%;
   position: absolute;
-    margin-left: -150%;
+    margin-left: -350%;
   
 
 -webkit-animation: spritechabelitaresponsive 2.8s steps(29, end) 1 forwards,hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
