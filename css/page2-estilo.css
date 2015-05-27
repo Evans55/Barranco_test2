@@ -93,10 +93,8 @@
   position: absolute;
   left: 0;
 
--webkit-animation: spritechabelitaresponsive 1.5s steps(29, end) 2 forwards,caminarresponsive 2.9s both linear ,hablaresponsive 1.6s steps(29, end) 3.2s 4 forwards;
--moz-animation: spritechabelitaresponsive 1.5s steps(29, end) 2 forwards,caminarresponsive 2.9s both linear ,hablaresponsive 1.6s steps(29, end) 3.2s 4 forwards;
--o-animation: spritechabelitaresponsive 1.5s steps(29, end) 2 forwards,caminarresponsive 2.9s both linear ,hablaresponsive 1.6s steps(29, end) 3.2s 4 forwards;
-animation: spritechabelitaresponsive 1.5s steps(29, end) 2 forwards,caminarresponsive 2.9s both linear ,hablaresponsive 1.6s steps(29, end) 3.2s 4 forwards;
+-webkit-animation: spritechabelitaresponsive 1.5s steps(29, end) 2 forwards,hablaresponsive 1.6s steps(29, end) 3.2s 4 forwards;
+animation: spritechabelitaresponsive 1.5s steps(29, end) 2 forwards,hablaresponsive 1.6s steps(29, end) 3.2s 4 forwards;
 
 }
 
