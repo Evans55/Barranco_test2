@@ -101,12 +101,12 @@ animation: spritechabelitaresponsive 2.8s steps(29, end) 1 forwards,hablarespons
 
 
 @keyframes spritechabelitaresponsive {  
- from {background-position: 0% 0%;  margin-left: -150%; } 
+ from {background-position: 0% 0%;  margin-left: -350%; } 
   to {background-position: -2900% 0%;  margin-left: 150%;}  
 }
 
 @-webkit-keyframes spritechabelitaresponsive {  
- from {background-position: 0% 0%;  margin-left: -150%;  } 
+ from {background-position: 0% 0%;  margin-left: -350%;  } 
   to {background-position: -2900% 0%;  margin-left: 150%;  }  
 }
 
