@@ -94,8 +94,8 @@
     margin-left: -150%;
   
 
--webkit-animation: caminarresponsive 2.9s both linear,spritechabelitaresponsive 2.8s steps(29, end) 1 forwards,hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
-animation: caminarresponsive 2.9s both linear,spritechabelitaresponsive 2.8s steps(29, end) 1 forwards,hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
+-webkit-animation: caminarresponsive 2.9s both linear,spritechabelitaresponsive 3s steps(29, end) 1 forwards,hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
+animation: caminarresponsive 2.9s both linear,spritechabelitaresponsive 3s steps(29, end) 1 forwards,hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
 
 }
 
