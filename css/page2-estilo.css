@@ -91,32 +91,34 @@
   height: 100%;
   width: 100%;
   position: absolute;
-    margin-left: -350%;
+    margin-left: -150%;
   
 
--webkit-animation: spritechabelitaresponsive 2.8s steps(29, end) 1 forwards,hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
-animation: spritechabelitaresponsive 2.8s steps(29, end) 1 forwards,hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
+-webkit-animation: caminarresponsive 2.9s both linear,spritechabelitaresponsive 2.8s steps(29, end) 1 forwards,hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
+animation: caminarresponsive 2.9s both linear,spritechabelitaresponsive 2.8s steps(29, end) 1 forwards,hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
 
 }
 
 
 @keyframes spritechabelitaresponsive {  
- from {background-position: 0% 0%;  margin-left: -350%; } 
-  to {background-position: -2900% 0%;  margin-left: 150%;}  
+ from {background-position: 0% 0%;} 
+  to {background-position: -2900% 0%;}  
 }
 
 @-webkit-keyframes spritechabelitaresponsive {  
- from {background-position: 0% 0%;  margin-left: -350%;  } 
-  to {background-position: -2900% 0%;  margin-left: 150%;  }  
+ from {background-position: 0% 0%;} 
+  to {background-position: -2900% 0%;}  
 }
 
 @-webkit-keyframes caminarresponsive{
-	from{-webkit-transform:translateX(-155%);transform:translateX(-155%)}
-	to{-webkit-transform:translateX(128%);transform:translateX(128%)}}
+	from{margin-left: -150%;}
+	to{ margin-left: 150%;}
+}
 	
 @keyframes caminarresponsive{
-    from{-webkit-transform:translateX(-155%);transform:translateX(-155%)}
-	to{-webkit-transform:translateX(128%);transform:translateX(128%)}}
+   from{margin-left: -150%;}
+	to{ margin-left: 150%;}
+}
 
 @keyframes hablaresponsive {  
   from {background-position: 0 -100%; } 
