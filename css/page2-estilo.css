@@ -92,7 +92,7 @@
   height: 100%;
   width: 100%;
   position: absolute;
-    margin-left: -150%;
+    margin-left: -30%;
   
 
 -webkit-animation: caminarresponsive 2.9s both linear,spritechabelitaresponsive 3s steps(29, end) 1 forwards,hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
@@ -112,13 +112,13 @@ animation: caminarresponsive 2.9s both linear,spritechabelitaresponsive 3s steps
 }
 
 @-webkit-keyframes caminarresponsive{
-	from{margin-left: -150%;}
-	to{ margin-left: 150%;}
+	from{margin-left: -30%;}
+	to{ margin-left: 270%;}
 }
 	
 @keyframes caminarresponsive{
-   from{margin-left: -150%;}
-	to{ margin-left: 150%;}
+   from{margin-left: -30%;}
+	to{ margin-left: 270%;}
 }
 
 @keyframes hablaresponsive {  
