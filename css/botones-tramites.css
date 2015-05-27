@@ -12,9 +12,9 @@
  	 background: none;
   	 position: absolute;
  	 z-index: 1;
-  	 width: 104%;
-     height: 20%;
-  	 top: 68%;
+  	 width: 112%;
+     height: 23%;
+  	 top: 62%;
  	 left: 0%;
 }
 
@@ -37,7 +37,7 @@
     width: 17%;
     height: 87%;
     bottom: 8%;
-    left: 20%;
+    left: 18%;
 	opacity: 0;
 }	
 
@@ -48,7 +48,7 @@
     width: 17%;
     height: 87%;
     bottom: 8%;
-    left: 40%;
+    left: 36%;
 	opacity: 0;
 }
 
@@ -59,7 +59,7 @@
     width: 17%;
     height: 87%;
     bottom: 8%;
-    left: 60%;
+    left: 54%;
 	opacity: 0;
 }
 .fila1-botones .btn4-1{
@@ -80,7 +80,7 @@
     width: 17%;
     height: 87%;
     bottom: 8%;
-    left: 80%;
+    left: 72%;
 	opacity: 0;
 }
 .fila1-botones .btn5-1{
@@ -99,9 +99,9 @@
  	 background: none;
   	 position: absolute;
  	 z-index: 1;
-  	 width: 104%;
-     height: 20%;
-  	 top: 84%;
+  	 width: 115%;
+     height: 23%;
+  	 top: 78%;
  	 left: 0%;
 }
 
@@ -114,7 +114,7 @@
 	width:17%;
 	height:87%;
 	bottom: 8%;
-    left: 12%;	
+    left: 6%;	
 	opacity: 0;
 }
 
@@ -126,7 +126,7 @@
     width: 17%;
     height: 87%;
     bottom: 8%;
-    left: 32%;
+    left: 25%;
 	opacity: 0;
 }	
 
@@ -137,7 +137,7 @@
     width: 17%;
     height: 87%;
     bottom: 8%;
-    left: 52%;
+    left: 44%;
 	opacity: 0;
 }
 
@@ -148,7 +148,7 @@
     width: 17%;
     height: 87%;
     bottom: 8%;
-    left: 72%;
+    left: 63%;
 	opacity: 0;
 }
 

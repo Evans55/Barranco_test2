@@ -36,12 +36,13 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  margin-left: 0%;
+  margin-left: 175%;
+  background-position: 0 -100%;
 
--webkit-animation: spritechabelitaresponsive 2.5s steps(29, end) 1 forwards,hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
--o-animation: spritechabelitaresponsive 2.5s steps(29, end) 1 forwards,hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
--moz-animation: spritechabelitaresponsive 2.5s steps(29, end) 1 forwards,hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
-animation: spritechabelitaresponsive 2.5s steps(29, end) 1 forwards,hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
+-webkit-animation: hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
+-o-animation: hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
+-moz-animation: hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
+animation: hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
 
 }	
 
