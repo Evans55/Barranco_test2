@@ -96,6 +96,8 @@
   
 
 -webkit-animation: spritechabelitaresponsive 2.5s steps(29, end) 1 forwards,hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
+-o-animation: spritechabelitaresponsive 2.5s steps(29, end) 1 forwards,hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
+-moz-animation: spritechabelitaresponsive 2.5s steps(29, end) 1 forwards,hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
 animation: spritechabelitaresponsive 2.5s steps(29, end) 1 forwards,hablaresponsive 1.6s steps(29, end) 3.5s 4 forwards;
 
 }

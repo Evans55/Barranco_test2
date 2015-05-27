@@ -25,7 +25,7 @@
   width: 24.3%;
   height: 53%;
   top: 38%;
-  left: 0;
+  margin-left: 0%;
 }
 
 
@@ -36,23 +36,23 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  left: 0;
+  margin-left: 0%;
 
--webkit-animation: spritechabelitaresponsive3 1.6s steps(28, end) 2 forwards,caminarresponsive3 2.9s both linear,hablaresponsive3 1.8s steps(28, end) 4s 3 forwards;
--moz-animation: spritechabelitaresponsive3 1.6s steps(28, end) 2 forwards,caminarresponsive3 2.9s both linear,hablaresponsive3 1.8s steps(28, end) 4s 3 forwards;
--o-animation: spritechabelitaresponsive3 1.6s steps(28, end) 2 forwards,caminarresponsive3 2.9s both linear,hablaresponsive3 1.8s steps(28, end) 4s 3 forwards;
-animation: spritechabelitaresponsive3 1.6s steps(28, end) 2 forwards,caminarresponsive3 2.9s both linear,hablaresponsive3 1.8s steps(28, end) 4s 3 forwards;
+-webkit-animation: spritechabelitaresponsive3 2.5s steps(28, end) 1 forwards,hablaresponsive3 1.8s steps(28, end) 4s 3 forwards;
+-moz-animation: spritechabelitaresponsive3 2.5s steps(28, end) 1 forwards,hablaresponsive3 1.8s steps(28, end) 4s 3 forwards;
+-o-animation: spritechabelitaresponsive3 2.5s steps(28, end) 1 forwards,hablaresponsive3 1.8s steps(28, end) 4s 3 forwards;
+animation: spritechabelitaresponsive3 2.5s steps(28, end) 1 forwards,hablaresponsive3 1.8s steps(28, end) 4s 3 forwards;
 
 }	
 
 @keyframes spritechabelitaresponsive3 {  
- from {background-position: 0% 0%; } 
-  to {background-position: -2800% 0%; }  
+ from {background-position: 0% 0%;margin-left: -50%;} 
+  to {background-position: -2800% 0%;margin-left: 150%;}   
 }
 
 @-webkit-keyframes spritechabelitaresponsive3 {  
- from {background-position: 0% 0%; } 
-  to {background-position: -2800% 0%; } 
+  from {background-position: 0% 0%;margin-left: -50%;} 
+  to {background-position: -2800% 0%;margin-left: 150%;}  
 }
 
 @-webkit-keyframes caminarresponsive3{
