@@ -193,6 +193,19 @@ if(document.getElementById(div1).style.display = 'none'){
   
 }
 
+function ocultarGif(){
+  var y = document.getElementsByClassName("gif-image");
+  for (var i =0 ; i <y.length ; i++) {
+    document.getElementsByClassName("gif-image")[i].style.display = "none";
+    document.getElementsByClassName("text-pointer")[i].style.display = "none";
+  };
+  
+ // x.getElementsByClassName("gif-image")[0].style.backgroundColor = "red";
+
+ /* document.getElementsByTagName('gif-image').style.display='none';
+  document.getElementsByTagName('text-pointer').style.display='none';*/
+}
+
 
 function anteriorpaginas(div1,div2){
 
@@ -314,7 +327,7 @@ function cambiardisplayy5(){
   z-index: 1;
   width: 72%;
   height: 68%;
-  top: 21%;
+  top: 22%;
   left:15.8%;
 
 }
@@ -495,10 +508,80 @@ function cambiardisplayy5(){
      </div>
 
 
-   <div class="contenedorchabelita" id="contenedorchabelita">
+<style>
+.chabelitabrazoiz {
+  background:  url(imagenes/sprite_chabukita22.png) 0 100%;
+  
+
+  z-index: 3;
+  height:511px;
+  width:600px;
+  position: absolute;
+  left: 0;
+  
+ margin-top:-22%;
+  margin-left:-12%;
+
+-webkit-animation: chabelitabrazoiz 1.5s steps(14, end) 2,caminatachabelita 2.9s both linear, spritehablachabelitabrazoiz 1.8s steps(14, end) 3.2s 3 forwards;
+
+  
+}
+
+.chabelitabrazoder {
+  background:  url(imagenes/sprite_chabukita33.png) 0 100%;
+  
+
+  z-index: 3;
+  height:511px;
+  width:600px;
+  position: absolute;
+  left: 0;
+  
+ margin-top:-22%;
+  margin-left:-12%;
+
+-webkit-animation: chabelitabrazoiz 1.5s steps(14, end) 2,caminatachabelita 2.9s both linear, spritehablachabelitabrazoiz 1.8s steps(14, end) 3.2s 3 forwards;
+
+  
+}
+
+@keyframes spritehablachabelitabrazoiz {  
+  from {background-position: 0 -511px; } 
+  to {background-position: -8400px -511px; } 
+}
+
+@-webkit-keyframes spritehablachabelitabrazoiz {  
+    from {background-position: 0 -511px; } 
+  to {background-position: -8400px -511px; } 
+}
+
+@keyframes chabelitabrazoiz {  
+  from {background-position: 0 0; } 
+  to {background-position: -8400px 0; } 
+}
+
+@-webkit-keyframes chabelitabrazoiz {  
+    from {background-position: 0 0; } 
+  to {background-position: -8400px 0; } 
+}
+
+@-webkit-keyframes caminatachabelita{
+	from{-webkit-transform:translateX(-1000px);transform:translateX(-1000px)}
+	to{-webkit-transform:translateX(300px);transform:translateX(300px)}}
+	
+@keyframes caminatachabelita{
+from{-webkit-transform:translateX(-1000px);transform:translateX(-1000px)}
+	to{-webkit-transform:translateX(300px);transform:translateX(300px)}}	
+
+</style>
+
+
+    <div class="contenedorchabelita" id="contenedorchabelita">
         <div class="chabelitaresponsive" id="chabelitaresponsive">
         </div>  
-    </div> 
+         <!-- <div class="chabelitabrazoiz" id="chabelitabrazoiz">
+        </div> -->
+    </div>
      
     </div>
     
@@ -535,13 +618,13 @@ function cambiardisplayy5(){
           </a>
           </div>
         
-        <div class="contenedorchabelita2" id="contenedorchabelita2">
+        <div class="contenedorchabelita2">
          <div class="chabelitaresponsive2" id="chabelitaresponsive2">
             </div>  
-        </div>  
-        
-      
-                                      
+           <!-- <div class="chabelitabrazoder" id="chabelitabrazoder">
+        </div> -->
+        </div> 
+                              
           </div>
    
     </div>
@@ -556,7 +639,7 @@ function cambiardisplayy5(){
                          <li><a href="#page"><img src="imagenes/fondomenu.png" width="100%" height="100%"></a></li>
                       <li><a href="#page" data-iconpos="notext"><img src="imagenes/menu_emergente-02.png" width="100%" height="100%"></a></li>
                    <li><a href="#page4" data-iconpos="notext"><img src="imagenes/menu_emergente-03.png" width="100%" height="100%"></a></li>
-                        <li id="activo3"><a data-role="button" data-iconpos="notext" style="-webkit-border-radius: inherit; padding:15%;" onclick="activarAudio33(),cambiardisplayy44();"><img src="imagenes/menu_emergente-04.png" width="100%" height="100%"></a></li>
+                        <li id="activo3"><a data-role="button" data-iconpos="notext" style="-webkit-border-radius: inherit; padding:15%;" onclick="activarAudio33(),cambiardisplay44();"><img src="imagenes/menu_emergente-04.png" width="100%" height="100%"></a></li>
                       <li><a href="#" onclick="enviomail();" data-iconpos="notext"><img src="imagenes/menu_emergente-05.png" width="100%" height="100%"></a></li>
                        <li><a onclick="showConfirm(); return false;" href="#" data-rel="close" data-iconpos="notext"><img src="imagenes/menu_emergente-06.png" width="100%" height="100%"></a>                  </li>
                       </ul> 
@@ -845,7 +928,7 @@ function cambiardisplayy5(){
            <h3>11. FRACCIONAMIENTO DE DEUDAS TRIBUTARIAS</h3>
 	          <ul data-role="listview">
 		          <li>
-		          	<a href="#FraccionamientoDeDeudasTributarias" style="text-decoration: none; display:block;">Fraccionamiento de deudas tributarias</a>
+		          	<a href="#FraccionamientoDeDeudasTributarias" style="text-decoration: none; display:block;"><p class="text-float">Fraccionamiento de deudas tributarias</p></a>
 		          </li>
 	          </ul>
            </div>
@@ -853,7 +936,7 @@ function cambiardisplayy5(){
            <h3>12. FRACCIONAMIENTO DE DEUDAS POR MULTAS ADMINISTRATIVAS</h3>
 	          <ul data-role="listview">
 		          <li>
-		          	<a href="#FraccionamientoDeDeudasPorMultasAdministrativas" style="text-decoration: none; display:block;">Fraccionamiento de deudas por multas administrativas</a>
+		          	<a href="#FraccionamientoDeDeudasPorMultasAdministrativas" style="text-decoration: none; display:block;"><p class="text-float">Fraccionamiento de deudas por multas administrativas</p></a>
 		          </li>
 	          </ul>
            </div>
@@ -861,7 +944,7 @@ function cambiardisplayy5(){
            <h3>14. TERCERÍA DE PROPIEDAD ANTE COBRANZA DE OBLIGACIONES TRIBUTARIAS</h3>
 	          <ul data-role="listview">
 		          <li>
-		          	<a href="#TerceriaDePropiedadAnteCobranzaDeObligacionesTributarias" style="text-decoration: none; display:block;">Tercería de propiedad ante cobranza de obligaciones tributarias</a>
+		          	<a href="#TerceriaDePropiedadAnteCobranzaDeObligacionesTributarias" style="text-decoration: none; display:block;"><p class="text-float">Tercería de propiedad ante cobranza de obligaciones tributarias</p></a>
 		          </li>
 	          </ul>
            </div>
@@ -869,7 +952,7 @@ function cambiardisplayy5(){
            <h3>16. SOLICITUD DE SUSPENSIÓN DE COBRANZA COACTIVA DE OBLIGACIONES TRIBUTARIAS </h3>
 	          <ul data-role="listview" >
 		          <li>
-		          	<a href="#SolicitudDeSuspensionDeCobranzaCoactivaDeObligacionesTributarias" style="text-decoration: none; display:block;">Solicitud de suspensión de cobranza coactiva de obligaciones tributarias.</a>
+		          	<a href="#SolicitudDeSuspensionDeCobranzaCoactivaDeObligacionesTributarias" style="text-decoration: none; display:block;"><p class="text-float">Solicitud de suspensión de cobranza coactiva de obligaciones tributarias.</p></a>
 		          </li>
 	          </ul>
            </div>
@@ -877,7 +960,7 @@ function cambiardisplayy5(){
            <h3>17. TERCERÍA DE PROPIEDAD ANTE COBRANZA DE OBLIGACIONES NO TRIBUTARIAS</h3>
 	          <ul data-role="listview">
 		          <li>
-		          	<a href="#TerceriaDePropiedadAnteCobranzaDeObligacionesNoTributarias" style="text-decoration: none; display:block;">Tercería de propiedad ante cobranza de obligaciones no tributarias.</a>
+		          	<a href="#TerceriaDePropiedadAnteCobranzaDeObligacionesNoTributarias" style="text-decoration: none; display:block;"><p class="text-float">Tercería de propiedad ante cobranza de obligaciones no tributarias.</p></a>
 		          </li>
 	          </ul>
            </div>
@@ -885,7 +968,7 @@ function cambiardisplayy5(){
            <h3>18. SOLICITUD DE SUSPENSIÓN DE COBRANZA COACTIVA DE OBLIGACIONES NO TRIBUTARIAS</h3>
 	          <ul data-role="listview">
 		          <li>
-		          	<a href="#SolicitudDeSuspensionDeCobranzaCoactivaDeObligacionesNoTributarias" style="text-decoration: none; display:block;">Solicitud de suspensión de cobranza coactiva de obligaciones no tributarias.</a>
+		          	<a href="#SolicitudDeSuspensionDeCobranzaCoactivaDeObligacionesNoTributarias" style="text-decoration: none; display:block;"><p class="text-float">Solicitud de suspensión de cobranza coactiva de obligaciones no tributarias.</p></a>
 		          </li>
 	          </ul>
            </div>
@@ -893,7 +976,7 @@ function cambiardisplayy5(){
            <h3>19. SOLICITUD DE DEVOLUCIÓN EN MATERIA TRIBUTARIA</h3>
 	          <ul data-role="listview" >
 		          <li>
-		          	<a href="#SolicitudDeDevolucionEnMateriaTributaria" style="text-decoration: none; display:block;">Solicitud de devolución en materia tributaria.</a>
+		          	<a href="#SolicitudDeDevolucionEnMateriaTributaria" style="text-decoration: none; display:block;"><p class="text-float">Solicitud de devolución en materia tributaria.</p></a>
 		          </li>
 	          </ul>
            </div>
@@ -901,7 +984,7 @@ function cambiardisplayy5(){
            <h3>20. SOLICITUD DE COMPENSACIÓN EN MATERIA TRIBUTARIA</h3>
 	          <ul data-role="listview" >
 		          <li >
-		          	<a href="#SolicitudDeCompensacionEnMateriaTributaria" style="text-decoration: none; display:block;">Solicitud de compensación en materia tributaria.</a>
+		          	<a href="#SolicitudDeCompensacionEnMateriaTributaria" style="text-decoration: none; display:block;"><p class="text-float">Solicitud de compensación en materia tributaria.</p></a>
 		          </li>
 	          </ul>
            </div>
@@ -909,7 +992,7 @@ function cambiardisplayy5(){
            <h3>21. SOLICITUD DE PRESCRIPCIÓN EN MATERIA TRIBUTARIA</h3>
 	          <ul data-role="listview">
 		          <li>
-		          	<a href="#SolicitudDePrescripcionEnMateriaTributaria" style="text-decoration: none; display:block;">Solicitud de prescripción en materia tributaria.</a>
+		          	<a href="#SolicitudDePrescripcionEnMateriaTributaria" style="text-decoration: none; display:block;"><p class="text-float">Solicitud de prescripción en materia tributaria.</p></a>
 		          </li>
 	          </ul>
            </div>
@@ -917,19 +1000,19 @@ function cambiardisplayy5(){
            <h3>27. CONSTANCIA DE NO ADEUDO TRIBUTARIO</h3>
 	          <ul data-role="listview">
 		          <li>
-		          	<a href="#ImpuestoPredial" style="text-decoration: none; display:block;">27a. Impuesto predial</a>
+		          	<a href="#ImpuestoPredial" style="text-decoration: none; display:block;"><p class="text-float">27a. Impuesto predial</p></a>
 		          </li>
 		          <li>
-		          	<a href="#ArbitriosMunicipales" style="text-decoration: none; display:block;">27b. Arbitrios municipales</a>
+		          	<a href="#ArbitriosMunicipales" style="text-decoration: none; display:block;"><p class="text-float">27b. Arbitrios municipales</p></a>
 		          </li>
 		          <li>
-		          	<a href="#InafectacionAlImpuestoPredial" style="text-decoration: none; display:block;">27c. Inafectación al impuesto predial</a>
+		          	<a href="#InafectacionAlImpuestoPredial" style="text-decoration: none; display:block;"><p class="text-float">27c. Inafectación al impuesto predial</p></a>
 		          </li>
 		          <li>
-		          	<a href="#InafectacionAlImpuestoDeAlcabalaHastaElAno2001" style="text-decoration: none; display:block;">27d. Inafectación al impuesto de alcabala hasta el año 2001</a>
+		          	<a href="#InafectacionAlImpuestoDeAlcabalaHastaElAno2001" style="text-decoration: none; display:block;"><p class="text-float">27d. Inafectación al impuesto de alcabala hasta el año 2001</p></a>
 		          </li>
 		          <li>
-		          	<a href="#PagoDeTributos" style="text-decoration: none; display:block;">27e. Pago de tributos</a>
+		          	<a href="#PagoDeTributos" style="text-decoration: none; display:block;"><p class="text-float">27e. Pago de tributos</p></a>
 		          </li>
 	          </ul>
            </div>
@@ -994,40 +1077,40 @@ function cambiardisplayy5(){
            <h3>28. SOLICITUD DE INAFECTACIÓN DEL IMPUESTO PREDIAL</h3>
             <ul data-role="listview">
               <li>
-                <a href="#SolicitudDeInafectacionDelImpuestoPredial" style="text-decoration: none; display:block;">28. Solicitud de inafectacion del impuesto predial</a>
+                <a href="#SolicitudDeInafectacionDelImpuestoPredial" style="text-decoration: none; display:block;"><p class="text-float">28. Solicitud de inafectacion del impuesto predial</p></a>
               </li>
               <li>
-                <a href="#GobiernosExtranjerosEnCondicionDeReciprocidad" style="text-decoration: none; display:block;">28a. Gobiernos extranjeros en condición de reciprocidad</a>
+                <a href="#GobiernosExtranjerosEnCondicionDeReciprocidad" style="text-decoration: none; display:block;"><p class="text-float">28a. Gobiernos extranjeros en condición de reciprocidad</p></a>
               </li>
               <li>
-                <a href="#OrganismosInternacionalesReconocidosPorElGobierno" style="text-decoration: none; display:block;">28b. Organismos internacionales reconocidos por el Gobierno</a>
+                <a href="#OrganismosInternacionalesReconocidosPorElGobierno" style="text-decoration: none; display:block;"><p class="text-float">28b. Organismos internacionales reconocidos por el Gobierno</p></a>
               </li>
               <li>
-                <a href="#SociedadesDeBeneficencias" style="text-decoration: none; display:block;">28c. Sociedades de Beneficencias</a>
+                <a href="#SociedadesDeBeneficencias" style="text-decoration: none; display:block;"><p class="text-float">28c. Sociedades de Beneficencias</p></a>
               </li>
               <li>
-                <a href="#EntidadesReligiosas" style="text-decoration: none; display:block;">28d. Entidades religiosas (Católicas)</a>
+                <a href="#EntidadesReligiosas" style="text-decoration: none; display:block;"><p class="text-float">28d. Entidades religiosas (Católicas)</p></a>
               </li>
               <li>
-                <a href="#EntidadesReligiosasNoCatolicas" style="text-decoration: none; display:block;">28e. Entidades religiosas (No Católicas)</a>
+                <a href="#EntidadesReligiosasNoCatolicas" style="text-decoration: none; display:block;"><p class="text-float">28e. Entidades religiosas (No Católicas)</p></a>
               </li>
               <li>
-                <a href="#EntidadesPublicasDestinadasAPrestarServiciosMedicosAsistenciales" style="text-decoration: none; display:block;">28f. Entidades Públicas destinadas a prestar servicios médicos asistenciales</a>
+                <a href="#EntidadesPublicasDestinadasAPrestarServiciosMedicosAsistenciales" style="text-decoration: none; display:block;"><p class="text-float">28f. Entidades Públicas destinadas a prestar servicios médicos asistenciales</p></a>
               </li>
               <li>
-                <a href="#CentrosEducativosYUniversidades" style="text-decoration: none; display:block;">28g. Centros Educativos y Universidades</a>
+                <a href="#CentrosEducativosYUniversidades" style="text-decoration: none; display:block;"><p class="text-float">28g. Centros Educativos y Universidades</p></a>
               </li>
               <li>
-                <a href="#OrganizacionesPoliticas" style="text-decoration: none; display:block;">28h. Organizaciones Políticas</a>
+                <a href="#OrganizacionesPoliticas" style="text-decoration: none; display:block;"><p class="text-float">28h. Organizaciones Políticas</p></a>
               </li>
               <li>
-                <a href="#OrganizacionDePersonasConDiscapacidad" style="text-decoration: none; display:block;">28i. Organización de Personas con Discapacidad</a>
+                <a href="#OrganizacionDePersonasConDiscapacidad" style="text-decoration: none; display:block;"><p class="text-float">28i. Organización de Personas con Discapacidad</p></a>
               </li>
               <li>
-                <a href="#Sindicatos" style="text-decoration: none; display:block;">28j. Sindicatos</a>
+                <a href="#Sindicatos" style="text-decoration: none; display:block;"><p class="text-float">28j. Sindicatos</p></a>
               </li>
               <li>
-                <a href="#PrediosDeclaradosMonumentosIntegrantesDelPatrimonioCulturalDeLaNacionPorElInc" style="text-decoration: none; display:block;">28k. Predios declarados monumentos integrantes del Patrimonio Cultural de la Nación por el INC.</a>
+                <a href="#PrediosDeclaradosMonumentosIntegrantesDelPatrimonioCulturalDeLaNacionPorElInc" style="text-decoration: none; display:block;"><p class="text-float">28k. Predios declarados monumentos integrantes del Patrimonio Cultural de la Nación por el INC.</p></a>
               </li>
             </ul>
            </div>
@@ -1143,22 +1226,22 @@ function cambiardisplayy5(){
                                                  <h3>1. MATRIMONIO CIVIL</h3>
                                                  <ul data-role="listview" id="lista">
                                                                 <li>
-                                                                  <a  href="#MatrimonioCivil" style="display : block;text-decoration:none;" ><span class="text-relleno">aaaaaaaa</span>Matrimonio Civil</a>
+                                                                  <a  href="#MatrimonioCivil" style="display : block;text-decoration:none;" ><p class="text-float">Matrimonio Civil</p></a>
                                                                 </li>
                                                                 <li>
-                                                                  <a href="#ParaMenoresDeEdad" style="display : block; text-decoration:none;"><span class="text-relleno">aaaaaaaa</span>Para menores de edad</a>
+                                                                  <a href="#ParaMenoresDeEdad" style="display : block; text-decoration:none;"><p class="text-float">Para menores de edad</p></a>
                                                                 </li>
                                                                 <li>
-                                                                  <a href="#ParaDivorciados" style="display : block;text-decoration:none;"><span class="text-relleno">aaaaaaaa</span>Para divorciados</a>
+                                                                  <a href="#ParaDivorciados" style="display : block;text-decoration:none;"><p class="text-float">Para divorciados</p></a>
                                                                 </li>
                                                                 <li>
-                                                                  <a href="#ParaViudos" style="display : block; text-decoration:none;"><span class="text-relleno">aaaaaaaa</span>Para viudos</a>
+                                                                  <a href="#ParaViudos" style="display : block; text-decoration:none;"><p class="text-float">Para viudos</p></a>
                                                                 </li>
                                                                 <li>
-                                                                  <a href="#ParaExtranjeros" style="display : block;text-decoration:none;"><span class="text-relleno">aaaaaaaa</span>Para extranjeros</a>
+                                                                  <a href="#ParaExtranjeros" style="display : block;text-decoration:none;"><p class="text-float">Para extranjeros</p></a>
                                                                 </li>
                                                                 <li>
-                                                                  <a href="#ParaMatrimoniosPorPoder" style="display : block; text-decoration:none;"><span class="text-relleno">aaaaaaaa</span>Para matrimonios por poder</a>
+                                                                  <a href="#ParaMatrimoniosPorPoder" style="display : block; text-decoration:none;"><p class="text-float">Para matrimonios por poder</p></a>
                                                                 </li>
                                                     </ul>
                                                </div>
@@ -1166,7 +1249,7 @@ function cambiardisplayy5(){
                                                     <h3>2. DISPENSA PARCIAL DE PUBLICACIÓN DE AVISO MATRIMONIAL </h3>
                                                     <ul data-role="listview" id="lista">
                                                       <li>
-                                                        <a href="#DispensaParcialDePublicacionDeAvisoMatrimonial" style="display : block;text-decoration:none;"><span class="text-relleno">aaaaaaaa</span>Dispensa parcial de publicacion de aviso matrimonial.</a>
+                                                        <a href="#DispensaParcialDePublicacionDeAvisoMatrimonial" style="display : block;text-decoration:none;"><p class="text-float">Dispensa parcial de publicacion de aviso matrimonial.</p></a>
                                                       </li>
                                                      </ul>
                                   			     </div>    
@@ -1174,7 +1257,7 @@ function cambiardisplayy5(){
                                                    <h3>3. EXHIBICIÓN DE EDICTOS MATRIMONIALES TRAMITADOS EN OTROS MUNICIPIOS</h3>
                                                     <ul data-role="listview">
                                                         <li>
-                                                       <a href="#ExhibicionDeEdictosMatrimonialesTramitadosEnOtrosMunicipios" style="display : block;text-decoration:none;"><span class="text-relleno">aaaaaaaa</span>Exhibición de edictos matrimoniales tramitados en otros municipios.</a>
+                                                       <a href="#ExhibicionDeEdictosMatrimonialesTramitadosEnOtrosMunicipios" style="display : block;text-decoration:none;"><p class="text-float">Exhibición de edictos matrimoniales tramitados en otros municipios.</p></a>
                                                         </li>
                                                     </ul>
                                               </div>
@@ -1182,7 +1265,7 @@ function cambiardisplayy5(){
                                                       <h3>4. REPROGRAMACIÓN DE FECHA DE MATRIMONIO (PEDIDO EFECTUADO CON ANTICIPACIÓN - 48 Horas)</h3>
                                                       <ul data-role="listview">
                                                           <li>
-                                                           <a href="#ReprogramacionDeFechaDeMatrimonio" style="display : block;text-decoration:none;"><span class="text-relleno">aaaaaaaa</span>Reprogramación de fecha de matrimonio (PEDIDO EFECTUADO CON ANTICIPACIÓN - 48 Horas).</a>
+                                                           <a href="#ReprogramacionDeFechaDeMatrimonio" style="display : block;text-decoration:none;"><p class="text-float">Reprogramación de fecha de matrimonio (PEDIDO EFECTUADO CON ANTICIPACIÓN - 48 Horas).</p></a>
                                                           </li>
                                                       </ul>
                                              </div>   
@@ -1193,33 +1276,34 @@ function cambiardisplayy5(){
                                                 <h3>5.1. SEPARACIÓN CONVENCIONAL</h3>
                                                     <ul data-role="listview">
                                                        <li>
-                                                        <a href="#SeparacionConvencional" style="display : block; text-decoration:none;"><span class="text-relleno">aaaaaaaa</span>Separación convencional</a>
+                                                        <a href="#SeparacionConvencional" style="display : block; text-decoration:none;"><p class="text-float">Separación convencional</p></a>
                                                        </li>
                                                        <li>
-                                                        <a href="#EnCasoDeNoTenerHijos" style="display : block; text-decoration:none;"><span class="text-relleno">aaaaaaaa</span>En caso de no tener hijos</a>
+                                                        <a href="#EnCasoDeNoTenerHijos" style="display : block; text-decoration:none;"><p class="text-float">En caso de no tener hijos</p></a>
                                                        </li>
                                                        <li>
-                                                        <a href="#EnCasoDeTenerHijosMenores" style="display : block; text-decoration:none;"><span class="text-relleno">aaaaaaaa</span>En caso de tener hijos menores</a>
+                                                        <a href="#EnCasoDeTenerHijosMenores" style="display : block; text-decoration:none;"><p class="text-float">En caso de tener hijos menores</p></a>
                                                        </li>
                                                        <li>
-                                                        <a href="#EnCasoDeTenerHijosMayoresConIncapacidad" style="display : block; text-decoration:none;"><span class="text-relleno">aaaaaaaa</span>En caso de tener hijos mayores con incapacidad </a>
+                                                        <a href="#EnCasoDeTenerHijosMayoresConIncapacidad" style="display : block; text-decoration:none;"><p class="text-float">En caso de tener hijos mayores con incapacidad</p></a>
                                                        </li>
                                                        <li>
-                                                        <a href="#EnCasoDeRequisitosRelacionadosConElPatrimonio" style="display : block; text-decoration:none;"><span class="text-relleno">aaaaaaaa</span>En caso de requisitos relacionados con el patrimonio</a>
+                                                        <a href="#EnCasoDeRequisitosRelacionadosConElPatrimonio" style="display : block; text-decoration:none;"><p class="text-float">En caso de requisitos relacionados con el patrimonio</p></a>
                                                        </li>
                                                     </ul>
+
+
                                                </div>
-                                            </div>
-                                      
-                                      <div data-role="collapsible" data-collapsed="true">
-                                        <h3>5.2. DIVORCIO ULTERIOR </h3>
-                                            <ul data-role="listview">
-                                               <li>
-                                                <a href="#DivorcioUlterior" style="display : block; text-decoration:none;"><span class="text-relleno">aaaaaaaa</span>Divorcio Ulterior</a>
-                                               </li>
-                                            </ul>
-                                      </div>
-             
+
+                                               <div data-role="collapsible" data-collapsed="true">
+                                                  <h3>5.2. DIVORCIO ULTERIOR </h3>
+                                                      <ul data-role="listview">
+                                                         <li>
+                                                          <a href="#DivorcioUlterior" style="display : block; text-decoration:none;"><p class="text-float">Divorcio Ulterior</p></a>
+                                                         </li>
+                                                      </ul>
+                                              </div>
+                                     </div>
                          </div>
                </div>
        </div>
@@ -1256,12 +1340,9 @@ function cambiardisplayy5(){
             </ul> 
     </div>
 
-
-
 </div>
 
 <!--FIN MENU MATRIMONIOS-->
-
 
 
 <!-- INICIO MENU TRANSPARENCIA-->
@@ -1785,21 +1866,19 @@ function cambiardisplayy5(){
       
 
             <div class="content-caminos">
-        
+
               <div class="caminotramite-show" id="MatrimonioCivilShow">
                 
-                
-
                 <div class="content-paso1">
-                   <a href="#popupMatrimonioCivil1" data-rel="popup" data-position-to="window" >
+                   <a href="#popupMatrimonioCivil1" data-rel="popup" data-position-to="window" onclick="ocultarGif();" >
                       <img src="imagenes/Bloque1.png"  width="100%" height="100%">
                    </a>
                       <div class="content-boton">
-                          <a href="#popupMatrimonioCivil1" data-rel="popup" data-position-to="window" >
+                          <a href="#popupMatrimonioCivil1" data-rel="popup" data-position-to="window" onclick="ocultarGif();">
                             <img src="imagenes/paso1.png"  width="100%" height="100%">
                           </a>
                       </div>
-                      <a href="#popupMatrimonioCivil1" data-rel="popup" data-position-to="window" >
+                      <a href="#popupMatrimonioCivil1" data-rel="popup" data-position-to="window" onclick="ocultarGif();" >
                       <p class="parafoCamino">Paso 1</p>
                       <p class="parafoCamino-click">Click Aqui</p>
                       </a>
@@ -1946,12 +2025,22 @@ function cambiardisplayy5(){
 
                 </div>
 
-              
-
-
             </div>
 
-    
+
+
+           <div class="gif-image">
+            <img src="imagenes/pointer.gif" width="100%" height="100%">
+           </div>
+
+           <div class="text-pointer">
+              <p>Toque</p>
+              <p>Aquí</p>
+           </div>
+
+              
+
+            
   
             <div class="content-cons-des">
                 <div class="boton-consulta">
@@ -1959,12 +2048,20 @@ function cambiardisplayy5(){
                        <img src="imagenes/Consulta_AZUL.png" width="100%" height="100%">
                       </a>
                     </div>
-                  <div class="boton-descarga" >
-               <!--   <a href="http://www.gmail.com" target="_blank" onclick="window.open('http://www.google.com'); window.open('http://www.yahoo.com');">Link text</a> -->
-                      <a href="#" onClick="window.open('http://www.centralearn.pe/formulario_barranco/solicitud_formulario_unico.pdf', '_blank', 'location=no'); window.open('http://www.munibarranco.gob.pe/pdf_multimedia/1matrimonios/05%20-%20Divorsio/5_A/5_a_4/4divorcio.pdf', '_blank', 'location=no');" >
-                          <img src="imagenes/DescarPDF.png" width="100%" height="100%">
+
+              <script>
+              function abrirArchivos(){ 
+                window.open('http://www.centralearn.pe/formulario_barranco/solicitud_formulario_unico.pdf', '_system', 'location=no');
+                window.open('http://www.munibarranco.gob.pe/pdf_multimedia/8defensacivilylicenciasdefuncionamiento/105/105_a/1defensacivil.pdf', '_system', 'location=no');
+              }
+              </script>
+
+            <div class="boton-descarga" >
+            <a href="#" onClick="abrirArchivos();" >
+            <img src="imagenes/DescarPDF.png" width="100%" height="100%">
                         </a>
-                    </div>
+            </div>
+
              </div>
     
          
@@ -2391,10 +2488,16 @@ function cambiardisplayy5(){
 
                 </div>
 
-              
-
-
             </div>
+
+           <div class="gif-image">
+            <img src="imagenes/pointer.gif" width="100%" height="100%">
+           </div>
+
+           <div class="text-pointer">
+              <p>Toque</p>
+              <p>Aquí</p>
+           </div>
 
             
   
@@ -2833,6 +2936,15 @@ function cambiardisplayy5(){
 
 
             </div>
+
+          <div class="gif-image">
+            <img src="imagenes/pointer.gif" width="100%" height="100%">
+          </div>
+
+           <div class="text-pointer">
+              <p>Toque</p>
+              <p>Aquí</p>
+           </div>           
 
             
   
@@ -3307,8 +3419,15 @@ function cambiardisplayy5(){
 
             </div>
 
-            
-  
+            <div class="gif-image">
+            <img src="imagenes/pointer.gif" width="100%" height="100%">
+          </div>
+
+           <div class="text-pointer">
+              <p>Toque</p>
+              <p>Aquí</p>
+           </div>   
+    
             <div class="content-cons-des">
                 <div class="boton-consulta">
                       <a href="#" onclick="enviomail();">
@@ -13005,11 +13124,9 @@ d) Firma del recurrente y de un abogado hábil.</p>
               </div>
                 
               <div class="caminotramite-hidden" id="RecursoDeApelacionContraResolucionQueDeclaraInfundadoOImprocedenteElRecursoDeReconsideracionContraMultasAdministrativasHidden">
-                 
-                  
+                   
 
               </div>
-
               
 
             </div>
@@ -16027,23 +16144,15 @@ e) Firma de abogado hábil.</p>
                       <p class="parafoCamino-click">Click Aqui</p>
                     </a>
                 </div>
-                
-
 
               </div>
                 
               <div class="caminotramite-hidden" id="PrediosDeclaradosMonumentosIntegrantesDelPatrimonioCulturalDeLaNacionPorElIncHidden">
-                 
-                  
 
               </div>
 
-              
-
             </div>
 
-            
-  
             <div class="content-cons-des">
                 <div class="boton-consulta">
                       <a href="#" onclick="enviomail();">
@@ -16155,7 +16264,6 @@ e) Firma de abogado hábil.</p>
             </div>
       </div>
   </div>
-
 
 
 <!-- FIN DE PERSONAS JURIDICAS OBLGACIONES TRIBUTARIAS-->

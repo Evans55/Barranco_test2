@@ -18,11 +18,11 @@ max-width: 1090px;
 max-height: 691px;
 	
 }
-.text-relleno{
-  opacity: 0;
-  -webkit-opacity:0;
-  -moz-opacity:0;
-  -o-opacity :0
+
+.text-float{
+  height: 15px;
+  padding-left: 45px;
+  font-family: "AlteHaasGroteskRegular";
 }
 
 
